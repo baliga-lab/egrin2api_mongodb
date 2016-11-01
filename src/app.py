@@ -8,11 +8,16 @@ from collections import defaultdict
 from flask import Flask, Response, url_for, redirect, render_template, request, session, flash, jsonify
 import flask
 
+# because we have an API, we need to allow cross-origin here
+from flask_cors import CORS, cross_origin
+
 from werkzeug import secure_filename
 import requests
 import pymongo
 
 app = Flask(__name__)
+CORS(app)
+
 app.config.from_envvar('EGRIN2API_SETTINGS')
 client = pymongo.MongoClient(host=app.config['MONGODB_HOST'], port=app.config['MONGODB_PORT'])
 db = client[app.config['MONGODB_DB']]
@@ -41,7 +46,13 @@ def make_counts(docs):
     for doc in docs:
         for i in range(doc['start'] + 1, doc['stop'] + 1):
             counts[i] += 1
-    return sorted([{'pos': x, 'count': count }for x, count in counts.items()], key=lambda d: d['pos'])
+    result = sorted([{'pos': x, 'count': count } for x, count in counts.items()], key=lambda d: d['pos'])
+    pos0 = result[0]['pos']
+    posn = result[-1]['pos']
+    # add artificial 0 GRE counts for a prettier presentation
+    result.insert(0, { 'pos': pos0 - 1, 'count': 0})
+    result.append({ 'pos': posn + 1, 'count': 0})
+    return result
 
 
 @app.route('/api/v1.0.0/gene_gres/<gene>')
