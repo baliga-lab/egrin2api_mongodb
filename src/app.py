@@ -14,6 +14,7 @@ from flask_cors import CORS, cross_origin
 from werkzeug import secure_filename
 import requests
 import pymongo
+from bson.objectid import ObjectId
 import pandas as pd
 
 import egrin2_query as e2q
@@ -143,6 +144,47 @@ def condition_info(condition_id):
             block2cond[egrin2_block].add(cond)
     cond_blocks = {block: list(block2cond[block]) for block in cond2block[conds[0]]}
     return jsonify(condition=cond_docs[0], blocks=cond_blocks)
+
+
+@app.route('/api/v1.0.0/gene_info/<gene>')
+def gene_info(gene):
+    chroms = db.genome.find({}, {"_id": 0, "scaffoldId": 1, "NCBI_RefSeq": 1 })
+    chrom_map = { int(c['scaffoldId']): c['NCBI_RefSeq'] for c in chroms }
+    genes = [{ "id": r['row_id'],
+                   "gene_name": r['sysName'],
+                   "common_name": r['name'],
+                   "accession":  str(r['accession']),
+                   "description": r['desc'],
+                   "start": r['start'], "stop": r['stop'], "strand": r['strand'],
+                   "chromosome": chrom_map[r['scaffoldId']]}
+                  for r in db.row_info.find({"sysName": gene},
+                                            {'_id': 0, 'row_id': 1, 'sysName': 1, 'name': 1,
+                                                 'accession': 1, 'desc': 1, 'start': 1, 'stop': 1,
+                                            'strand': 1, 'scaffoldId': 1})]
+    return jsonify(gene=genes[0])
+
+
+@app.route('/api/v1.0.0/gene_biclusters/<gene>')
+def gene_biclusters(gene):
+    row_id = db.row_info.find({'sysName': 'Rv0001'}, {'_id': 0, 'row_id': 1})[0]["row_id"]
+    clusters = [{ "id": str(c['_id']), "num_genes": len(c['rows']), "num_conditions": len(c["columns"]), "residual": c["residual"]}
+                    for c in db.bicluster_info.find({"rows": row_id}, {'_id': 1, 'rows': 1, 'columns': 1, 'residual': 1})]
+    return jsonify(biclusters=clusters)
+
+
+@app.route('/api/v1.0.0/condition_biclusters/<condition_id>')
+def condition_biclusters(condition_id):
+    clusters = [{ "id": str(c['_id']), "num_genes": len(c['rows']), "num_conditions": len(c["columns"]), "residual": c["residual"]}
+                    for c in db.bicluster_info.find({"columns": int(condition_id)}, {'_id': 1, 'rows': 1, 'columns': 1, 'residual': 1})]
+    return jsonify(biclusters=clusters)
+
+
+@app.route('/api/v1.0.0/bicluster_info/<cluster_id>')
+def bicluster_info(cluster_id):
+    cluster_id = ObjectId(cluster_id)
+    cluster = [{ "id": str(c['_id']), "num_genes": len(c['rows']), "num_conditions": len(c["columns"]), "residual": c["residual"]}
+                   for c in db.bicluster_info.find({"_id": cluster_id}, {'_id': 1, 'rows': 1, 'columns': 1, 'residual': 1})][0]
+    return jsonify(bicluster=cluster)
 
 ######################################################################
 ### API functions global to the model
