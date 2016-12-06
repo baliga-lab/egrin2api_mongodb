@@ -186,6 +186,37 @@ def bicluster_info(cluster_id):
                    for c in db.bicluster_info.find({"_id": cluster_id}, {'_id': 1, 'rows': 1, 'columns': 1, 'residual': 1})][0]
     return jsonify(bicluster=cluster)
 
+
+@app.route('/api/v1.0.0/bicluster_genes/<cluster_id>')
+def bicluster_genes(cluster_id):
+    cluster_id = ObjectId(cluster_id)
+    gene_ids = db.bicluster_info.find({"_id": cluster_id}, {'_id': 0, 'rows': 1})[0]["rows"]
+    print(gene_ids)
+    chroms = db.genome.find({}, {"_id": 0, "scaffoldId": 1, "NCBI_RefSeq": 1 })
+    chrom_map = { int(c['scaffoldId']): c['NCBI_RefSeq'] for c in chroms }
+    genes = [{ "id": r['row_id'],
+                   "gene_name": r['sysName'],
+                   "common_name": r['name'],
+                   "accession":  str(r['accession']),
+                   "description": r['desc'],
+                   "start": r['start'], "stop": r['stop'], "strand": r['strand'],
+                   "chromosome": chrom_map[r['scaffoldId']]}
+                  for r in db.row_info.find({"row_id": { "$in": gene_ids }},
+                                            {'_id': 0, 'row_id': 1, 'sysName': 1, 'name': 1,
+                                                 'accession': 1, 'desc': 1, 'start': 1, 'stop': 1,
+                                            'strand': 1, 'scaffoldId': 1})]
+    return jsonify(genes=genes)
+
+
+@app.route('/api/v1.0.0/bicluster_conditions/<cluster_id>')
+def bicluster_conditions(cluster_id):
+    cluster_id = ObjectId(cluster_id)
+    condition_ids = db.bicluster_info.find({"_id": cluster_id}, {'_id': 0, 'columns': 1})[0]["columns"]
+    cond_docs = [{ "id": c['col_id'], "name": c['egrin2_col_name']}
+                    for c in db.col_info.find({'col_id': { "$in": condition_ids }},
+                                                  {'_id': 0, 'col_id': 1, 'egrin2_col_name': 1})]
+    return jsonify(conditions=cond_docs)
+
 ######################################################################
 ### API functions global to the model
 ######################################################################
