@@ -217,6 +217,17 @@ def bicluster_conditions(cluster_id):
                                                   {'_id': 0, 'col_id': 1, 'egrin2_col_name': 1})]
     return jsonify(conditions=cond_docs)
 
+
+@app.route('/api/v1.0.0/bicluster_pssms/<cluster_id>')
+def bicluster_pssms(cluster_id):
+    cluster_id = ObjectId(cluster_id)
+    motifs = []
+    for mi in db.motif_info.find({"cluster_id": cluster_id}, {"_id": 0, "pwm": 1, "motif_num": 1}):
+        motifs.append({"motif_num": mi["motif_num"], "alphabet": ["A", "C", "G", "T"],
+                           "values": [[r["a"], r["c"], r["g"], r["t"]] for r in mi["pwm"]]})
+    return jsonify(motifs=motifs)
+
+
 ######################################################################
 ### API functions global to the model
 ######################################################################
