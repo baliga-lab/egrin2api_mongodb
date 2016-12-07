@@ -228,6 +228,34 @@ def bicluster_pssms(cluster_id):
     return jsonify(motifs=motifs)
 
 
+@app.route('/api/v1.0.0/corem_genes/<corem_id>')
+def corem_genes(corem_id):
+    gene_ids = db.corem.find({"corem_id": int(corem_id)}, {'_id': 0, 'rows': 1})[0]["rows"]
+    chroms = db.genome.find({}, {"_id": 0, "scaffoldId": 1, "NCBI_RefSeq": 1 })
+    chrom_map = { int(c['scaffoldId']): c['NCBI_RefSeq'] for c in chroms }
+    genes = [{ "id": r['row_id'],
+                   "gene_name": r['sysName'],
+                   "common_name": r['name'],
+                   "accession":  str(r['accession']),
+                   "description": r['desc'],
+                   "start": r['start'], "stop": r['stop'], "strand": r['strand'],
+                   "chromosome": chrom_map[r['scaffoldId']]}
+                  for r in db.row_info.find({"row_id": { "$in": gene_ids }},
+                                            {'_id': 0, 'row_id': 1, 'sysName': 1, 'name': 1,
+                                                 'accession': 1, 'desc': 1, 'start': 1, 'stop': 1,
+                                            'strand': 1, 'scaffoldId': 1})]
+    return jsonify(genes=genes)
+
+
+@app.route('/api/v1.0.0/corem_conditions/<corem_id>')
+def corem_conditions(corem_id):
+    conds = db.corem.find({"corem_id": int(corem_id)}, {'_id': 0, 'cols': 1})[0]["cols"]
+    cond_ids = [int(c["col_id"]) for c in conds]
+    conds = [{ "id": c['col_id'], "name": c['egrin2_col_name']}
+                 for c in db.col_info.find({"col_id": { "$in": cond_ids} }, {'_id': 0, 'col_id': 1, 'egrin2_col_name': 1})]
+    return jsonify(conditions=conds)
+
+
 ######################################################################
 ### API functions global to the model
 ######################################################################
