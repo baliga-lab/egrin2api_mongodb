@@ -27,24 +27,6 @@ client = pymongo.MongoClient(host=app.config['MONGODB_HOST'], port=app.config['M
 db = client[app.config['MONGODB_DB']]
 
 
-"""
-for i in range(len(corem_ids)):
-    try:
-        genes = find_corem_info(db, [corem_ids.values[i,0]], x_type="corem_id", y_type="genes")
-        genes_list = list(genes['genes'])
-        corem_GREs = agglom(db, genes_list, x_type="genes", y_type="gres", logic="or")
-        corem_GREs_sig = corem_GREs[corem_GREs.loc[:,'qval_BH']<0.01]
-        corem_GREs_sig['COREM'] = str(corem_ids.values[i,0])
-        corem_GREs_sig['genes'] = str(genes_list)
-        #corem_GREs_sig.columns = ['GRE_id', 'counts', 'all_counts', 'pval', 'qval_BH', 'qval_Bonf', 'COREM', 'genes']
-        corem_GREs_sig_163 = corem_GREs_sig[corem_GREs_sig.index<=163]
-        corem_GREs_sig_163.to_csv('gres/corem_gres2/'+str(corem_ids.values[i,0])+'.csv')
-    except:
-        # note that errors are silently ignored
-        pass
-"""
-
-
 def make_sites(cluster_id, motif_num, start, stop):
     sites = db.fimo.find({"cluster_id": cluster_id, "motif_num": motif_num,
                               "start": {"$gte": start}, "stop": {"$lte": stop}},
@@ -328,6 +310,15 @@ def summary():
 def index():
     return render_template('index.html')
 
+
+"""
+TODO:
+
+  - GREs are only found in db.motif_info as gre_id attribute and it can be null
+  - cluster-motif assosciations are stored in motif_info and fimo
+  - corem - cluster relationships ?
+  - corem - GRE relationships ?
+"""
 
 if __name__ == '__main__':
     handler = logging.StreamHandler()
