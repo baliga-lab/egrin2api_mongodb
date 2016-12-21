@@ -113,8 +113,9 @@ def condition_info(condition_id):
                   for c in db.col_info.find({'col_id': int(condition_id)},
                                             {'_id': 0, 'col_id': 1, 'egrin2_col_name': 1})]
     print("cond: %s, res: %s" % (condition_id, str(cond_docs)))
-
-    df = pd.read_csv(app.config["COND_BLOCKS_FILE"])
+    cond_blocks_path = app.config["COND_BLOCKS_FILE"]
+    logging.info("cond blocks file: '%s'", cond_blocks_path)
+    df = pd.read_csv(cond_blocks_path)
     cond2block = defaultdict(set)
     block2cond = defaultdict(set)
 
