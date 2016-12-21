@@ -114,7 +114,7 @@ def condition_info(condition_id):
                                             {'_id': 0, 'col_id': 1, 'egrin2_col_name': 1})]
     print("cond: %s, res: %s" % (condition_id, str(cond_docs)))
 
-    df = pd.read_csv("cond_blocks.csv")
+    df = pd.read_csv(app.config["COND_BLOCKS_FILE"])
     cond2block = defaultdict(set)
     block2cond = defaultdict(set)
 
