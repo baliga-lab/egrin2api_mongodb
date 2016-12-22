@@ -19,6 +19,8 @@ import pandas as pd
 
 import egrin2_query as e2q
 
+BATCH_SIZE = 100
+
 app = Flask(__name__)
 CORS(app)
 
@@ -258,21 +260,41 @@ def conditions():
     return jsonify(conditions=conds)
 
 
-@app.route('/api/v1.0.0/genes')
-def genes():
+def _query_genes(start, num_entries):
+    """reusable gene query function. Since this is a database access
+    function, we could possibly move that into a database access module
+    """
+    end = start + num_entries
     chroms = db.genome.find({}, {"_id": 0, "scaffoldId": 1, "NCBI_RefSeq": 1 })
     chrom_map = { int(c['scaffoldId']): c['NCBI_RefSeq'] for c in chroms }
-    genes = [{ "id": r['row_id'],
-                   "gene_name": r['sysName'],
-                   "common_name": r['name'],
-                   "accession":  str(r['accession']),
-                   "description": r['desc'],
-                   "start": r['start'], "stop": r['stop'], "strand": r['strand'],
-                   "chromosome": chrom_map[r['scaffoldId']]}
-                  for r in db.row_info.find({},
-                                            {'_id': 0, 'row_id': 1, 'sysName': 1, 'name': 1,
-                                                 'accession': 1, 'desc': 1, 'start': 1, 'stop': 1,
-                                            'strand': 1, 'scaffoldId': 1})]
+    cursor = db.row_info.find({}, {'_id': 0, 'row_id': 1, 'sysName': 1, 'name': 1,
+                                       'accession': 1, 'desc': 1, 'start': 1, 'stop': 1,
+                                       'strand': 1, 'scaffoldId': 1})[0:end]
+    return [{ "id": r['row_id'],
+                  "gene_name": r['sysName'],
+                  "common_name": r['name'],
+                  "accession":  str(r['accession']),
+                  "description": r['desc'],
+                  "start": r['start'], "stop": r['stop'], "strand": r['strand'],
+                  "chromosome": chrom_map[r['scaffoldId']]} for r in cursor]
+
+
+@app.route('/api/v1.0.0/genes')
+def genes():
+    """Returns a list of genes. The maximum number of entries returned is BATCH_SIZE.
+    Optional request parameters:
+    - start: start position
+    - length: number of elements to return
+    """
+    try:
+        start = int(request.args.get('start'))
+    except:
+        start = 0
+    try:
+        num_entries = int(request.args.get('length'))
+    except:
+        num_entries = BATCH_SIZE
+    genes = _query_genes(start, num_entries)
     return jsonify(genes=genes)
 
 
