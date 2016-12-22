@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import logging
 import json
 import os
@@ -288,12 +288,15 @@ def genes():
     """
     try:
         start = int(request.args.get('start'))
-    except:
+    except Exception as e:
+        logging.exception(e)
         start = 0
     try:
         num_entries = int(request.args.get('length'))
-    except:
+    except Exception as e:
+        logging.exception(e)
         num_entries = BATCH_SIZE
+    logging.error("genes(), start: %d, length: %d", start, num_entries)
     genes = _query_genes(start, num_entries)
     return jsonify(genes=genes)
 
