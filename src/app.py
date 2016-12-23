@@ -303,12 +303,27 @@ def genes():
 
 @app.route('/api/v1.0.0/biclusters')
 def biclusters():
-    """TODO: we currently limit the output to 100 entries, because rendering everything exceeds
-    the memory limit, this lsit should most likely be loaded in batches
+    """Returns a list of biclusters. The maximum number of entries returned is BATCH_SIZE.
+    Optional request parameters:
+    - start: start position
+    - length: number of elements to return
     """
+    try:
+        start = int(request.args.get('start'))
+    except Exception as e:
+        logging.exception(e)
+        start = 0
+    try:
+        num_entries = int(request.args.get('length'))
+    except Exception as e:
+        logging.exception(e)
+        num_entries = BATCH_SIZE
+    end = start + num_entries
+
+    cursor = db.bicluster_info.find({}, {'_id': 1, 'rows': 1, 'columns': 1, 'residual': 1})[start:end]
     clusters = [{ "id": str(c['_id']), "num_genes": len(c['rows']), "num_conditions": len(c["columns"]), "residual": c["residual"]}
-                    for c in db.bicluster_info.find({}, {'_id': 1, 'rows': 1, 'columns': 1, 'residual': 1})]
-    return jsonify(biclusters=clusters[:100])
+                    for c in cursor]
+    return jsonify(biclusters=clusters)
 
 
 @app.route('/api/v1.0.0/api_info')
