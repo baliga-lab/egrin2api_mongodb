@@ -269,7 +269,7 @@ def _query_genes(start, num_entries):
     chrom_map = { int(c['scaffoldId']): c['NCBI_RefSeq'] for c in chroms }
     cursor = db.row_info.find({}, {'_id': 0, 'row_id': 1, 'sysName': 1, 'name': 1,
                                        'accession': 1, 'desc': 1, 'start': 1, 'stop': 1,
-                                       'strand': 1, 'scaffoldId': 1})[0:end]
+                                       'strand': 1, 'scaffoldId': 1})[start:end]
     return [{ "id": r['row_id'],
                   "gene_name": r['sysName'],
                   "common_name": r['name'],
