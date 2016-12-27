@@ -335,13 +335,13 @@ def api_info():
 
 @app.route('/api/v1.0.0/summary')
 def summary():
-    #db_info = list(db.ensemble_info.find({}))
     num_genes = db.row_info.count()
     num_conditions = db.col_info.count()
     num_corems = db.corem.count()
     num_biclusters = db.bicluster_info.count()
 
-    num_gres = len(db.motif_info.distinct('gre_id', { '$and': [ {'gre_id': {'$ne': "NaN"} }, {'gre_id': {'$ne': None}}]} ));
+    #num_gres = len(db.motif_info.distinct('gre_id', { '$and': [ {'gre_id': {'$ne': "NaN"} }, {'gre_id': {'$ne': None}}]} ));
+    num_gres = 163  # TODO we need a link to show the selection of the relevant GREs
 
     return jsonify(num_genes=num_genes, num_conditions=num_conditions, num_corems=num_corems,
                    num_biclusters=num_biclusters, num_gres=num_gres)
