@@ -1,3 +1,4 @@
 *.pyc
 __pycache__
 cmonkey_run.db
+test-reports
