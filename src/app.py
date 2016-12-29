@@ -176,7 +176,6 @@ def bicluster_info(cluster_id):
 def bicluster_genes(cluster_id):
     cluster_id = ObjectId(cluster_id)
     gene_ids = db.bicluster_info.find({"_id": cluster_id}, {'_id': 0, 'rows': 1})[0]["rows"]
-    print(gene_ids)
     chroms = db.genome.find({}, {"_id": 0, "scaffoldId": 1, "NCBI_RefSeq": 1 })
     chrom_map = { int(c['scaffoldId']): c['NCBI_RefSeq'] for c in chroms }
     genes = [{ "id": r['row_id'],

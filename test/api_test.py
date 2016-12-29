@@ -10,7 +10,7 @@ from app import app
 
 
 BATCHSIZE = 100
-
+BICLUSTER1_ID = '552ef64cb744335b89d3d6b6'
 
 class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
     """Test class for png_util"""
@@ -70,6 +70,39 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
         """test the biclusters() function with start/length arguments"""
         biclusters = json.loads(self.app.get('/api/v1.0.0/biclusters?start=100&length=3').data.decode('utf-8'))["biclusters"]
         self.assertEquals(len(biclusters), 3)
+
+    def test_corem_conditions_1(self):
+        """test the corem_conditions() function with corem 1"""
+        conds = json.loads(self.app.get('/api/v1.0.0/corem_conditions/1').data.decode('utf-8'))["conditions"]
+        self.assertEquals(len(conds), 659)
+
+    def test_corem_genes_1(self):
+        """test the corem_genes() function with corem 1"""
+        genes = json.loads(self.app.get('/api/v1.0.0/corem_genes/1').data.decode('utf-8'))["genes"]
+        self.assertEquals(len(genes), 3)
+
+    def test_bicluster_pssms_1(self):
+        """test the bicluster_pssms() function with the first bicluster"""
+        motifs = json.loads(self.app.get('/api/v1.0.0/bicluster_pssms/' + BICLUSTER1_ID).data.decode('utf-8'))["motifs"]
+        self.assertEquals(len(motifs), 2)
+
+    def test_bicluster_conditions_1(self):
+        """test the bicluster_conditions() function with the first bicluster"""
+        conds = json.loads(self.app.get('/api/v1.0.0/bicluster_conditions/' + BICLUSTER1_ID).data.decode('utf-8'))["conditions"]
+        self.assertEquals(len(conds), 91)
+
+    def test_bicluster_genes_1(self):
+        """test the bicluster_genes() function with the first bicluster"""
+        genes = json.loads(self.app.get('/api/v1.0.0/bicluster_genes/' + BICLUSTER1_ID).data.decode('utf-8'))["genes"]
+        self.assertEquals(len(genes), 16)
+
+    def test_bicluster_info_1(self):
+        """test the bicluster_info() function with the first bicluster"""
+        bicluster = json.loads(self.app.get('/api/v1.0.0/bicluster_info/' + BICLUSTER1_ID).data.decode('utf-8'))["bicluster"]
+        self.assertEquals(bicluster['id'], BICLUSTER1_ID)
+        self.assertEquals(bicluster['num_conditions'], 91)
+        self.assertEquals(bicluster['num_genes'], 16)
+        self.assertAlmostEquals(bicluster['residual'], 0.4244137794133839)
 
 
 if __name__ == '__main__':
