@@ -132,6 +132,23 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
         info = json.loads(self.app.get('/api/v1.0.0/condition_info/1').data.decode('utf-8'))
         self.assertEquals(len(info['blocks']['carbon.source.fatty.acid']), 224)
 
+    def test_corem_info_1(self):
+        """test the corem_info() function with the first corem"""
+        info = json.loads(self.app.get('/api/v1.0.0/corem_info/1').data.decode('utf-8'))
+        self.assertEquals(info['corem'], "1")
+        self.assertEquals(len(info['genes']), 3)
+        self.assertEquals(len(info['gres']), 51)
+
+    def test_gene_gres_Rv0116c(self):
+        """test the gene_gres() function with the specified gene"""
+        gres = json.loads(self.app.get('/api/v1.0.0/gene_gres/Rv0116c').data.decode('utf-8'))
+        self.assertEquals(gres['gene'], 'Rv0116c')
+        self.assertEquals(len(gres['gres']), 16)
+
+    def test_corems_with_gene_Rv1100(self):
+        """test the corems_with_gene() function with the specified gene"""
+        corems = json.loads(self.app.get('/api/v1.0.0/corems_with_gene/Rv1100').data.decode('utf-8'))['corem_infos']
+        self.assertEquals(len(corems), 7)
 
 if __name__ == '__main__':
     SUITE = []
