@@ -104,6 +104,34 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
         self.assertEquals(bicluster['num_genes'], 16)
         self.assertAlmostEquals(bicluster['residual'], 0.4244137794133839)
 
+    def test_condition_biclusters_1(self):
+        """test the condition_biclusters() function with the first condition"""
+        biclusters = json.loads(self.app.get('/api/v1.0.0/condition_biclusters/1').data.decode('utf-8'))["biclusters"]
+        self.assertEquals(len(biclusters), 6235)
+
+    def test_gene_biclusters_Rv0001(self):
+        """test the gene_biclusters() function with a specified gene"""
+        biclusters = json.loads(self.app.get('/api/v1.0.0/gene_biclusters/Rv0001').data.decode('utf-8'))["biclusters"]
+        self.assertEquals(len(biclusters), 556)
+
+    def test_gene_info_Rv0001(self):
+        """test the gene_info() function with a specified gene"""
+        gene = json.loads(self.app.get('/api/v1.0.0/gene_info/Rv0001').data.decode('utf-8'))["gene"]
+        self.assertEquals(gene['accession'], 'NP_214515.1')
+        self.assertEquals(gene['chromosome'], 'NC_000962')
+        self.assertEquals(gene['common_name'], 'dnaA')
+        self.assertEquals(gene['gene_name'], 'Rv0001')
+        self.assertEquals(gene['id'], 0)
+        self.assertEquals(gene['start'], 1)
+        self.assertEquals(gene['stop'], 1524)
+        self.assertEquals(gene['strand'], '+')
+        self.assertEquals(gene['description'], 'chromosomal replication initiation protein (NCBI)')
+
+    def test_condition_info_1(self):
+        """test the condition_info() function with the first condition"""
+        info = json.loads(self.app.get('/api/v1.0.0/condition_info/1').data.decode('utf-8'))
+        self.assertEquals(len(info['blocks']['carbon.source.fatty.acid']), 224)
+
 
 if __name__ == '__main__':
     SUITE = []
