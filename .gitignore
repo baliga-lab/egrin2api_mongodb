@@ -2,3 +2,5 @@
 __pycache__
 cmonkey_run.db
 test-reports
+.coverage
+coverage.xml

@@ -289,14 +289,11 @@ def genes():
     try:
         start = int(request.args.get('start'))
     except Exception as e:
-        logging.exception(e)
         start = 0
     try:
         num_entries = int(request.args.get('length'))
     except Exception as e:
-        logging.exception(e)
         num_entries = BATCH_SIZE
-    logging.error("genes(), start: %d, length: %d", start, num_entries)
     genes = _query_genes(start, num_entries)
     return jsonify(genes=genes)
 
@@ -311,12 +308,10 @@ def biclusters():
     try:
         start = int(request.args.get('start'))
     except Exception as e:
-        logging.exception(e)
         start = 0
     try:
         num_entries = int(request.args.get('length'))
     except Exception as e:
-        logging.exception(e)
         num_entries = BATCH_SIZE
     end = start + num_entries
 
