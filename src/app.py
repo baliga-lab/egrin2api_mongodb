@@ -16,6 +16,7 @@ import requests
 import pymongo
 from bson.objectid import ObjectId
 import pandas as pd
+import numpy as np
 
 import egrin2_query as e2q
 
@@ -66,7 +67,6 @@ def make_counts(docs):
 def corems_with_gene(gene):
     gene_ids = [r["row_id"] for r in db.row_info.find({"sysName": gene}, {"_id": 0, "row_id": 1})]
     gene_id = gene_ids[0]
-    print("gene id: ", gene_id)
     corem_infos = [{"corem_id": r["corem_id"], "genes": r["rows"]}
                        for r in db.corem.find({"rows": gene_id}, {"_id": 0, "corem_id": 1, "rows": 1})]
     return jsonify(corem_infos=corem_infos)
@@ -236,6 +236,32 @@ def corem_conditions(corem_id):
     conds = [{ "id": c['col_id'], "name": c['egrin2_col_name']}
                  for c in db.col_info.find({"col_id": { "$in": cond_ids} }, {'_id': 0, 'col_id': 1, 'egrin2_col_name': 1})]
     return jsonify(conditions=conds)
+
+
+@app.route('/api/v1.0.0/corem_expressions/<corem_id>')
+def corem_expressions(corem_id):
+    """retrieve the co-regulation expressions for the specified corem"""
+    expressions = []
+    corem = db.corem.find({"corem_id": int(corem_id)}, {'_id': 0, 'cols': 1, 'rows': 1})[0]
+    cols = [int(c['col_id']) for c in corem['cols']]
+    gene_ids = corem["rows"]
+    expressions.append({"cols": cols, "rows": gene_ids})
+    exps = db.gene_expression.find({'col_id': {"$in": cols}, 'row_id': {"$in": gene_ids}},
+                                    {'_id': 0, 'row_id': 1, 'col_id': 1, 'standardized_expression': 1, 'raw_expression': 1})
+    exps.sort('col_id', 1)
+    sys_names = db.row_info.find({"row_id": {"$in": gene_ids}}, {"_id": 0, "row_id": 1, "sysName": 1})
+    sys_name_map = {sn['row_id']: sn['sysName'] for sn in sys_names}
+    col_names = db.col_info.find({"col_id": {"$in": cols}}, {"_id": 0, "col_id": 1, "egrin2_col_name": 1})
+    col_name_map = {cn['col_id']: cn['egrin2_col_name'] for cn in col_names}
+    series = defaultdict(list)
+    for exp in exps:
+        gene = sys_name_map[exp['row_id']]
+        value = exp['standardized_expression']
+        if np.isnan(value):
+            value = 0.0
+        series[gene].append(value)
+
+    return jsonify(expressions=series, conditions=[col_name_map[cid] for cid in cols])
 
 
 ######################################################################
