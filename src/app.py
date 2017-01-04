@@ -264,6 +264,18 @@ def corem_expressions(corem_id):
     return jsonify(expressions=series, conditions=[col_name_map[cid] for cid in cols])
 
 
+@app.route('/api/v1.0.0/corem_condition_enrichment/<corem_id>')
+def corem_condition_enrichment(corem_id):
+    cond_blocks_path = app.config["COREM_COND_BLOCKS_FILE"]
+    df = pd.read_csv(cond_blocks_path)
+    df = df[df['COREM'] == int(corem_id)]
+    blocks = [{'name': df['EGRIN2.block'][i], 'q-value': df['BH.adjusted.p.value'][i]}
+                   for i in range(df.shape[0])]
+    return jsonify(condition_blocks=blocks)
+
+
+
+
 ######################################################################
 ### API functions global to the model
 ######################################################################

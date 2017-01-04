@@ -151,12 +151,18 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
         self.assertEquals(len(corems), 7)
 
     def test_corem_expressions1(self):
-        """test the corem_expressions() function with the specified gene"""
+        """test the corem_expressions() function with the specified corem"""
         exps = json.loads(self.app.get('/api/v1.0.0/corem_expressions/1').data.decode('utf-8'))
         num_conditions = len(exps['conditions'])
         self.assertTrue(num_conditions > 0)
         self.assertEquals(len(exps['expressions']['Rv0440']), num_conditions)
 
+
+    def test_corem_condition_enrichment1(self):
+        """test the corem_condition_enrichment() function with the specified corem"""
+        exps = json.loads(self.app.get('/api/v1.0.0/corem_condition_enrichment/1').data.decode('utf-8'))
+        num_blocks = len(exps['condition_blocks'])
+        self.assertEquals(num_blocks, 3)
 
 if __name__ == '__main__':
     SUITE = []
