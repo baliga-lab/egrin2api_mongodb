@@ -274,6 +274,23 @@ def corem_condition_enrichment(corem_id):
     return jsonify(condition_blocks=blocks)
 
 
+def __pwm2pssm_rows(pwm):
+    """reduce the information to a 2D-array of numbers"""
+    return [[r['a'], r['c'], r['g'], r['t']] for r in pwm]
+
+def __gre_motifs(gre_id):
+    """extract the motifs from the GRE"""
+    motifs = db.motif_info.find({'gre_id': gre_id})
+    return [{'pssm': __pwm2pssm_rows(m['pwm'])} for m in motifs]
+
+@app.route('/api/v1.0.0/corem_gres/<corem_id>')
+def corem_gres(corem_id):
+    corem_gres_path = app.config["COREM_GRES_FILE"]
+    df = pd.read_csv(corem_gres_path)
+    df = df[df['corem'] == int(corem_id)]
+    gres = [{'gre': int(df['gre'][i]), 'q_value': df['qval_BH'][i], 'motifs': __gre_motifs(int(df['gre'][i]))}
+                for i in range(df.shape[0])]
+    return jsonify(gres=gres)
 
 
 ######################################################################

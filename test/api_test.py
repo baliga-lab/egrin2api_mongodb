@@ -164,6 +164,13 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
         num_blocks = len(exps['condition_blocks'])
         self.assertEquals(num_blocks, 3)
 
+    def test_corem_gres2(self):
+        """test the corem_gres() function with the specified corem"""
+        gres = json.loads(self.app.get('/api/v1.0.0/corem_gres/2').data.decode('utf-8'))['gres']
+        self.assertEquals(len(gres), 2)
+        self.assertTrue(len(gres[0]['motifs']) > 0)
+
+
 if __name__ == '__main__':
     SUITE = []
     SUITE.append(unittest.TestLoader().loadTestsFromTestCase(APITest))
