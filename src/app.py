@@ -268,7 +268,7 @@ def corem_expressions(corem_id):
 def corem_condition_enrichment(corem_id):
     cond_blocks_path = app.config["COREM_COND_BLOCKS_FILE"]
     df = pd.read_csv(cond_blocks_path)
-    df = df[df['COREM'] == int(corem_id)]
+    df = df[df['COREM'] == int(corem_id)].reset_index()
     blocks = [{'name': df['EGRIN2.block'][i], 'q_value': df['BH.adjusted.p.value'][i]}
                    for i in range(df.shape[0])]
     return jsonify(condition_blocks=blocks)
@@ -287,7 +287,7 @@ def __gre_motifs(gre_id):
 def corem_gres(corem_id):
     corem_gres_path = app.config["COREM_GRES_FILE"]
     df = pd.read_csv(corem_gres_path)
-    df = df[df['corem'] == int(corem_id)]
+    df = df[df['corem'] == int(corem_id)].reset_index()
     gres = [{'gre': int(df['gre'][i]), 'q_value': df['qval_BH'][i], 'motifs': __gre_motifs(int(df['gre'][i]))}
                 for i in range(df.shape[0])]
     return jsonify(gres=gres)
