@@ -67,7 +67,7 @@ def make_counts(docs):
 def corems_with_gene(gene):
     gene_ids = [r["row_id"] for r in db.row_info.find({"sysName": gene}, {"_id": 0, "row_id": 1})]
     gene_id = gene_ids[0]
-    corem_infos = [{"corem_id": r["corem_id"], "genes": r["rows"]}
+    corem_infos = [{"id": r["corem_id"], "genes": r["rows"]}
                        for r in db.corem.find({"rows": gene_id}, {"_id": 0, "corem_id": 1, "rows": 1})]
     return jsonify(corem_infos=corem_infos)
 
