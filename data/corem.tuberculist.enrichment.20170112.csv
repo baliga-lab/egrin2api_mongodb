@@ -1,0 +1,537 @@
+corem_ID,tuberculist.category,p.adj
+1,"virulence, detoxification, adaptation",0
+10,cell wall & cell processes,0.007171897
+10,regulatory proteins,0.007079843
+100,"virulence, detoxification, adaptation",1.39E-05
+101,conserved hypotheticals,0.000909688
+101,insertion seqs & phages,0.006763485
+101,regulatory proteins,0.004234438
+102,"virulence, detoxification, adaptation",3.53E-05
+103,cell wall & cell processes,0.002502663
+103,regulatory proteins,0.008045744
+105,regulatory proteins,0.008045744
+106,lipid metabolism,0.002007379
+107,cell wall & cell processes,0.002502663
+108,cell wall & cell processes,0.000243916
+11,regulatory proteins,0.007079843
+110,intermediary metabolism & respiration,0.002986498
+111,cell wall & cell processes,0.005839584
+112,cell wall & cell processes,0
+113,intermediary metabolism & respiration,0
+114,conserved hypotheticals,0.004590009
+114,insertion seqs & phages,0.007669971
+115,PE/PPE,0.009954887
+117,information pathways,0.001998534
+118,cell wall & cell processes,0.000265326
+118,unknown,0.000130496
+121,"virulence, detoxification, adaptation",0.001927088
+122,cell wall & cell processes,0.000265326
+123,lipid metabolism,9.92E-05
+125,information pathways,0.000836842
+126,cell wall & cell processes,0.001380177
+127,regulatory proteins,0.000461027
+129,lipid metabolism,0.003168074
+13,intermediary metabolism & respiration,0
+130,unknown,0.000130496
+131,cell wall & cell processes,0.005839584
+131,lipid metabolism,0.002808354
+132,unknown,7.85E-05
+132,"virulence, detoxification, adaptation",0.000806453
+134,intermediary metabolism & respiration,0.002986498
+136,conserved hypotheticals,0.004590009
+139,insertion seqs & phages,0.007669971
+14,lipid metabolism,0.000311439
+142,cell wall & cell processes,0.005839584
+145,lipid metabolism,0.004714808
+146,cell wall & cell processes,0.005839584
+147,PE/PPE,0.009954887
+148,insertion seqs & phages,0.007669971
+148,unknown,7.85E-05
+149,cell wall & cell processes,0.005839584
+149,lipid metabolism,0.002808354
+15,cell wall & cell processes,0
+151,cell wall & cell processes,0.001380177
+151,PE/PPE,0.009954887
+152,lipid metabolism,2.10E-05
+153,information pathways,0.000836842
+154,"virulence, detoxification, adaptation",0.001927088
+155,cell wall & cell processes,0.005839584
+156,information pathways,0.000836842
+157,intermediary metabolism & respiration,0.000240987
+160,"virulence, detoxification, adaptation",5.94E-05
+161,conserved hypotheticals,0.004590009
+162,insertion seqs & phages,0.000189527
+162,lipid metabolism,0.001182862
+165,PE/PPE,0.009954887
+168,PE/PPE,3.31E-13
+169,regulatory proteins,0.000603754
+17,insertion seqs & phages,0
+170,cell wall & cell processes,8.30E-06
+170,PE/PPE,0.000262806
+171,lipid metabolism,7.51E-06
+172,lipid metabolism,0.000865736
+173,lipid metabolism,0.000176724
+173,"virulence, detoxification, adaptation",0.000937314
+174,lipid metabolism,0.003168074
+175,unknown,0.00019532
+176,lipid metabolism,0.000281665
+177,conserved hypotheticals,0.005607361
+178,lipid metabolism,0.000281665
+179,conserved hypotheticals,0.000309646
+182,"virulence, detoxification, adaptation",4.18E-06
+183,cell wall & cell processes,0.001337191
+184,conserved hypotheticals,0.005607361
+185,"virulence, detoxification, adaptation",4.18E-06
+186,cell wall & cell processes,5.10E-05
+187,intermediary metabolism & respiration,0.000162406
+189,conserved hypotheticals,0.005607361
+19,lipid metabolism,1.34E-12
+191,"virulence, detoxification, adaptation",0.000169725
+192,"virulence, detoxification, adaptation",0.000169725
+193,intermediary metabolism & respiration,4.75E-06
+194,intermediary metabolism & respiration,0.00173427
+195,cell wall & cell processes,0.009664249
+195,lipid metabolism,3.24E-05
+196,lipid metabolism,1.34E-09
+197,cell wall & cell processes,3.28E-12
+198,lipid metabolism,0.001177866
+198,"virulence, detoxification, adaptation",3.53E-05
+199,intermediary metabolism & respiration,0.00702086
+199,regulatory proteins,0.008045744
+2,insertion seqs & phages,0
+20,intermediary metabolism & respiration,0
+200,intermediary metabolism & respiration,4.77E-05
+201,cell wall & cell processes,5.81E-05
+202,lipid metabolism,0.003168074
+203,PE/PPE,2.62E-05
+203,"virulence, detoxification, adaptation",0.000143887
+204,lipid metabolism,1.38E-06
+204,regulatory proteins,0.001861504
+205,lipid metabolism,7.49E-09
+206,lipid metabolism,0.000419458
+207,PE/PPE,2.05E-10
+208,intermediary metabolism & respiration,0
+209,lipid metabolism,0.0006221
+210,intermediary metabolism & respiration,0.0007269
+212,intermediary metabolism & respiration,0.009514385
+212,lipid metabolism,0.00886975
+213,insertion seqs & phages,0.001527922
+213,lipid metabolism,2.63E-05
+215,information pathways,0.006385841
+215,PE/PPE,2.42E-06
+216,cell wall & cell processes,8.30E-06
+219,intermediary metabolism & respiration,0.002299418
+222,intermediary metabolism & respiration,0.00702086
+224,intermediary metabolism & respiration,0.00086447
+225,PE/PPE,0.005073635
+227,insertion seqs & phages,8.62E-09
+227,PE/PPE,2.62E-05
+229,lipid metabolism,1.27E-10
+23,PE/PPE,0
+230,lipid metabolism,1.27E-10
+231,lipid metabolism,1.00E-08
+234,intermediary metabolism & respiration,0.0029166
+235,cell wall & cell processes,1.87E-06
+236,insertion seqs & phages,0.000109384
+236,lipid metabolism,6.63E-05
+237,intermediary metabolism & respiration,0.000223215
+239,intermediary metabolism & respiration,0.0003975
+239,lipid metabolism,8.28E-09
+24,intermediary metabolism & respiration,0
+242,cell wall & cell processes,1.12E-09
+243,insertion seqs & phages,0.003472931
+244,PE/PPE,1.36E-05
+245,lipid metabolism,6.62E-06
+246,cell wall & cell processes,0.000235921
+246,lipid metabolism,6.19E-06
+247,cell wall & cell processes,0.000591362
+247,lipid metabolism,2.21E-07
+248,regulatory proteins,0.006631564
+25,intermediary metabolism & respiration,0
+250,lipid metabolism,0.0006221
+251,conserved hypotheticals,0.000309646
+252,PE/PPE,4.22E-05
+253,"virulence, detoxification, adaptation",0.000169725
+255,regulatory proteins,0.002140061
+256,regulatory proteins,0.002140061
+257,information pathways,0.00017824
+258,cell wall & cell processes,0.001337191
+259,information pathways,0.003818829
+259,PE/PPE,4.22E-05
+26,intermediary metabolism & respiration,0.009514385
+26,lipid metabolism,0.0006221
+261,lipid metabolism,0.000281665
+263,cell wall & cell processes,0.001337191
+264,"virulence, detoxification, adaptation",0.000169725
+265,lipid metabolism,0.0006221
+266,insertion seqs & phages,1.24E-06
+267,intermediary metabolism & respiration,0.003368317
+267,lipid metabolism,0.005335043
+268,insertion seqs & phages,4.15E-07
+268,lipid metabolism,0.000266337
+269,cell wall & cell processes,5.14E-05
+27,intermediary metabolism & respiration,1.10E-07
+270,cell wall & cell processes,0.008832256
+271,regulatory proteins,0.005565081
+272,PE/PPE,0.003489423
+273,intermediary metabolism & respiration,0.0029166
+274,information pathways,0.005696668
+274,lipid metabolism,2.54E-05
+275,lipid metabolism,1.54E-08
+276,information pathways,0.006056729
+277,PE/PPE,0.000181325
+278,intermediary metabolism & respiration,1.96E-05
+279,PE/PPE,0.000320999
+28,PE/PPE,0
+281,cell wall & cell processes,0.000243916
+282,information pathways,0.001294294
+283,intermediary metabolism & respiration,0.005051324
+284,lipid metabolism,5.72E-08
+285,"virulence, detoxification, adaptation",6.48E-07
+286,intermediary metabolism & respiration,1.67E-05
+287,lipid metabolism,8.21E-12
+288,insertion seqs & phages,1.65E-10
+289,cell wall & cell processes,0.005839584
+29,cell wall & cell processes,0
+292,PE/PPE,0.000684397
+292,unknown,0.000130496
+294,regulatory proteins,2.81E-05
+295,cell wall & cell processes,0.005839584
+298,cell wall & cell processes,0.005839584
+3,cell wall & cell processes,0
+30,intermediary metabolism & respiration,8.80E-06
+302,cell wall & cell processes,0.005839584
+302,lipid metabolism,0.002808354
+305,lipid metabolism,6.19E-06
+306,cell wall & cell processes,0.005839584
+308,lipid metabolism,0.002808354
+309,cell wall & cell processes,0.005839584
+31,lipid metabolism,0.001182862
+310,cell wall & cell processes,0.005839584
+311,information pathways,0.001998534
+312,PE/PPE,1.46E-05
+313,cell wall & cell processes,0.005839584
+313,information pathways,0.001998534
+316,cell wall & cell processes,0.000265326
+317,conserved hypotheticals,0.001192598
+318,intermediary metabolism & respiration,0.000696725
+319,conserved hypotheticals,0.000588576
+320,insertion seqs & phages,0.001246997
+321,lipid metabolism,1.41E-07
+322,cell wall & cell processes,0.001553732
+323,PE/PPE,0.000786761
+324,lipid metabolism,1.63E-06
+324,"virulence, detoxification, adaptation",0.000250997
+325,lipid metabolism,0.00239056
+325,regulatory proteins,0.005171117
+326,intermediary metabolism & respiration,0.004240265
+326,"virulence, detoxification, adaptation",4.34E-09
+327,intermediary metabolism & respiration,5.34E-06
+329,"virulence, detoxification, adaptation",0.005401327
+33,information pathways,0.000219036
+330,cell wall & cell processes,3.09E-06
+330,PE/PPE,0.001141722
+331,intermediary metabolism & respiration,0.0096952
+331,lipid metabolism,3.68E-06
+332,intermediary metabolism & respiration,0.000169684
+332,lipid metabolism,0.000219488
+334,cell wall & cell processes,0.008832256
+335,intermediary metabolism & respiration,0.0029166
+336,insertion seqs & phages,0.003472931
+337,cell wall & cell processes,0.008832256
+337,lipid metabolism,0.001177866
+338,regulatory proteins,0.000603754
+34,regulatory proteins,0.002140061
+340,lipid metabolism,0.000140975
+340,PE/PPE,0.000320999
+341,PE/PPE,3.45E-10
+341,unknown,0.000580896
+344,"virulence, detoxification, adaptation",0.00357658
+345,cell wall & cell processes,2.68E-08
+345,unknown,0.001000356
+346,conserved hypotheticals,0.001153247
+346,insertion seqs & phages,0.006191804
+346,regulatory proteins,0.001609532
+347,lipid metabolism,1.63E-06
+348,cell wall & cell processes,2.19E-05
+348,insertion seqs & phages,6.82E-07
+35,lipid metabolism,9.92E-05
+350,intermediary metabolism & respiration,0.001781155
+350,lipid metabolism,5.87E-06
+351,intermediary metabolism & respiration,0.009514385
+352,"virulence, detoxification, adaptation",0.006164696
+353,conserved hypotheticals,0.009549522
+354,PE/PPE,0.002250023
+354,"virulence, detoxification, adaptation",0.006164696
+356,lipid metabolism,0.00886975
+356,regulatory proteins,0.00360901
+357,information pathways,0.003077678
+358,cell wall & cell processes,0.003935116
+359,cell wall & cell processes,1.12E-09
+360,"virulence, detoxification, adaptation",9.10E-05
+361,intermediary metabolism & respiration,1.37E-09
+362,intermediary metabolism & respiration,0.000223215
+362,lipid metabolism,0.000747133
+363,lipid metabolism,0.000747133
+364,lipid metabolism,0.000116491
+365,lipid metabolism,0.004401043
+366,lipid metabolism,0.005760776
+366,PE/PPE,6.13E-05
+367,cell wall & cell processes,5.14E-05
+367,information pathways,3.14E-05
+368,cell wall & cell processes,2.16E-05
+369,"virulence, detoxification, adaptation",4.61E-05
+37,lipid metabolism,2.00E-07
+370,lipid metabolism,8.21E-12
+371,intermediary metabolism & respiration,0.000574923
+372,intermediary metabolism & respiration,5.34E-06
+373,lipid metabolism,3.03E-05
+374,intermediary metabolism & respiration,0.006123441
+375,information pathways,2.26E-08
+375,PE/PPE,0.000786761
+377,lipid metabolism,0.003168074
+379,cell wall & cell processes,0.007724375
+38,cell wall & cell processes,0
+380,cell wall & cell processes,0.005240331
+381,cell wall & cell processes,0.00067755
+382,lipid metabolism,0.000277869
+382,regulatory proteins,0.005171117
+383,information pathways,0.001415787
+384,insertion seqs & phages,1.47E-09
+385,lipid metabolism,5.87E-06
+386,lipid metabolism,4.10E-07
+388,information pathways,8.87E-08
+39,"virulence, detoxification, adaptation",2.86E-07
+390,PE/PPE,6.85E-09
+391,lipid metabolism,6.62E-06
+392,lipid metabolism,0.000140975
+393,regulatory proteins,0.008045744
+397,insertion seqs & phages,0.008995873
+398,intermediary metabolism & respiration,1.09E-08
+398,"virulence, detoxification, adaptation",0.00357658
+399,PE/PPE,1.55E-14
+4,cell wall & cell processes,1.31E-08
+40,PE/PPE,0.005118689
+400,information pathways,4.97E-26
+404,intermediary metabolism & respiration,0
+405,intermediary metabolism & respiration,0.003368317
+407,"virulence, detoxification, adaptation",0.000169725
+408,insertion seqs & phages,0.000897227
+409,intermediary metabolism & respiration,0.003368317
+41,intermediary metabolism & respiration,0.00702086
+410,lipid metabolism,0.000281665
+411,insertion seqs & phages,3.66E-07
+411,PE/PPE,0.001326569
+413,intermediary metabolism & respiration,8.45E-05
+414,cell wall & cell processes,8.49E-05
+415,lipid metabolism,0.000865736
+416,information pathways,0.009764497
+416,insertion seqs & phages,0.002379046
+418,cell wall & cell processes,0.008832256
+418,lipid metabolism,0.001177866
+42,cell wall & cell processes,0.005839584
+420,lipid metabolism,6.63E-05
+421,lipid metabolism,0.001177866
+422,lipid metabolism,3.68E-06
+423,lipid metabolism,0.004437947
+424,insertion seqs & phages,0.008386307
+425,cell wall & cell processes,0.001553732
+426,lipid metabolism,1.75E-06
+427,PE/PPE,0
+428,conserved hypotheticals,5.74E-05
+429,regulatory proteins,0.001861504
+429,"virulence, detoxification, adaptation",0.004254757
+43,intermediary metabolism & respiration,0
+430,intermediary metabolism & respiration,0
+431,intermediary metabolism & respiration,0.008856322
+433,information pathways,8.95E-11
+434,conserved hypotheticals,0.004068001
+434,intermediary metabolism & respiration,0.005774866
+435,lipid metabolism,0.001932183
+436,conserved hypotheticals,0.001412678
+436,regulatory proteins,0.000729296
+437,information pathways,0.002673577
+437,insertion seqs & phages,6.65E-11
+438,conserved hypotheticals,0.000353241
+438,"virulence, detoxification, adaptation",0.003381986
+439,intermediary metabolism & respiration,5.92E-06
+44,lipid metabolism,0.002808354
+440,insertion seqs & phages,9.60E-05
+441,insertion seqs & phages,0.000525106
+443,"virulence, detoxification, adaptation",0.000206284
+444,cell wall & cell processes,2.19E-05
+445,lipid metabolism,5.71E-05
+446,lipid metabolism,0.00061165
+446,regulatory proteins,0.008341488
+447,conserved hypotheticals,0.004097499
+447,insertion seqs & phages,0.0042479
+447,PE/PPE,0.007479582
+448,intermediary metabolism & respiration,0.000191763
+449,conserved hypotheticals,0.003642589
+449,insertion seqs & phages,0.008386307
+45,cell wall & cell processes,2.68E-08
+450,insertion seqs & phages,0.000689099
+451,PE/PPE,3.03E-16
+452,"virulence, detoxification, adaptation",7.56E-05
+454,insertion seqs & phages,5.07E-08
+455,lipid metabolism,0.0006221
+456,information pathways,0.000221002
+457,conserved hypotheticals,0.001685486
+457,regulatory proteins,0.00360901
+458,intermediary metabolism & respiration,0.00090989
+458,PE/PPE,0.002250023
+459,cell wall & cell processes,0.003935116
+46,lipid metabolism,1.75E-06
+461,lipid metabolism,0.0006221
+461,"virulence, detoxification, adaptation",0.006164696
+462,lipid metabolism,2.63E-05
+463,lipid metabolism,0.00886975
+464,lipid metabolism,0.00886975
+464,PE/PPE,2.42E-06
+465,PE/PPE,2.05E-10
+466,lipid metabolism,0.0006221
+466,regulatory proteins,0.00360901
+467,information pathways,0.002639897
+469,conserved hypotheticals,0.004518787
+469,insertion seqs & phages,0.006475677
+469,unknown,0.006484455
+47,lipid metabolism,3.95E-07
+471,information pathways,4.88E-38
+472,lipid metabolism,1.44E-05
+473,conserved hypotheticals,0.005542794
+475,conserved hypotheticals,0.007322755
+475,regulatory proteins,1.75E-05
+476,cell wall & cell processes,0.000120733
+477,intermediary metabolism & respiration,0.000239868
+477,regulatory proteins,0.005560349
+478,"virulence, detoxification, adaptation",0.003659177
+480,lipid metabolism,0.004401043
+480,"virulence, detoxification, adaptation",0.002498299
+481,lipid metabolism,3.54E-11
+483,conserved hypotheticals,0.004473084
+485,information pathways,2.48E-48
+486,"virulence, detoxification, adaptation",0.000788912
+487,information pathways,2.43E-54
+488,"virulence, detoxification, adaptation",0.004204898
+489,intermediary metabolism & respiration,1.95E-05
+49,lipid metabolism,2.10E-05
+491,cell wall & cell processes,0.002873488
+492,cell wall & cell processes,0.000393901
+492,unknown,0.002400062
+493,intermediary metabolism & respiration,1.46E-06
+494,cell wall & cell processes,0.00065862
+495,information pathways,9.52E-15
+496,information pathways,1.97E-05
+497,conserved hypotheticals,0.004841808
+498,insertion seqs & phages,6.14E-06
+498,PE/PPE,1.66E-05
+499,cell wall & cell processes,0.00865889
+5,insertion seqs & phages,0
+50,lipid metabolism,1.41E-06
+500,regulatory proteins,0.001074312
+501,cell wall & cell processes,0.002448926
+502,lipid metabolism,0.001177866
+503,cell wall & cell processes,6.51E-05
+505,cell wall & cell processes,0.000996832
+505,information pathways,0.009764497
+506,lipid metabolism,2.34E-06
+508,lipid metabolism,6.63E-05
+51,intermediary metabolism & respiration,0.00086447
+510,cell wall & cell processes,0.001497586
+511,cell wall & cell processes,0.006912333
+512,intermediary metabolism & respiration,8.51E-05
+513,"virulence, detoxification, adaptation",1.44E-07
+514,lipid metabolism,0.00046129
+515,information pathways,5.75E-12
+516,"virulence, detoxification, adaptation",0.000432011
+519,lipid metabolism,0.008215613
+52,unknown,3.93E-05
+520,regulatory proteins,8.97E-08
+521,intermediary metabolism & respiration,6.33E-05
+523,cell wall & cell processes,0.009343195
+524,"virulence, detoxification, adaptation",0.00890177
+526,lipid metabolism,0.002007379
+528,"virulence, detoxification, adaptation",7.56E-05
+529,"virulence, detoxification, adaptation",0.001234766
+53,regulatory proteins,0.000119635
+530,insertion seqs & phages,0.000191276
+531,intermediary metabolism & respiration,0.00702086
+532,"virulence, detoxification, adaptation",3.09E-06
+534,intermediary metabolism & respiration,0.00043288
+535,insertion seqs & phages,8.44E-06
+535,PE/PPE,2.04E-05
+536,regulatory proteins,0.008341488
+537,PE/PPE,3.27E-20
+538,lipid metabolism,0.00352576
+538,"virulence, detoxification, adaptation",0.00182404
+539,information pathways,6.92E-52
+54,cell wall & cell processes,0.007171897
+542,PE/PPE,3.19E-12
+543,insertion seqs & phages,1.36E-05
+545,information pathways,0.000261287
+545,insertion seqs & phages,2.20E-10
+546,intermediary metabolism & respiration,0.000731167
+547,information pathways,4.29E-17
+549,information pathways,7.31E-07
+55,conserved hypotheticals,0.004590009
+550,lipid metabolism,1.34E-09
+551,intermediary metabolism & respiration,0.005051324
+552,lipid metabolism,6.11E-05
+553,PE/PPE,3.53E-09
+555,regulatory proteins,0.000262932
+556,lipid metabolism,1.42E-05
+557,insertion seqs & phages,0.000139768
+558,information pathways,1.26E-09
+558,lipid metabolism,0.000277869
+56,information pathways,0.000219036
+560,information pathways,0
+57,cell wall & cell processes,0
+58,PE/PPE,0
+6,"virulence, detoxification, adaptation",0
+60,PE/PPE,0.005118689
+61,information pathways,0.001602023
+61,insertion seqs & phages,2.01E-11
+62,lipid metabolism,8.32E-12
+64,conserved hypotheticals,2.87E-05
+64,"virulence, detoxification, adaptation",0.0017985
+65,intermediary metabolism & respiration,0.002509636
+65,lipid metabolism,8.25E-05
+66,PE/PPE,5.29E-65
+68,lipid metabolism,0.000277869
+68,regulatory proteins,0.005171117
+69,intermediary metabolism & respiration,3.32E-05
+69,"virulence, detoxification, adaptation",0.000343233
+7,cell wall & cell processes,0.007171897
+70,insertion seqs & phages,3.08E-07
+70,PE/PPE,0.009416066
+71,cell wall & cell processes,0.000815231
+72,information pathways,3.53E-62
+73,intermediary metabolism & respiration,2.36E-06
+74,conserved hypotheticals,0.003053724
+75,information pathways,0.000594528
+76,insertion seqs & phages,0
+77,lipid metabolism,1.56E-05
+78,cell wall & cell processes,0.008832256
+79,lipid metabolism,6.63E-05
+79,regulatory proteins,0.005565081
+80,PE/PPE,6.24E-06
+82,"virulence, detoxification, adaptation",0.000143887
+83,"virulence, detoxification, adaptation",0
+85,"virulence, detoxification, adaptation",0.000169725
+86,cell wall & cell processes,0.003935116
+87,cell wall & cell processes,5.10E-05
+88,regulatory proteins,8.09E-05
+89,intermediary metabolism & respiration,0.009514385
+89,"virulence, detoxification, adaptation",0.000377457
+9,cell wall & cell processes,6.96E-07
+90,lipid metabolism,0.005335043
+91,cell wall & cell processes,0.003935116
+92,information pathways,0.00017824
+92,"virulence, detoxification, adaptation",0.000169725
+93,"virulence, detoxification, adaptation",1.39E-05
+94,lipid metabolism,0.005335043
+95,cell wall & cell processes,0.001337191
+97,intermediary metabolism & respiration,0.009514385
+98,information pathways,1.48E-05
+98,"virulence, detoxification, adaptation",0.000377457
+99,lipid metabolism,0.005335043

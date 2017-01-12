@@ -274,6 +274,16 @@ def corem_condition_enrichment(corem_id):
     return jsonify(condition_blocks=blocks)
 
 
+@app.route('/api/v1.0.0/corem_categories/<corem_id>')
+def corem_category_enrichment(corem_id):
+    corem_category_path = app.config["COREM_CATEGORIES_FILE"]
+    df = pd.read_csv(corem_category_path)
+    df = df[df['corem_ID'] == int(corem_id)].reset_index()
+    categories = [{'category': df['tuberculist.category'][i], 'p_adj': df['p.adj'][i]}
+                   for i in range(df.shape[0])]
+    return jsonify(categories=categories)
+
+
 def __pwm2pssm_rows(pwm):
     """reduce the information to a 2D-array of numbers"""
     return [[r['a'], r['c'], r['g'], r['t']] for r in pwm]

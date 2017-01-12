@@ -164,6 +164,12 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
         num_blocks = len(exps['condition_blocks'])
         self.assertEquals(num_blocks, 3)
 
+    def test_corem_category_enrichment1(self):
+        """test the corem_condition_enrichment() function with the specified corem"""
+        cats = json.loads(self.app.get('/api/v1.0.0/corem_categories/1').data.decode('utf-8'))
+        num_cats = len(cats['categories'])
+        self.assertEquals(num_cats, 1)
+
     def test_corem_gres2(self):
         """test the corem_gres() function with the specified corem"""
         gres = json.loads(self.app.get('/api/v1.0.0/corem_gres/2').data.decode('utf-8'))['gres']
