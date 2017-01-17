@@ -29,6 +29,17 @@ app.config.from_envvar('EGRIN2API_SETTINGS')
 client = pymongo.MongoClient(host=app.config['MONGODB_HOST'], port=app.config['MONGODB_PORT'])
 db = client[app.config['MONGODB_DB']]
 
+def __request_start_length():
+    try:
+        start = int(request.args.get('start'))
+    except Exception as e:
+        start = 0
+    try:
+        num_entries = int(request.args.get('length'))
+    except Exception as e:
+        num_entries = BATCH_SIZE
+    return start, num_entries
+
 
 def make_sites(cluster_id, motif_num, start, stop):
     sites = db.fimo.find({"cluster_id": cluster_id, "motif_num": motif_num,
@@ -212,9 +223,18 @@ def bicluster_pssms(cluster_id):
 
 @app.route('/api/v1.0.0/corem_genes/<corem_id>')
 def corem_genes(corem_id):
+    start, num_entries = __request_start_length()
+    end = start + num_entries
+
     gene_ids = db.corem.find({"corem_id": int(corem_id)}, {'_id': 0, 'rows': 1})[0]["rows"]
+    total = len(gene_ids)
     chroms = db.genome.find({}, {"_id": 0, "scaffoldId": 1, "NCBI_RefSeq": 1 })
     chrom_map = { int(c['scaffoldId']): c['NCBI_RefSeq'] for c in chroms }
+
+    cursor = db.row_info.find({"row_id": { "$in": gene_ids }},
+                                  {'_id': 0, 'row_id': 1, 'sysName': 1, 'name': 1,
+                                       'accession': 1, 'desc': 1, 'start': 1, 'stop': 1,
+                                  'strand': 1, 'scaffoldId': 1})[start:end]
     genes = [{ "id": r['row_id'],
                    "gene_name": r['sysName'],
                    "common_name": r['name'],
@@ -222,11 +242,8 @@ def corem_genes(corem_id):
                    "description": r['desc'],
                    "start": r['start'], "stop": r['stop'], "strand": r['strand'],
                    "chromosome": chrom_map[r['scaffoldId']]}
-                  for r in db.row_info.find({"row_id": { "$in": gene_ids }},
-                                            {'_id': 0, 'row_id': 1, 'sysName': 1, 'name': 1,
-                                                 'accession': 1, 'desc': 1, 'start': 1, 'stop': 1,
-                                            'strand': 1, 'scaffoldId': 1})]
-    return jsonify(genes=genes)
+                  for r in cursor]
+    return jsonify(genes=genes, total=total)
 
 
 @app.route('/api/v1.0.0/corem_conditions/<corem_id>')
@@ -332,13 +349,14 @@ def _query_genes(start, num_entries):
     cursor = db.row_info.find({}, {'_id': 0, 'row_id': 1, 'sysName': 1, 'name': 1,
                                        'accession': 1, 'desc': 1, 'start': 1, 'stop': 1,
                                        'strand': 1, 'scaffoldId': 1})[start:end]
+    total = db.row_info.find({}).count()
     return [{ "id": r['row_id'],
                   "gene_name": r['sysName'],
                   "common_name": r['name'],
                   "accession":  str(r['accession']),
                   "description": r['desc'],
                   "start": r['start'], "stop": r['stop'], "strand": r['strand'],
-                  "chromosome": chrom_map[r['scaffoldId']]} for r in cursor]
+                  "chromosome": chrom_map[r['scaffoldId']]} for r in cursor], total
 
 
 @app.route('/api/v1.0.0/genes')
@@ -348,16 +366,9 @@ def genes():
     - start: start position
     - length: number of elements to return
     """
-    try:
-        start = int(request.args.get('start'))
-    except Exception as e:
-        start = 0
-    try:
-        num_entries = int(request.args.get('length'))
-    except Exception as e:
-        num_entries = BATCH_SIZE
-    genes = _query_genes(start, num_entries)
-    return jsonify(genes=genes)
+    start, num_entries = __request_start_length()
+    genes, total = _query_genes(start, num_entries)
+    return jsonify(genes=genes, total=total)
 
 
 @app.route('/api/v1.0.0/biclusters')
