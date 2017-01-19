@@ -60,6 +60,14 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
         genes = json.loads(self.app.get('/api/v1.0.0/genes?start=100&length=2').data.decode('utf-8'))["genes"]
         self.assertEquals(len(genes), 2)
 
+    def test_genes_with_search(self):
+        """test the genes() function with start/length arguments"""
+        result = json.loads(self.app.get('/api/v1.0.0/genes?search=dna').data.decode('utf-8'))
+        genes = result['genes']
+        total = result['total']
+        self.assertEquals(total, 12)
+        self.assertTrue(len(genes) <= 12)
+
     def test_biclusters_no_args(self):
         """test the biclusters() function without arguments"""
         biclusters = json.loads(self.app.get('/api/v1.0.0/biclusters').data.decode('utf-8'))["biclusters"]
@@ -80,6 +88,14 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
         """test the corem_genes() function with corem 1"""
         genes = json.loads(self.app.get('/api/v1.0.0/corem_genes/1').data.decode('utf-8'))["genes"]
         self.assertEquals(len(genes), 3)
+
+    def test_corem_genes_2_search(self):
+        """test the corem_genes() function with corem 1"""
+        result = json.loads(self.app.get('/api/v1.0.0/corem_genes/2?search=Rv13').data.decode('utf-8'))
+        genes = result['genes']
+        total = result['total']
+        self.assertEquals(len(genes), 1)
+        self.assertEquals(total, 1)
 
     def test_bicluster_pssms_1(self):
         """test the bicluster_pssms() function with the first bicluster"""

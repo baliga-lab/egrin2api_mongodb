@@ -29,7 +29,7 @@ app.config.from_envvar('EGRIN2API_SETTINGS')
 client = pymongo.MongoClient(host=app.config['MONGODB_HOST'], port=app.config['MONGODB_PORT'])
 db = client[app.config['MONGODB_DB']]
 
-def __request_start_length():
+def __request_batch_params():
     try:
         start = int(request.args.get('start'))
     except Exception as e:
@@ -38,7 +38,11 @@ def __request_start_length():
         num_entries = int(request.args.get('length'))
     except Exception as e:
         num_entries = BATCH_SIZE
-    return start, num_entries
+    try:
+        search = request.args.get('search')
+    except Exception as e:
+        search = None
+    return start, num_entries, search
 
 
 def make_sites(cluster_id, motif_num, start, stop):
@@ -223,18 +227,24 @@ def bicluster_pssms(cluster_id):
 
 @app.route('/api/v1.0.0/corem_genes/<corem_id>')
 def corem_genes(corem_id):
-    start, num_entries = __request_start_length()
+    start, num_entries, search = __request_batch_params()
     end = start + num_entries
 
     gene_ids = db.corem.find({"corem_id": int(corem_id)}, {'_id': 0, 'rows': 1})[0]["rows"]
-    total = len(gene_ids)
     chroms = db.genome.find({}, {"_id": 0, "scaffoldId": 1, "NCBI_RefSeq": 1 })
     chrom_map = { int(c['scaffoldId']): c['NCBI_RefSeq'] for c in chroms }
 
-    cursor = db.row_info.find({"row_id": { "$in": gene_ids }},
+    search_params = {"row_id": { "$in": gene_ids }}
+    if search is not None and len(search) > 0:
+        match_name = {'$or': [{'name': {'$regex': search}},  {'sysName': {'$regex': search}}] }
+        search_params = {"$and": [search_params, match_name]}
+
+    cursor = db.row_info.find(search_params,
                                   {'_id': 0, 'row_id': 1, 'sysName': 1, 'name': 1,
                                        'accession': 1, 'desc': 1, 'start': 1, 'stop': 1,
-                                  'strand': 1, 'scaffoldId': 1})[start:end]
+                                  'strand': 1, 'scaffoldId': 1})
+    total = cursor.count()
+    cursor = cursor[start:end]
     genes = [{ "id": r['row_id'],
                    "gene_name": r['sysName'],
                    "common_name": r['name'],
@@ -339,26 +349,6 @@ def conditions():
     return jsonify(conditions=conds)
 
 
-def _query_genes(start, num_entries):
-    """reusable gene query function. Since this is a database access
-    function, we could possibly move that into a database access module
-    """
-    end = start + num_entries
-    chroms = db.genome.find({}, {"_id": 0, "scaffoldId": 1, "NCBI_RefSeq": 1 })
-    chrom_map = { int(c['scaffoldId']): c['NCBI_RefSeq'] for c in chroms }
-    cursor = db.row_info.find({}, {'_id': 0, 'row_id': 1, 'sysName': 1, 'name': 1,
-                                       'accession': 1, 'desc': 1, 'start': 1, 'stop': 1,
-                                       'strand': 1, 'scaffoldId': 1})[start:end]
-    total = db.row_info.find({}).count()
-    return [{ "id": r['row_id'],
-                  "gene_name": r['sysName'],
-                  "common_name": r['name'],
-                  "accession":  str(r['accession']),
-                  "description": r['desc'],
-                  "start": r['start'], "stop": r['stop'], "strand": r['strand'],
-                  "chromosome": chrom_map[r['scaffoldId']]} for r in cursor], total
-
-
 @app.route('/api/v1.0.0/genes')
 def genes():
     """Returns a list of genes. The maximum number of entries returned is BATCH_SIZE.
@@ -366,8 +356,26 @@ def genes():
     - start: start position
     - length: number of elements to return
     """
-    start, num_entries = __request_start_length()
-    genes, total = _query_genes(start, num_entries)
+    start, num_entries, search = __request_batch_params()
+    end = start + num_entries
+    search_params = {}
+    if search is not None and len(search) > 0:
+        search_params = {'$or': [{'name': {'$regex': search}},  {'sysName': {'$regex': search}}] }
+
+    chroms = db.genome.find({}, {"_id": 0, "scaffoldId": 1, "NCBI_RefSeq": 1 })
+    chrom_map = { int(c['scaffoldId']): c['NCBI_RefSeq'] for c in chroms }
+    cursor = db.row_info.find(search_params, {'_id': 0, 'row_id': 1, 'sysName': 1, 'name': 1,
+                                        'accession': 1, 'desc': 1, 'start': 1, 'stop': 1,
+                                        'strand': 1, 'scaffoldId': 1})[start:end]
+    total = db.row_info.find(search_params).count()
+    genes = [{ "id": r['row_id'],
+                   "gene_name": r['sysName'],
+                   "common_name": r['name'],
+                   "accession":  str(r['accession']),
+                   "description": r['desc'],
+                   "start": r['start'], "stop": r['stop'], "strand": r['strand'],
+                   "chromosome": chrom_map[r['scaffoldId']]} for r in cursor]
+
     return jsonify(genes=genes, total=total)
 
 
