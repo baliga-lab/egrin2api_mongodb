@@ -320,12 +320,18 @@ def __gre_motifs(gre_id):
     motifs = db.motif_info.find({'gre_id': gre_id})
     return [{'pssm': __pwm2pssm_rows(m['pwm'])} for m in motifs]
 
+
+def __gre_pssm(gre_id):
+    gre_pssms_path = app.config["GRE_PSSMS_DIR"]
+    with open(os.path.join(gre_pssms_path, 'gre_pssm_%04d.json' % gre_id)) as infile:
+        return json.load(infile)
+
 @app.route('/api/v1.0.0/corem_gres/<corem_id>')
 def corem_gres(corem_id):
     corem_gres_path = app.config["COREM_GRES_FILE"]
     df = pd.read_csv(corem_gres_path)
     df = df[df['corem'] == int(corem_id)].reset_index()
-    gres = [{'gre': int(df['gre'][i]), 'q_value': df['qval_BH'][i], 'motifs': __gre_motifs(int(df['gre'][i]))}
+    gres = [{'gre': int(df['gre'][i]), 'q_value': df['qval_BH'][i], 'pssm': __gre_pssm(int(df['gre'][i]))}
                 for i in range(df.shape[0])]
     return jsonify(gres=gres)
 
