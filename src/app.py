@@ -100,7 +100,8 @@ def gene_gre_counts(gene):
     cluster_ids = [c['_id'] for c in biclusters]
     motif_infos = db.motif_info.find({"$and": [{"cluster_id": {"$in": cluster_ids}},
                                                    {"gre_id": {"$ne": "NaN"}},
-                                                   {"gre_id": {"$ne": None}}]},
+                                                   {"gre_id": {"$ne": None}},
+                                                {"gre_id": {"$lte": 163 }}]},
                                          {"_id": 0, "gre_id": 1, "motif_num": 1, "cluster_id": 1})
     gres = defaultdict(list)
 
