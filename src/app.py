@@ -89,7 +89,7 @@ def corems_with_gene(gene):
 
 @app.route('/api/v1.0.0/gene_gres/<gene>')
 def gene_gre_counts(gene):
-    """Get the GRE counts for a specific gene
+    """Get the GRE counts (we only use the first 163) for a specific gene
     TODO: make corem contexts available
     """
     gene_infos = [(r["row_id"], r["start"], r["stop"], r["strand"])
@@ -327,12 +327,21 @@ def __gre_pssm(gre_id):
     with open(os.path.join(gre_pssms_path, 'gre_pssm_%04d.json' % gre_id)) as infile:
         return json.load(infile)
 
+def __gre_motif_evalue(df, gre_id):
+    df = df[df['GRE'] == gre_id].reset_index()
+    return df['motif e-value'][0]
+
 @app.route('/api/v1.0.0/corem_gres/<corem_id>')
 def corem_gres(corem_id):
     corem_gres_path = app.config["COREM_GRES_FILE"]
+    gre_summary_path = app.config["GRE_SUMMARY_FILE"]
     df = pd.read_csv(corem_gres_path)
     df = df[df['corem'] == int(corem_id)].reset_index()
-    gres = [{'gre': int(df['gre'][i]), 'q_value': df['qval_BH'][i], 'pssm': __gre_pssm(int(df['gre'][i]))}
+    gre_df = pd.read_csv(gre_summary_path, sep='\t')
+
+    gres = [{'gre': int(df['gre'][i]), 'q_value': df['qval_BH'][i],
+                 'pssm': __gre_pssm(int(df['gre'][i])),
+                 'motif_evalue': __gre_motif_evalue(gre_df, int(df['gre'][i]))}
                 for i in range(df.shape[0])]
     return jsonify(gres=gres)
 
