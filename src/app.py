@@ -47,7 +47,7 @@ def __request_batch_params():
 
 def make_sites(cluster_id, motif_num, start, stop):
     sites = db.fimo.find({"cluster_id": cluster_id, "motif_num": motif_num,
-                              "start": {"$gte": start}, "stop": {"$lte": stop}},
+                              "start": {"$gte": int(start)}, "stop": {"$lte": int(stop)}},
                              {"_id": 0, "start": 1, "stop": 1, "strand": 1})
     result = []
     for s in sites:
