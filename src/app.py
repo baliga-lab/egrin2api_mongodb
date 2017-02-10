@@ -90,8 +90,15 @@ def corems_with_gene(gene):
 @app.route('/api/v1.0.0/gene_gres/<gene>')
 def gene_gre_counts(gene):
     """Get the GRE counts (we only use the first 163) for a specific gene
-    TODO: make corem contexts available
+    TODO: 1. make corem contexts available
     """
+    gene_start_stop_path = app.config["GENE_TSS_START_STOP_FILE"]
+    df = pd.read_csv(gene_start_stop_path)
+    df = df[df['gene'] == gene].reset_index()
+    tss_start = df['start'][0]
+    tss_stop = df['end'][0]
+    tss_strand = df['strand'][0]
+
     gene_infos = [(r["row_id"], r["start"], r["stop"], r["strand"])
                     for r in db.row_info.find({"sysName": gene},
                                                   {"_id": 0, "row_id": 1, "start": 1, "stop": 1, "strand": 1})]
@@ -105,8 +112,16 @@ def gene_gre_counts(gene):
                                          {"_id": 0, "gre_id": 1, "motif_num": 1, "cluster_id": 1})
     gres = defaultdict(list)
 
-    window_start = gene_start - 1000
-    window_stop = gene_stop + 2000
+    # set the window to the TSS, and if the TSS does not overlap
+    # with the coding region, include 50 additional bases
+    # TODO: because of the circular nature of the chromosome, we need to handle Rv0001
+    # separately
+    window_start = tss_start
+    window_stop = tss_stop
+    if gene_start > window_stop:
+        window_stop = gene_start + 50
+    print("window %d-%d" % (window_start, window_stop))
+
     for m in motif_infos:
         gres[m["gre_id"]].extend(make_sites(m["cluster_id"], m["motif_num"], window_start, window_stop))
     gres = {'GRE_%d' % gre_id: make_counts(sorted(unique(sites), key=lambda e: e['start']))
