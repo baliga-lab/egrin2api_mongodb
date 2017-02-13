@@ -107,7 +107,6 @@ def gene_gre_counts(gene):
     # Read the chipseq peaks for the gene
     chipseq_path = app.config["CHIPSEQ_FILE"]
     chipseq_df = pd.read_csv(chipseq_path)
-    chipseq_df = chipseq_df[chipseq_df['gene'] == gene].reset_index()
 
     gene_infos = [(r["row_id"], r["start"], r["stop"], r["strand"])
                     for r in db.row_info.find({"sysName": gene},
@@ -131,13 +130,14 @@ def gene_gre_counts(gene):
     if gene_start > window_stop:
         window_stop = gene_start + 50
     app.logger.debug("window %d-%d", window_start, window_stop)
-    chipseq_peaks = filter(lambda x: x >= window_start and x <= window_stop, map(int, sorted(list(chipseq_df['position']))))
+    chipseq_df = chipseq_df[(chipseq_df['position'] >= window_start) & (chipseq_df['position'] <= window_stop)].reset_index()
+    chipseq_peaks = {e['tf']: int(e['position']) for index, e in chipseq_df.iterrows()}
 
     for m in motif_infos:
         gres[m["gre_id"]].extend(make_sites(m["cluster_id"], m["motif_num"], window_start, window_stop))
     gres = {'GRE_%d' % gre_id: make_counts(sorted(unique(sites), key=lambda e: e['start']))
             for gre_id, sites in gres.items() if len(sites) > 0}
-    return jsonify(gene=gene, gres=gres, chipseq_peaks=list(chipseq_peaks))
+    return jsonify(gene=gene, gres=gres, chipseq_peaks=chipseq_peaks)
 
 
 @app.route('/api/v1.0.0/corem_info/<corem_num>')
