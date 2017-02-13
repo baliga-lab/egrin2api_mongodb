@@ -46,6 +46,9 @@ def __request_batch_params():
 
 
 def make_sites(cluster_id, motif_num, start, stop):
+    """Generate the site objects for the specified motif and number. Note the explicit
+    int() cast to make sure our CentOS server pymongo can understand it
+    """
     sites = db.fimo.find({"cluster_id": cluster_id, "motif_num": motif_num,
                               "start": {"$gte": int(start)}, "stop": {"$lte": int(stop)}},
                              {"_id": 0, "start": 1, "stop": 1, "strand": 1})
@@ -92,12 +95,19 @@ def gene_gre_counts(gene):
     """Get the GRE counts (we only use the first 163) for a specific gene
     TODO: 1. make corem contexts available
     """
+
+    # Read the output window from the TSS start stop file
     gene_start_stop_path = app.config["GENE_TSS_START_STOP_FILE"]
     df = pd.read_csv(gene_start_stop_path)
     df = df[df['gene'] == gene].reset_index()
     tss_start = df['start'][0]
     tss_stop = df['end'][0]
     tss_strand = df['strand'][0]
+
+    # Read the chipseq peaks for the gene
+    chipseq_path = app.config["CHIPSEQ_FILE"]
+    chipseq_df = pd.read_csv(chipseq_path)
+    chipseq_df = chipseq_df[chipseq_df['gene'] == gene].reset_index()
 
     gene_infos = [(r["row_id"], r["start"], r["stop"], r["strand"])
                     for r in db.row_info.find({"sysName": gene},
@@ -120,13 +130,14 @@ def gene_gre_counts(gene):
     window_stop = tss_stop
     if gene_start > window_stop:
         window_stop = gene_start + 50
-    print("window %d-%d" % (window_start, window_stop))
+    app.logger.debug("window %d-%d", window_start, window_stop)
+    chipseq_peaks = filter(lambda x: x >= window_start and x <= window_stop, map(int, sorted(list(chipseq_df['position']))))
 
     for m in motif_infos:
         gres[m["gre_id"]].extend(make_sites(m["cluster_id"], m["motif_num"], window_start, window_stop))
     gres = {'GRE_%d' % gre_id: make_counts(sorted(unique(sites), key=lambda e: e['start']))
             for gre_id, sites in gres.items() if len(sites) > 0}
-    return jsonify(gene=gene, gres=gres)
+    return jsonify(gene=gene, gres=gres, chipseq_peaks=list(chipseq_peaks))
 
 
 @app.route('/api/v1.0.0/corem_info/<corem_num>')

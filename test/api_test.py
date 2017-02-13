@@ -159,7 +159,7 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
         """test the gene_gres() function with the specified gene"""
         gres = json.loads(self.app.get('/api/v1.0.0/gene_gres/Rv0116c').data.decode('utf-8'))
         self.assertEquals(gres['gene'], 'Rv0116c')
-        self.assertEquals(len(gres['gres']), 16)
+        self.assertEquals(len(gres['gres']), 6)
 
     def test_corems_with_gene_Rv1100(self):
         """test the corems_with_gene() function with the specified gene"""
@@ -190,7 +190,13 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
         """test the corem_gres() function with the specified corem"""
         gres = json.loads(self.app.get('/api/v1.0.0/corem_gres/2').data.decode('utf-8'))['gres']
         self.assertEquals(len(gres), 2)
-        self.assertTrue(len(gres[0]['motifs']) > 0)
+        self.assertTrue(len(gres[0]['pssm']['values']) > 0)
+
+    def test_gene_gre_counts(self):
+        """test the gene_gre_counts() function with the specified gene"""
+        gre_counts = json.loads(self.app.get('/api/v1.0.0/gene_gres/Rv0135c').data.decode('utf-8'))
+        self.assertEquals(len(gre_counts['chipseq_peaks']), 1)
+        self.assertTrue(len(gre_counts['gres']['GRE_1']) > 0)
 
 
 if __name__ == '__main__':
