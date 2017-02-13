@@ -195,7 +195,7 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
     def test_gene_gre_counts(self):
         """test the gene_gre_counts() function with the specified gene"""
         gre_counts = json.loads(self.app.get('/api/v1.0.0/gene_gres/Rv0135c').data.decode('utf-8'))
-        self.assertEquals(len(gre_counts['chipseq_peaks']), 1)
+        self.assertEquals(len(gre_counts['chipseq_peaks']), 3)
         self.assertTrue(len(gre_counts['gres']['GRE_1']) > 0)
 
 
