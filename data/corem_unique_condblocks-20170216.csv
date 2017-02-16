@@ -1,0 +1,2214 @@
+COREM,EGRIN2.block,BH.adjusted.p.value
+1,DNA damage - antitubercular drugs,0.000703201
+1,fatty acids - carbon source,6.07E-11
+1,lipids - carbon source,0.001942787
+2,reaeration,9.46E-07
+2,aromatic amides - antitubercular drugs,0.000293103
+2,respiration inhibitors - antitubercular drugs,0.001300892
+2,others - antitubercular drugs,0.000149033
+2,carboxylic acids - carbon source,0
+2,osmotic stress,0
+2,low pH,0.0053184
+4,aromatic amides - antitubercular drugs,0
+4,iron scavengers - antitubercular drugs,3.68E-08
+4,carboxylic acids - carbon source,0
+4,fatty acids - carbon source,0.001642845
+4,hypoxia,2.43E-09
+4,low oxygen,0.009683198
+5,reaeration,3.16E-06
+5,aromatic amides - antitubercular drugs,0.001215046
+5,respiration inhibitors - antitubercular drugs,0.000251278
+5,iron scavengers - antitubercular drugs,0.002108545
+5,others - antitubercular drugs,0.000533964
+5,MTB strain comparisons,0.000387919
+5,hypoxia,0.000898609
+6,aromatic amides - antitubercular drugs,2.51E-11
+6,others - antitubercular drugs,6.98E-05
+6,carboxylic acids - carbon source,0
+6,fatty acids - carbon source,3.18E-06
+6,DNA damage,0.000998728
+7,cell wall inhibitors - antitubercular drugs,4.03E-05
+7,carboxylic acids - carbon source,0
+7,lipids - carbon source,0
+7,hypoxia,7.12E-26
+9,carboxylic acids - carbon source,0
+9,DNA damage,1.93E-05
+9,limited nutrients,9.40E-10
+9,low pH,0.002635505
+10,cell wall inhibitors - antitubercular drugs,8.65E-06
+10,protein synthesis inhibitors  - antitubercular drugs,9.45E-06
+10,others - antitubercular drugs,8.17E-12
+11,aromatic amides - antitubercular drugs,4.82E-20
+11,cell wall inhibitors - antitubercular drugs,0.00323448
+11,iron scavengers - antitubercular drugs,0.004181679
+11,hypoxia,1.11E-15
+12,DNA damage - antitubercular drugs,0.004290284
+12,others - carbon source,0.000697781
+12,carboxylic acids - carbon source,0
+12,hypoxia,0.000640012
+12,macrophage infection,0.000357038
+12,nitrosative stress,0.000113319
+13,reaeration,0.003202478
+13,protein synthesis inhibitors  - antitubercular drugs,0.000782094
+13,lipids - carbon source,0
+13,hypoxia,0.000312438
+15,respiration inhibitors - antitubercular drugs,0.00158875
+15,carboxylic acids - carbon source,0
+15,oxidative stress,0.000893493
+16,iron scavengers - antitubercular drugs,0.000101508
+16,fatty acids - carbon source,3.23E-12
+16,limited nutrients,1.64E-07
+16,low oxygen,0.002698392
+16,nitrosative stress,3.19E-08
+16,oxidative stress,0.001144658
+17,respiration inhibitors - antitubercular drugs,0.006832718
+17,limited - carbon source,9.33E-05
+17,hypoxia,2.44E-10
+19,fatty acids - carbon source,2.20E-13
+19,limited - carbon source,0.000695652
+19,limited nutrients,7.75E-06
+20,iron scavengers - antitubercular drugs,0.009752503
+20,nitrosative stress,1.30E-08
+21,aromatic amides - antitubercular drugs,0.008198819
+21,respiration inhibitors - antitubercular drugs,0.009373368
+21,DNA damage,2.77E-13
+21,hypoxia,5.13E-30
+21,nitrosative stress,1.49E-06
+22,DNA damage,0.003874391
+22,hypoxia,5.18E-33
+22,macrophage infection,0.009179046
+22,nitrosative stress,8.06E-05
+23,iron scavengers - antitubercular drugs,0.009378244
+23,others - antitubercular drugs,6.58E-05
+23,fatty acids - carbon source,1.12E-24
+23,limited - carbon source,0.000120756
+23,hypoxia,0.008608262
+23,limited nutrients,2.36E-06
+24,cell wall stress,0.007904002
+24,MTB strain comparisons,2.14E-12
+24,wildtype growth,3.55E-09
+25,fatty acids - carbon source,7.20E-07
+25,limited nutrients,6.41E-09
+26,carbon monoxide stress,0.009249716
+26,others - carbon source,0.009249716
+26,carboxylic acids - carbon source,0
+27,iron scavengers - antitubercular drugs,0.000630037
+27,others - carbon source,0
+27,carboxylic acids - carbon source,0
+27,fatty acids - carbon source,1.87E-07
+27,lipids - carbon source,0
+27,limited nutrients,6.18E-09
+28,iron scavengers - antitubercular drugs,0.00241571
+28,others - antitubercular drugs,2.80E-05
+28,fatty acids - carbon source,0.002972485
+29,aromatic amides - antitubercular drugs,0.001567238
+29,carbon monoxide stress,0.005738048
+29,hypoxia,6.39E-08
+30,reaeration,0.000736573
+31,respiration inhibitors - antitubercular drugs,4.77E-07
+31,transcription inhibitors  - antitubercular drugs,0.007952038
+31,hypoxia,1.23E-05
+32,lipids - carbon source,0
+32,cell wall stress,0.003056003
+32,hypoxia,1.67E-23
+33,reaeration,0.007541877
+33,cell wall inhibitors - antitubercular drugs,0.00024183
+33,fatty acids - carbon source,0.003157009
+33,limited nutrients,3.02E-05
+34,aromatic amides - antitubercular drugs,0.00100921
+34,others - carbon source,0.001942787
+34,carboxylic acids - carbon source,0
+34,fatty acids - carbon source,9.72E-25
+34,cell wall stress,0.005926744
+35,reaeration,2.92E-05
+35,others - antitubercular drugs,0.000867999
+35,limited nutrients,0.006644151
+36,DNA damage,0.000295744
+36,hypoxia,1.08E-05
+36,nitrosative stress,8.37E-06
+38,respiration inhibitors - antitubercular drugs,0.000593908
+38,iron scavengers - antitubercular drugs,0.003853754
+38,limited - carbon source,0.002305292
+38,hypoxia,1.86E-07
+39,others - antitubercular drugs,5.72E-05
+39,limited - carbon source,2.48E-06
+39,hypoxia,5.54E-17
+40,aromatic amides - antitubercular drugs,0.002364061
+41,respiration inhibitors - antitubercular drugs,2.59E-06
+41,iron scavengers - antitubercular drugs,7.25E-08
+41,lipids - carbon source,0
+41,hypoxia,1.99E-05
+41,limited nutrients,0.008165304
+42,respiration inhibitors - antitubercular drugs,0.009168781
+42,wildtype growth,0.002684136
+43,iron scavengers - antitubercular drugs,9.86E-05
+43,carboxylic acids - carbon source,0
+45,respiration inhibitors - antitubercular drugs,0.004798924
+45,fatty acids - carbon source,0.00054991
+45,lipids - carbon source,0.007679317
+45,cell wall stress,0.007961252
+45,limited nutrients,1.58E-10
+46,protein synthesis inhibitors  - antitubercular drugs,0.002308984
+46,others - antitubercular drugs,0.000206487
+46,cell wall stress,0.000169754
+47,others - carbon source,0.008494631
+47,carboxylic acids - carbon source,0
+47,hypoxia,2.44E-05
+47,limited nutrients,0.007341738
+48,respiration inhibitors - antitubercular drugs,0.00079875
+49,fatty acids - carbon source,1.73E-06
+49,lipids - carbon source,0.000266624
+50,aromatic amides - antitubercular drugs,4.56E-06
+51,reaeration,1.86E-12
+51,protein synthesis inhibitors  - antitubercular drugs,0.000513875
+52,aromatic amides - antitubercular drugs,0
+52,cell wall inhibitors - antitubercular drugs,7.11E-13
+52,respiration inhibitors - antitubercular drugs,4.70E-27
+52,transcription inhibitors  - antitubercular drugs,8.41E-05
+52,others - antitubercular drugs,3.31E-08
+52,carboxylic acids - carbon source,0
+52,DNA damage,0.004984491
+53,wildtype growth,2.32E-13
+53,hypoxia,3.91E-47
+56,protein synthesis inhibitors  - antitubercular drugs,4.75E-05
+56,low oxygen,7.64E-08
+56,macrophage infection,0.007154616
+56,oxidative stress,5.69E-05
+57,aromatic amides - antitubercular drugs,7.61E-05
+60,reaeration,2.16E-05
+60,aromatic amides - antitubercular drugs,0
+60,cell wall inhibitors - antitubercular drugs,7.73E-15
+60,respiration inhibitors - antitubercular drugs,7.04E-15
+60,iron scavengers - antitubercular drugs,3.18E-05
+60,others - antitubercular drugs,2.45E-07
+60,others - carbon source,0
+60,fatty acids - carbon source,0
+60,lipids - carbon source,0
+60,host interactions,0
+60,limited nutrients,0
+60,macrophage infection,4.05E-06
+60,low pH,4.30E-05
+61,DNA damage - antitubercular drugs,4.16E-06
+61,cell wall inhibitors - antitubercular drugs,0.009111445
+61,iron scavengers - antitubercular drugs,0.000862405
+61,others - antitubercular drugs,0.004582882
+61,DNA damage,2.90E-19
+61,hypoxia,0.001460543
+61,nitrosative stress,2.57E-19
+61,oxidative stress,6.38E-08
+62,iron scavengers - antitubercular drugs,3.42E-05
+62,others - carbon source,0.007791627
+62,DNA damage,0.001852317
+62,hypoxia,0.007403831
+62,iron stress,0.007791627
+62,nitrosative stress,3.60E-14
+63,DNA damage - antitubercular drugs,0.003408874
+63,iron scavengers - antitubercular drugs,0.004843979
+63,carboxylic acids - carbon source,0
+63,fatty acids - carbon source,3.00E-12
+63,limited - carbon source,0.000752407
+63,DNA damage,4.30E-05
+63,hypoxia,4.85E-06
+63,limited nutrients,1.97E-08
+64,carbon monoxide stress,0
+64,DNA damage,2.82E-07
+64,limited nutrients,0.000113035
+64,low oxygen,8.84E-05
+64,nitrosative stress,9.83E-16
+64,oxidative stress,0.000694451
+65,cell wall inhibitors - antitubercular drugs,0.000658154
+65,iron scavengers - antitubercular drugs,1.43E-06
+65,limited - carbon source,0.000380118
+65,hypoxia,2.73E-23
+65,nitrosative stress,0.00571785
+66,respiration inhibitors - antitubercular drugs,0.002829076
+66,iron scavengers - antitubercular drugs,1.45E-05
+66,others - antitubercular drugs,0.000466438
+66,carbon monoxide stress,0
+66,fatty acids - carbon source,0.000105854
+66,lipids - carbon source,0
+66,DNA damage,0.000268476
+66,low pH,0.00037958
+67,carboxylic acids - carbon source,0
+67,cell wall stress,0.00452167
+67,hypoxia,4.22E-08
+67,limited nutrients,0.002890276
+68,protein synthesis inhibitors  - antitubercular drugs,0.009243141
+68,fatty acids - carbon source,4.52E-26
+68,limited - carbon source,3.38E-12
+69,limited - carbon source,5.09E-06
+69,DNA damage,0.007870086
+69,limited nutrients,0
+70,iron scavengers - antitubercular drugs,0.000113073
+70,carboxylic acids - carbon source,0
+70,fatty acids - carbon source,3.77E-11
+70,macrophage infection,0.003508166
+70,oxidative stress,0.001306368
+71,iron scavengers - antitubercular drugs,0.001767236
+71,others - antitubercular drugs,0.007218539
+71,carboxylic acids - carbon source,0
+71,DNA damage,0.002943643
+71,limited nutrients,5.39E-08
+71,low pH,1.71E-08
+72,respiration inhibitors - antitubercular drugs,2.94E-08
+72,others - antitubercular drugs,0.000231547
+72,fatty acids - carbon source,0.001591896
+72,lipids - carbon source,0
+72,limited nutrients,0
+72,nitrosative stress,4.33E-06
+73,respiration inhibitors - antitubercular drugs,0.002785591
+73,iron scavengers - antitubercular drugs,2.60E-05
+73,hypoxia,1.40E-05
+74,respiration inhibitors - antitubercular drugs,0.000755142
+74,iron scavengers - antitubercular drugs,5.09E-05
+74,carboxylic acids - carbon source,0
+74,DNA damage,1.21E-07
+74,hypoxia,6.46E-11
+74,low oxygen,4.60E-06
+75,cell wall inhibitors - antitubercular drugs,0.00012361
+75,respiration inhibitors - antitubercular drugs,0.000305696
+75,iron scavengers - antitubercular drugs,0.003091422
+75,lipids - carbon source,0
+75,hypoxia,6.91E-05
+75,low oxygen,0.005416679
+76,aromatic amides - antitubercular drugs,0.004773801
+76,respiration inhibitors - antitubercular drugs,6.93E-08
+76,others - antitubercular drugs,0.009767069
+76,low pH,0.002447881
+77,respiration inhibitors - antitubercular drugs,0.009579301
+77,cell wall stress,0.008320275
+78,reaeration,0.007664271
+78,hypoxia,4.37E-08
+79,limited nutrients,0.005030079
+80,iron scavengers - antitubercular drugs,0.00014078
+80,others - carbon source,0.007608474
+80,fatty acids - carbon source,2.65E-05
+80,DNA damage,2.66E-08
+80,limited nutrients,0.000103562
+80,nitrosative stress,7.53E-07
+80,oxidative stress,1.65E-06
+81,DNA damage,3.61E-12
+81,hypoxia,1.10E-32
+81,oxidative stress,8.18E-07
+82,aromatic amides - antitubercular drugs,0.000430572
+82,iron scavengers - antitubercular drugs,3.62E-05
+82,others - antitubercular drugs,0.002477087
+82,fatty acids - carbon source,1.06E-10
+82,lipids - carbon source,0
+82,DNA damage,0.001962527
+82,limited nutrients,1.73E-06
+83,aromatic amides - antitubercular drugs,1.49E-11
+83,carboxylic acids - carbon source,0
+83,fatty acids - carbon source,0.000437786
+83,lipids - carbon source,0.008928576
+83,DNA damage,9.07E-05
+83,limited nutrients,2.92E-06
+85,carboxylic acids - carbon source,0
+85,fatty acids - carbon source,1.25E-14
+85,limited - carbon source,0.000422621
+85,DNA damage,0.00944135
+85,limited nutrients,1.82E-11
+85,oxidative stress,0.009166978
+87,cell wall inhibitors - antitubercular drugs,0.005152232
+87,protein synthesis inhibitors  - antitubercular drugs,2.91E-23
+87,iron scavengers - antitubercular drugs,0.000202422
+88,iron scavengers - antitubercular drugs,0.000128301
+88,fatty acids - carbon source,0.002088937
+89,others - antitubercular drugs,0.009206361
+89,fatty acids - carbon source,2.81E-11
+89,limited - carbon source,0.007057581
+89,hypoxia,2.32E-05
+90,carbon monoxide stress,0.002273949
+90,carboxylic acids - carbon source,0
+90,fatty acids - carbon source,3.86E-22
+90,limited - carbon source,1.76E-09
+91,aromatic amides - antitubercular drugs,4.94E-05
+92,DNA damage - antitubercular drugs,7.14E-05
+92,respiration inhibitors - antitubercular drugs,0.001175272
+92,fatty acids - carbon source,0.002099514
+93,reaeration,0.000392952
+93,fatty acids - carbon source,1.60E-07
+93,limited nutrients,9.70E-09
+93,oxidative stress,0.006194806
+94,carboxylic acids - carbon source,0
+94,fatty acids - carbon source,1.00E-10
+94,limited nutrients,4.73E-10
+94,nitrosative stress,0.000813724
+95,protein synthesis inhibitors  - antitubercular drugs,0.000869767
+95,respiration inhibitors - antitubercular drugs,7.38E-05
+95,others - antitubercular drugs,0.00703082
+96,protein synthesis inhibitors  - antitubercular drugs,0.000904624
+96,hypoxia,7.66E-07
+96,low pH,0.00517023
+97,aromatic amides - antitubercular drugs,1.95E-05
+97,fatty acids - carbon source,3.01E-09
+97,hypoxia,1.12E-14
+98,others - antitubercular drugs,3.79E-06
+98,fatty acids - carbon source,0.000207554
+99,fatty acids - carbon source,6.62E-05
+99,limited - carbon source,4.90E-12
+99,DNA damage,0.008329835
+99,hypoxia,1.08E-09
+100,reaeration,0.003631418
+100,fatty acids - carbon source,3.51E-05
+100,DNA damage,0.006249775
+100,hypoxia,1.76E-07
+100,limited nutrients,0.005488789
+101,iron scavengers - antitubercular drugs,3.81E-05
+101,fatty acids - carbon source,9.34E-08
+101,nitrosative stress,0.000102126
+102,fatty acids - carbon source,9.00E-10
+102,hypoxia,8.48E-11
+102,limited nutrients,6.38E-05
+103,carboxylic acids - carbon source,0
+103,fatty acids - carbon source,1.45E-15
+103,limited - carbon source,0.00389631
+103,hypoxia,4.99E-11
+103,limited nutrients,0.004871908
+104,DNA damage,2.14E-08
+104,limited nutrients,3.64E-09
+104,low oxygen,0.002149874
+104,nitrosative stress,5.56E-08
+104,oxidative stress,0.00074602
+105,aromatic amides - antitubercular drugs,0.00884166
+105,carboxylic acids - carbon source,0
+105,limited - carbon source,1.08E-05
+105,cell wall stress,0.000383057
+106,carboxylic acids - carbon source,0
+107,DNA damage,1.35E-08
+107,nitrosative stress,0.00046574
+108,DNA damage,4.94E-21
+108,nitrosative stress,4.09E-06
+108,oxidative stress,1.10E-12
+109,DNA damage - antitubercular drugs,0.000505539
+109,limited - carbon source,2.69E-09
+109,hypoxia,0.000275787
+110,others - carbon source,0.001628912
+110,fatty acids - carbon source,0.004792536
+110,cell wall stress,8.07E-06
+110,MTB strain comparisons,3.62E-07
+110,wildtype growth,0.001182764
+110,nitrosative stress,0.007142382
+112,respiration inhibitors - antitubercular drugs,2.41E-06
+112,oxidative stress,0.004061185
+113,limited - carbon source,0.00190568
+113,hypoxia,1.12E-08
+113,limited nutrients,2.62E-07
+114,carboxylic acids - carbon source,0
+116,DNA damage - antitubercular drugs,3.79E-06
+116,limited - carbon source,0.001616156
+117,reaeration,0.000809379
+117,DNA damage - antitubercular drugs,0.002184439
+117,iron scavengers - antitubercular drugs,0.001217254
+117,carboxylic acids - carbon source,0
+117,fatty acids - carbon source,0.000119977
+118,respiration inhibitors - antitubercular drugs,8.94E-06
+118,others - antitubercular drugs,5.35E-05
+118,carboxylic acids - carbon source,0
+118,lipids - carbon source,0.001293907
+119,limited nutrients,0.000290855
+120,others - antitubercular drugs,2.13E-08
+121,aromatic amides - antitubercular drugs,7.44E-05
+121,respiration inhibitors - antitubercular drugs,0.000551626
+121,iron scavengers - antitubercular drugs,0.009606333
+121,others - antitubercular drugs,0.007586531
+121,DNA damage,9.58E-05
+121,hypoxia,5.65E-20
+121,limited nutrients,6.43E-05
+122,protein synthesis inhibitors  - antitubercular drugs,7.69E-22
+122,respiration inhibitors - antitubercular drugs,1.05E-05
+123,DNA damage,8.63E-05
+123,wildtype growth,0.005930871
+123,limited nutrients,0.000460235
+123,nitrosative stress,0.000102418
+124,cell wall inhibitors - antitubercular drugs,7.15E-05
+124,others - antitubercular drugs,0.005651635
+125,reaeration,3.34E-21
+125,fatty acids - carbon source,0.000560318
+125,wildtype growth,0.004658287
+127,iron scavengers - antitubercular drugs,0.002118898
+127,others - antitubercular drugs,1.20E-07
+127,hypoxia,0.002075301
+128,DNA damage,2.33E-05
+128,oxidative stress,7.26E-06
+129,DNA damage - antitubercular drugs,1.96E-05
+129,carboxylic acids - carbon source,0
+129,fatty acids - carbon source,0.001889847
+129,cell wall stress,0.007193687
+129,limited nutrients,4.06E-05
+130,others - carbon source,0.000414598
+130,macrophage infection,0.004234185
+131,respiration inhibitors - antitubercular drugs,0.000137702
+131,fatty acids - carbon source,0.005373078
+131,low pH,0.003596559
+132,fatty acids - carbon source,0.000776942
+133,respiration inhibitors - antitubercular drugs,7.70E-09
+133,others - carbon source,0.006684973
+133,lipids - carbon source,0.006684973
+134,DNA damage - antitubercular drugs,0.000645531
+134,iron scavengers - antitubercular drugs,0.00250248
+134,DNA damage,0.000925609
+135,respiration inhibitors - antitubercular drugs,4.99E-09
+135,limited nutrients,3.08E-05
+135,low oxygen,0.00976609
+136,reaeration,3.68E-05
+137,carboxylic acids - carbon source,0
+137,wildtype growth,0.001652011
+138,hypoxia,7.10E-11
+139,aromatic amides - antitubercular drugs,0
+139,DNA damage - antitubercular drugs,0.005119186
+139,cell wall inhibitors - antitubercular drugs,2.66E-06
+139,respiration inhibitors - antitubercular drugs,5.66E-08
+139,iron scavengers - antitubercular drugs,7.41E-07
+139,others - carbon source,0
+139,carboxylic acids - carbon source,0
+139,limited - carbon source,0
+139,limited nutrients,0
+140,reaeration,4.28E-08
+140,aromatic amides - antitubercular drugs,0.003259281
+140,hypoxia,4.34E-07
+143,respiration inhibitors - antitubercular drugs,2.82E-08
+143,others - antitubercular drugs,6.50E-10
+143,DNA damage,0.002246675
+144,cell wall inhibitors - antitubercular drugs,0.009751939
+144,protein synthesis inhibitors  - antitubercular drugs,2.75E-06
+144,iron scavengers - antitubercular drugs,0.004324645
+144,others - antitubercular drugs,3.30E-08
+144,low oxygen,0.002466992
+145,iron scavengers - antitubercular drugs,0.00033666
+145,lipids - carbon source,0.003338712
+145,limited - carbon source,3.45E-07
+146,DNA damage - antitubercular drugs,0.000700168
+146,cell wall inhibitors - antitubercular drugs,1.62E-17
+146,others - antitubercular drugs,7.35E-08
+147,respiration inhibitors - antitubercular drugs,0.000892826
+147,fatty acids - carbon source,6.82E-11
+147,limited nutrients,1.42E-06
+147,macrophage infection,1.14E-07
+148,others - carbon source,0.009422438
+148,carboxylic acids - carbon source,0
+148,oxidative stress,0.001068816
+149,protein synthesis inhibitors  - antitubercular drugs,8.17E-06
+149,carboxylic acids - carbon source,0
+149,lipids - carbon source,0.006138626
+149,cell wall stress,0.00359043
+149,hypoxia,1.45E-09
+150,others - carbon source,0.003717959
+150,fatty acids - carbon source,8.91E-14
+150,cell wall stress,0.000406902
+151,reaeration,0.00014283
+151,others - antitubercular drugs,4.75E-06
+151,lipids - carbon source,0.007682956
+151,DNA damage,0.001250186
+151,oxidative stress,0.000452564
+152,reaeration,4.76E-13
+152,respiration inhibitors - antitubercular drugs,0.001570303
+152,fatty acids - carbon source,2.71E-09
+152,limited - carbon source,0.002272566
+152,limited nutrients,0.005452351
+153,reaeration,0
+153,respiration inhibitors - antitubercular drugs,1.17E-06
+153,cell wall stress,2.96E-08
+154,respiration inhibitors - antitubercular drugs,3.54E-07
+154,others - carbon source,0.00106057
+154,hypoxia,3.90E-12
+156,reaeration,3.59E-06
+156,transcription inhibitors  - antitubercular drugs,0.005116912
+156,fatty acids - carbon source,0.000779311
+156,cell wall stress,8.78E-07
+156,low oxygen,0.000254578
+156,low pH,6.91E-05
+158,reaeration,0.006109899
+158,hypoxia,2.67E-06
+159,reaeration,2.07E-06
+159,aromatic amides - antitubercular drugs,0
+159,cell wall inhibitors - antitubercular drugs,4.77E-08
+159,respiration inhibitors - antitubercular drugs,4.37E-10
+159,iron scavengers - antitubercular drugs,2.69E-06
+159,others - antitubercular drugs,0.007756254
+159,carboxylic acids - carbon source,0
+159,fatty acids - carbon source,0
+159,macrophage infection,0.000548777
+159,low pH,5.90E-06
+160,DNA damage - antitubercular drugs,0.000269198
+160,fatty acids - carbon source,2.70E-09
+161,cell wall inhibitors - antitubercular drugs,0.000330583
+161,respiration inhibitors - antitubercular drugs,4.36E-07
+162,reaeration,0.006787053
+162,aromatic amides - antitubercular drugs,1.09E-05
+162,limited nutrients,1.10E-06
+162,oxidative stress,0.005675322
+163,cell wall inhibitors - antitubercular drugs,0.001265699
+163,MTB strain comparisons,0.000355606
+164,fatty acids - carbon source,0.005661786
+165,reaeration,6.17E-08
+165,DNA damage - antitubercular drugs,0.001000939
+165,cell wall inhibitors - antitubercular drugs,2.32E-07
+165,respiration inhibitors - antitubercular drugs,1.87E-16
+165,iron scavengers - antitubercular drugs,0
+165,others - antitubercular drugs,1.40E-08
+165,others - carbon source,0
+165,lipids - carbon source,0
+165,macrophage infection,1.92E-08
+165,low pH,2.78E-06
+166,iron scavengers - antitubercular drugs,1.02E-05
+166,low oxygen,0.000432922
+167,others - carbon source,0
+167,fatty acids - carbon source,4.03E-14
+167,limited - carbon source,4.25E-08
+167,low pH,0.000358324
+168,limited nutrients,0.000194784
+169,cell wall inhibitors - antitubercular drugs,0.001584321
+169,respiration inhibitors - antitubercular drugs,0.008968827
+169,low pH,8.94E-07
+170,aromatic amides - antitubercular drugs,2.63E-11
+170,iron scavengers - antitubercular drugs,1.32E-08
+170,carboxylic acids - carbon source,0
+170,hypoxia,4.46E-11
+170,low oxygen,0.001286416
+170,low pH,0.005990249
+172,iron scavengers - antitubercular drugs,0.005838818
+172,others - antitubercular drugs,0.000154632
+172,limited nutrients,0.00989006
+172,nitrosative stress,0.000433215
+173,others - carbon source,0.00161364
+173,fatty acids - carbon source,1.76E-26
+173,limited - carbon source,3.84E-12
+174,others - carbon source,0.004844892
+174,carboxylic acids - carbon source,0
+174,lipids - carbon source,0
+174,DNA damage,3.55E-06
+174,limited nutrients,0.001646759
+174,oxidative stress,0.001964406
+175,iron scavengers - antitubercular drugs,3.23E-06
+175,others - antitubercular drugs,1.85E-05
+175,carboxylic acids - carbon source,0
+175,lipids - carbon source,0.000827897
+175,DNA damage,0.009549388
+176,aromatic amides - antitubercular drugs,0.002778297
+176,fatty acids - carbon source,1.40E-14
+176,limited nutrients,1.10E-09
+178,aromatic amides - antitubercular drugs,4.80E-07
+178,fatty acids - carbon source,3.73E-11
+180,aromatic amides - antitubercular drugs,5.48E-05
+181,hypoxia,2.76E-05
+181,limited nutrients,4.26E-07
+182,reaeration,0.00276901
+182,fatty acids - carbon source,3.16E-05
+182,DNA damage,0.007543357
+183,DNA damage - antitubercular drugs,0.000160238
+183,fatty acids - carbon source,0.001387322
+185,reaeration,0.004398655
+185,limited - carbon source,0.005616033
+185,limited nutrients,2.94E-06
+187,protein synthesis inhibitors  - antitubercular drugs,2.53E-06
+188,iron scavengers - antitubercular drugs,0.008126742
+188,limited nutrients,0.001021965
+189,others - antitubercular drugs,3.84E-07
+189,DNA damage,1.12E-05
+189,oxidative stress,0.007215115
+190,macrophage infection,0.002971358
+191,limited - carbon source,0.004187138
+192,carboxylic acids - carbon source,0
+192,fatty acids - carbon source,3.99E-11
+192,lipids - carbon source,0.00456222
+192,limited - carbon source,5.68E-05
+192,low oxygen,0.001578895
+193,respiration inhibitors - antitubercular drugs,0.001492089
+193,iron scavengers - antitubercular drugs,0.004542666
+193,fatty acids - carbon source,0.000132174
+193,limited - carbon source,0
+193,hypoxia,3.42E-11
+193,limited nutrients,0
+196,cell wall inhibitors - antitubercular drugs,6.57E-05
+196,limited - carbon source,2.93E-05
+196,DNA damage,3.42E-05
+196,limited nutrients,1.59E-05
+197,carboxylic acids - carbon source,0
+197,low oxygen,0.004626628
+197,low pH,0.008223454
+198,others - carbon source,0.000872478
+198,fatty acids - carbon source,8.13E-23
+198,limited nutrients,7.15E-09
+199,protein synthesis inhibitors  - antitubercular drugs,6.33E-05
+199,carboxylic acids - carbon source,0
+199,lipids - carbon source,0.000482543
+199,hypoxia,1.73E-05
+199,limited nutrients,0.004064822
+200,cell wall inhibitors - antitubercular drugs,0.006399824
+200,others - carbon source,0
+200,carboxylic acids - carbon source,0
+200,limited - carbon source,7.14E-07
+200,hypoxia,0.000572536
+201,aromatic amides - antitubercular drugs,0.003696234
+201,DNA damage,1.73E-08
+201,nitrosative stress,3.11E-06
+202,aromatic amides - antitubercular drugs,0.000794022
+202,fatty acids - carbon source,2.59E-07
+202,cell wall stress,0.000336346
+202,nitrosative stress,0.001542373
+203,aromatic amides - antitubercular drugs,0.000273047
+203,iron scavengers - antitubercular drugs,2.69E-07
+203,others - antitubercular drugs,0.000163972
+203,others - carbon source,0.003627404
+203,limited - carbon source,2.33E-05
+203,DNA damage,2.42E-06
+203,oxidative stress,0.000103472
+204,protein synthesis inhibitors  - antitubercular drugs,1.76E-05
+204,fatty acids - carbon source,2.82E-19
+204,limited - carbon source,5.84E-10
+205,iron scavengers - antitubercular drugs,0.003765764
+205,others - carbon source,0.007513383
+205,iron stress,0.007513383
+205,low oxygen,0.000105327
+205,nitrosative stress,1.36E-23
+206,protein synthesis inhibitors  - antitubercular drugs,0.000480537
+206,fatty acids - carbon source,3.58E-09
+206,limited - carbon source,8.83E-10
+208,reaeration,0.004108775
+208,iron scavengers - antitubercular drugs,3.60E-09
+208,limited nutrients,2.69E-08
+208,nitrosative stress,2.68E-08
+209,fatty acids - carbon source,7.12E-18
+209,low pH,0.009557661
+210,cell wall inhibitors - antitubercular drugs,0.000160317
+210,respiration inhibitors - antitubercular drugs,4.59E-06
+210,iron scavengers - antitubercular drugs,1.89E-06
+210,others - antitubercular drugs,0.007113905
+210,limited - carbon source,0.000454307
+210,DNA damage,0.000432902
+210,hypoxia,4.69E-06
+210,nitrosative stress,6.56E-07
+211,lipids - carbon source,0.001172408
+212,aromatic amides - antitubercular drugs,7.06E-08
+212,protein synthesis inhibitors  - antitubercular drugs,6.73E-09
+212,fatty acids - carbon source,0.000465735
+212,limited nutrients,0.00029369
+213,aromatic amides - antitubercular drugs,0.001770221
+213,others - carbon source,0
+213,limited - carbon source,0.007679672
+213,cell wall stress,0.002521256
+213,hypoxia,0.000648841
+214,DNA damage - antitubercular drugs,2.86E-07
+214,cell wall inhibitors - antitubercular drugs,5.25E-21
+214,DNA damage,3.16E-06
+214,nitrosative stress,0.002933338
+215,DNA damage,3.36E-07
+215,limited nutrients,0.006506131
+215,low oxygen,1.50E-06
+215,nitrosative stress,3.93E-05
+216,reaeration,0.009315001
+216,aromatic amides - antitubercular drugs,0
+216,fatty acids - carbon source,3.02E-05
+216,lipids - carbon source,0
+217,cell wall inhibitors - antitubercular drugs,6.67E-07
+217,carboxylic acids - carbon source,0
+217,DNA damage,1.65E-07
+217,hypoxia,0.00027564
+217,limited nutrients,2.36E-06
+217,nitrosative stress,0.000566686
+218,cell wall inhibitors - antitubercular drugs,1.18E-08
+218,respiration inhibitors - antitubercular drugs,5.19E-07
+218,iron scavengers - antitubercular drugs,1.63E-09
+218,cell wall stress,0.008565207
+218,hypoxia,2.43E-10
+219,iron scavengers - antitubercular drugs,3.10E-09
+219,fatty acids - carbon source,0.00147606
+219,lipids - carbon source,0
+219,hypoxia,1.22E-22
+219,nitrosative stress,2.47E-07
+220,DNA damage - antitubercular drugs,7.56E-05
+220,carboxylic acids - carbon source,0
+220,lipids - carbon source,0.009120124
+220,DNA damage,2.63E-07
+220,hypoxia,0.008519649
+220,limited nutrients,4.89E-07
+220,nitrosative stress,5.50E-12
+221,limited - carbon source,5.86E-05
+221,DNA damage,4.07E-08
+221,hypoxia,2.69E-07
+221,oxidative stress,3.70E-06
+222,fatty acids - carbon source,1.72E-14
+222,limited nutrients,7.25E-08
+222,oxidative stress,0.000137109
+223,cell wall inhibitors - antitubercular drugs,8.70E-06
+223,respiration inhibitors - antitubercular drugs,0.000150975
+223,iron scavengers - antitubercular drugs,1.31E-10
+223,others - carbon source,0
+223,DNA damage,7.95E-09
+223,hypoxia,9.82E-15
+225,DNA damage - antitubercular drugs,0.000358481
+225,cell wall inhibitors - antitubercular drugs,0.005279173
+225,limited - carbon source,0.002403134
+225,limited nutrients,1.66E-07
+226,reaeration,0.000141765
+226,respiration inhibitors - antitubercular drugs,4.89E-06
+226,iron scavengers - antitubercular drugs,0.001367269
+226,DNA damage,1.47E-09
+226,limited nutrients,7.12E-05
+226,nitrosative stress,0.000116552
+227,reaeration,2.30E-05
+227,aromatic amides - antitubercular drugs,0.004227216
+227,fatty acids - carbon source,6.58E-06
+227,limited - carbon source,0.007297466
+227,hypoxia,1.73E-06
+227,low oxygen,0.000224491
+228,cell wall inhibitors - antitubercular drugs,2.15E-09
+228,others - antitubercular drugs,5.49E-06
+228,fatty acids - carbon source,0.000198923
+228,DNA damage,0.000570524
+228,hypoxia,6.33E-05
+228,limited nutrients,2.48E-07
+229,fatty acids - carbon source,4.58E-12
+229,limited - carbon source,0.000342071
+229,limited nutrients,2.75E-06
+230,cell wall inhibitors - antitubercular drugs,0.003876939
+230,carboxylic acids - carbon source,0
+230,fatty acids - carbon source,6.75E-17
+230,limited nutrients,9.50E-06
+231,iron scavengers - antitubercular drugs,5.67E-05
+231,low pH,4.06E-05
+232,fatty acids - carbon source,8.99E-20
+232,limited nutrients,1.92E-11
+232,low oxygen,0.002975417
+233,fatty acids - carbon source,3.58E-17
+233,DNA damage,7.77E-06
+233,low oxygen,0.00037334
+233,nitrosative stress,2.22E-09
+233,oxidative stress,0.002243923
+234,lipids - carbon source,0.002746633
+234,hypoxia,1.99E-24
+235,respiration inhibitors - antitubercular drugs,0.003712667
+235,others - antitubercular drugs,0.005125534
+235,lipids - carbon source,0.000957767
+235,wildtype growth,2.26E-05
+235,low pH,3.67E-08
+236,limited - carbon source,2.20E-05
+237,cell wall inhibitors - antitubercular drugs,2.95E-05
+237,iron scavengers - antitubercular drugs,5.93E-06
+237,hypoxia,2.50E-11
+238,respiration inhibitors - antitubercular drugs,6.15E-09
+238,iron scavengers - antitubercular drugs,1.19E-06
+238,others - antitubercular drugs,0.000174273
+238,carboxylic acids - carbon source,0
+238,lipids - carbon source,0.007513383
+238,DNA damage,0.000278203
+238,hypoxia,1.29E-10
+238,nitrosative stress,0.002396095
+239,others - antitubercular drugs,0.001538795
+239,hypoxia,1.82E-10
+239,low oxygen,0.003731407
+239,macrophage infection,0.000880562
+240,nitrosative stress,3.57E-16
+240,oxidative stress,3.43E-07
+241,DNA damage - antitubercular drugs,2.41E-06
+241,iron scavengers - antitubercular drugs,1.69E-06
+241,others - antitubercular drugs,3.57E-06
+241,DNA damage,7.65E-05
+242,respiration inhibitors - antitubercular drugs,1.53E-06
+242,iron scavengers - antitubercular drugs,0.001113839
+242,carboxylic acids - carbon source,0
+242,wildtype growth,0.008278339
+243,iron scavengers - antitubercular drugs,5.11E-05
+243,others - antitubercular drugs,0.003005697
+243,limited nutrients,3.82E-06
+244,aromatic amides - antitubercular drugs,1.33E-05
+244,others - antitubercular drugs,3.57E-06
+244,DNA damage,2.61E-17
+244,hypoxia,4.60E-12
+244,oxidative stress,6.73E-07
+245,cell wall inhibitors - antitubercular drugs,1.09E-07
+245,respiration inhibitors - antitubercular drugs,1.27E-05
+245,lipids - carbon source,0
+246,carboxylic acids - carbon source,0
+246,fatty acids - carbon source,0.000362733
+246,lipids - carbon source,0
+246,DNA damage,6.07E-07
+246,nitrosative stress,6.35E-05
+246,oxidative stress,1.16E-05
+247,iron scavengers - antitubercular drugs,1.08E-06
+247,lipids - carbon source,0
+247,DNA damage,9.64E-07
+247,hypoxia,1.16E-05
+247,limited nutrients,0.000550949
+247,low oxygen,8.62E-07
+247,nitrosative stress,9.68E-18
+247,oxidative stress,0.000249188
+247,low pH,3.86E-05
+248,aromatic amides - antitubercular drugs,7.06E-06
+248,iron scavengers - antitubercular drugs,0.008179641
+248,hypoxia,3.26E-10
+248,limited nutrients,0.000274362
+249,DNA damage,9.90E-12
+249,oxidative stress,2.40E-09
+250,reaeration,6.17E-07
+250,aromatic amides - antitubercular drugs,2.84E-08
+250,protein synthesis inhibitors  - antitubercular drugs,0.008639364
+250,others - carbon source,0
+250,wildtype growth,0.005975927
+252,fatty acids - carbon source,3.05E-05
+252,limited - carbon source,0.000166933
+252,DNA damage,0.000298874
+252,hypoxia,2.87E-16
+252,oxidative stress,0.007755735
+253,others - antitubercular drugs,1.82E-06
+253,cell wall stress,9.53E-05
+253,hypoxia,2.93E-14
+254,aromatic amides - antitubercular drugs,1.39E-07
+254,iron scavengers - antitubercular drugs,9.74E-10
+254,carboxylic acids - carbon source,0
+254,lipids - carbon source,0.00106057
+254,hypoxia,2.36E-10
+255,iron scavengers - antitubercular drugs,0.000807595
+255,fatty acids - carbon source,0.00926958
+255,hypoxia,1.53E-37
+256,aromatic amides - antitubercular drugs,6.29E-07
+256,iron scavengers - antitubercular drugs,0.007135874
+256,others - antitubercular drugs,0.009328745
+256,fatty acids - carbon source,0.000273058
+256,limited nutrients,0.005030079
+256,low oxygen,0.000198906
+256,nitrosative stress,9.88E-09
+257,others - carbon source,0.007402786
+257,limited - carbon source,0.003144922
+257,limited nutrients,3.86E-11
+258,iron scavengers - antitubercular drugs,1.45E-06
+258,cell wall stress,0.000217997
+258,DNA damage,2.20E-05
+258,MTB strain comparisons,0.00056003
+258,limited nutrients,0.000383497
+258,oxidative stress,6.54E-09
+259,lipids - carbon source,0.00321105
+259,limited nutrients,5.01E-06
+259,nitrosative stress,0.000156664
+260,respiration inhibitors - antitubercular drugs,0.007635324
+260,lipids - carbon source,0.005486014
+260,DNA damage,2.12E-06
+260,hypoxia,4.76E-21
+260,limited nutrients,1.18E-05
+260,oxidative stress,0.006333575
+261,aromatic amides - antitubercular drugs,0
+261,cell wall inhibitors - antitubercular drugs,6.56E-08
+261,respiration inhibitors - antitubercular drugs,1.08E-07
+261,iron scavengers - antitubercular drugs,2.05E-06
+261,others - antitubercular drugs,8.62E-05
+261,others - carbon source,0
+261,carboxylic acids - carbon source,0
+261,lipids - carbon source,0
+261,limited nutrients,0
+261,macrophage infection,1.03E-08
+261,low pH,4.75E-06
+262,cell wall inhibitors - antitubercular drugs,0.00408338
+262,respiration inhibitors - antitubercular drugs,8.04E-11
+262,low oxygen,0.005478004
+262,nitrosative stress,1.95E-12
+262,osmotic stress,0.006624503
+263,cell wall stress,0.000539186
+263,DNA damage,0.003141145
+263,nitrosative stress,0.000198223
+264,fatty acids - carbon source,4.36E-11
+264,cell wall stress,0.006957015
+264,limited nutrients,0.005165914
+265,respiration inhibitors - antitubercular drugs,0.009306191
+265,fatty acids - carbon source,0.000792357
+265,limited - carbon source,8.27E-11
+265,hypoxia,6.96E-06
+265,oxidative stress,0.003814239
+266,cell wall inhibitors - antitubercular drugs,0.001152904
+266,iron scavengers - antitubercular drugs,0.000369498
+266,DNA damage,1.82E-11
+266,low pH,0.001989508
+267,carbon monoxide stress,0.009416623
+267,fatty acids - carbon source,1.23E-11
+267,limited - carbon source,6.90E-09
+267,oxidative stress,0.006266415
+268,DNA damage - antitubercular drugs,0.000372455
+268,cell wall inhibitors - antitubercular drugs,0.003125265
+268,DNA damage,4.06E-18
+268,low oxygen,0.001514277
+268,oxidative stress,4.51E-12
+268,low pH,3.64E-11
+269,limited nutrients,4.11E-09
+269,nitrosative stress,2.66E-07
+269,oxidative stress,1.02E-07
+270,respiration inhibitors - antitubercular drugs,4.86E-07
+270,iron scavengers - antitubercular drugs,4.83E-06
+270,cell wall stress,0.000361528
+271,aromatic amides - antitubercular drugs,1.98E-11
+271,limited nutrients,6.80E-09
+271,low pH,2.87E-07
+272,aromatic amides - antitubercular drugs,0
+272,DNA damage - antitubercular drugs,1.89E-07
+272,cell wall inhibitors - antitubercular drugs,2.50E-11
+272,respiration inhibitors - antitubercular drugs,5.50E-16
+272,transcription inhibitors  - antitubercular drugs,0.009982234
+272,iron scavengers - antitubercular drugs,1.10E-14
+272,carboxylic acids - carbon source,0
+272,fatty acids - carbon source,0.005121736
+272,limited - carbon source,0.003356034
+272,limited nutrients,4.09E-05
+272,low pH,1.06E-10
+273,protein synthesis inhibitors  - antitubercular drugs,0.000290996
+273,others - antitubercular drugs,8.89E-08
+273,hypoxia,0.005999987
+274,fatty acids - carbon source,9.22E-07
+274,limited nutrients,0.000116834
+274,low pH,1.03E-05
+275,DNA damage,4.95E-06
+275,limited nutrients,4.06E-06
+275,oxidative stress,0.00203178
+276,DNA damage - antitubercular drugs,4.68E-05
+276,others - carbon source,0.005319468
+276,fatty acids - carbon source,4.75E-13
+276,DNA damage,1.85E-05
+276,limited nutrients,3.07E-07
+277,fatty acids - carbon source,0.005058994
+277,limited - carbon source,9.53E-05
+277,DNA damage,2.27E-15
+277,hypoxia,4.49E-05
+277,limited nutrients,4.13E-10
+277,nitrosative stress,0.00016946
+277,low pH,0.005193037
+278,iron scavengers - antitubercular drugs,0.000377564
+278,others - antitubercular drugs,0.003421147
+278,lipids - carbon source,0.000414598
+279,cell wall stress,0.000302282
+279,limited nutrients,1.85E-05
+279,oxidative stress,6.36E-07
+280,DNA damage - antitubercular drugs,0.002339814
+280,cell wall inhibitors - antitubercular drugs,3.00E-10
+280,respiration inhibitors - antitubercular drugs,1.71E-10
+280,iron scavengers - antitubercular drugs,0.00080895
+281,protein synthesis inhibitors  - antitubercular drugs,7.59E-05
+281,respiration inhibitors - antitubercular drugs,0.000695824
+281,limited - carbon source,0.000124688
+281,DNA damage,0.005974323
+282,DNA damage,5.97E-07
+282,hypoxia,5.55E-10
+282,nitrosative stress,4.71E-12
+282,oxidative stress,0.003012765
+282,low pH,4.30E-07
+283,reaeration,4.33E-06
+283,hypoxia,3.29E-29
+284,hypoxia,7.83E-18
+285,reaeration,0.000412615
+285,iron scavengers - antitubercular drugs,0.000409335
+285,carboxylic acids - carbon source,0
+285,DNA damage,8.22E-05
+285,MTB strain comparisons,0.002819657
+285,hypoxia,3.15E-11
+286,cell wall inhibitors - antitubercular drugs,0.000728611
+286,respiration inhibitors - antitubercular drugs,0.000166632
+286,iron scavengers - antitubercular drugs,2.91E-10
+287,cell wall inhibitors - antitubercular drugs,0.004113682
+287,fatty acids - carbon source,3.46E-09
+287,lipids - carbon source,0.006149797
+287,limited - carbon source,0.000527704
+287,DNA damage,1.88E-08
+287,limited nutrients,7.91E-08
+288,DNA damage - antitubercular drugs,4.68E-05
+288,iron scavengers - antitubercular drugs,0.000128954
+288,DNA damage,4.96E-07
+288,limited nutrients,3.07E-07
+288,nitrosative stress,8.06E-07
+288,oxidative stress,0.005649121
+288,low pH,7.57E-05
+289,respiration inhibitors - antitubercular drugs,0.005629787
+289,others - antitubercular drugs,0.000499026
+290,nitrosative stress,0.002222825
+291,protein synthesis inhibitors  - antitubercular drugs,3.31E-17
+291,fatty acids - carbon source,0.009554112
+291,low oxygen,0.001494225
+292,aromatic amides - antitubercular drugs,0.000120764
+292,transcription inhibitors  - antitubercular drugs,0.0007768
+292,iron scavengers - antitubercular drugs,8.54E-08
+292,others - antitubercular drugs,1.69E-06
+292,carboxylic acids - carbon source,0
+292,DNA damage,5.11E-07
+292,limited nutrients,0.005985201
+293,carboxylic acids - carbon source,0
+293,limited nutrients,2.73E-11
+294,iron scavengers - antitubercular drugs,0.003031135
+294,hypoxia,2.42E-28
+294,low oxygen,0.003940241
+295,respiration inhibitors - antitubercular drugs,0.00411943
+295,iron scavengers - antitubercular drugs,0.000298424
+295,carboxylic acids - carbon source,0
+295,hypoxia,4.49E-08
+295,limited nutrients,0.000128397
+295,nitrosative stress,1.73E-05
+296,cell wall inhibitors - antitubercular drugs,6.95E-06
+296,respiration inhibitors - antitubercular drugs,7.11E-07
+296,iron scavengers - antitubercular drugs,6.72E-10
+296,others - antitubercular drugs,1.57E-15
+296,hypoxia,0.001223789
+296,low oxygen,0.004887702
+296,nitrosative stress,0.005070092
+297,DNA damage - antitubercular drugs,0.007210353
+297,iron scavengers - antitubercular drugs,0.001755635
+297,osmotic stress,0
+298,respiration inhibitors - antitubercular drugs,0.000293583
+299,respiration inhibitors - antitubercular drugs,0.009946906
+299,iron scavengers - antitubercular drugs,0.000426015
+299,limited nutrients,1.18E-07
+300,reaeration,0.003520005
+300,fatty acids - carbon source,0.002413227
+300,DNA damage,0.000233832
+300,hypoxia,7.87E-05
+300,oxidative stress,0.000491126
+301,fatty acids - carbon source,2.93E-08
+301,limited - carbon source,2.08E-11
+301,hypoxia,4.11E-39
+301,limited nutrients,8.61E-10
+303,iron scavengers - antitubercular drugs,5.38E-10
+303,others - antitubercular drugs,2.40E-05
+303,DNA damage,4.47E-10
+303,limited nutrients,0.000712111
+303,nitrosative stress,3.81E-09
+303,oxidative stress,0.00024071
+304,reaeration,3.94E-05
+304,carboxylic acids - carbon source,0
+304,fatty acids - carbon source,6.14E-15
+305,carboxylic acids - carbon source,0
+305,fatty acids - carbon source,1.18E-06
+305,DNA damage,0.001197707
+305,limited nutrients,4.43E-08
+305,oxidative stress,0.009356345
+305,low pH,6.33E-05
+307,fatty acids - carbon source,1.58E-14
+307,cell wall stress,0.000126224
+308,cell wall inhibitors - antitubercular drugs,3.80E-06
+308,hypoxia,4.40E-05
+308,oxidative stress,6.97E-07
+310,others - antitubercular drugs,0.000166305
+310,others - carbon source,0.007470867
+310,limited - carbon source,1.60E-06
+310,DNA damage,4.01E-05
+311,cell wall stress,2.90E-05
+311,hypoxia,2.29E-10
+312,reaeration,8.95E-09
+312,aromatic amides - antitubercular drugs,0
+312,cell wall inhibitors - antitubercular drugs,1.05E-12
+312,respiration inhibitors - antitubercular drugs,1.51E-14
+312,iron scavengers - antitubercular drugs,2.90E-11
+312,others - antitubercular drugs,2.77E-09
+312,carboxylic acids - carbon source,0
+312,fatty acids - carbon source,1.51E-11
+312,limited nutrients,2.07E-05
+312,low pH,2.00E-09
+313,aromatic amides - antitubercular drugs,1.02E-07
+313,DNA damage - antitubercular drugs,0.006449122
+313,cell wall inhibitors - antitubercular drugs,0.00033533
+313,iron scavengers - antitubercular drugs,0.002238801
+313,low pH,0.001085564
+315,limited - carbon source,0.00251454
+315,cell wall stress,0.00053651
+315,oxidative stress,1.76E-05
+318,MTB strain comparisons,0.004177029
+319,aromatic amides - antitubercular drugs,0.006572612
+319,cell wall inhibitors - antitubercular drugs,2.83E-06
+319,others - antitubercular drugs,8.16E-05
+319,carboxylic acids - carbon source,0
+319,limited - carbon source,0
+319,cell wall stress,0.004419272
+319,DNA damage,0.002574466
+319,hypoxia,1.43E-17
+319,limited nutrients,3.69E-07
+320,carboxylic acids - carbon source,0
+320,DNA damage,5.31E-05
+320,limited nutrients,0.000225708
+321,iron scavengers - antitubercular drugs,1.91E-05
+321,others - antitubercular drugs,0.00258002
+321,iron stress,0.006727831
+321,macrophage infection,0.001099732
+321,nitrosative stress,3.52E-23
+321,oxidative stress,0.001808297
+322,DNA damage - antitubercular drugs,0.000497274
+322,respiration inhibitors - antitubercular drugs,2.26E-14
+322,limited nutrients,2.10E-06
+323,aromatic amides - antitubercular drugs,0.007314546
+323,limited nutrients,0.00257428
+323,osmotic stress,0
+324,cell wall inhibitors - antitubercular drugs,2.12E-05
+324,others - antitubercular drugs,0.00041782
+324,carboxylic acids - carbon source,0
+324,DNA damage,0.005457687
+324,limited nutrients,7.14E-09
+325,iron scavengers - antitubercular drugs,8.28E-06
+325,limited - carbon source,0.002134995
+325,hypoxia,1.53E-27
+326,iron scavengers - antitubercular drugs,4.00E-06
+326,limited - carbon source,4.20E-05
+326,hypoxia,1.94E-13
+326,limited nutrients,5.63E-08
+327,iron scavengers - antitubercular drugs,0.002244436
+327,others - carbon source,0
+327,carboxylic acids - carbon source,0
+327,limited - carbon source,4.41E-07
+327,limited nutrients,6.39E-09
+328,aromatic amides - antitubercular drugs,4.92E-07
+328,iron scavengers - antitubercular drugs,6.63E-06
+328,hypoxia,1.74E-22
+328,low oxygen,0.008224602
+329,cell wall inhibitors - antitubercular drugs,0.000109122
+329,respiration inhibitors - antitubercular drugs,1.81E-05
+329,others - antitubercular drugs,4.34E-05
+329,hypoxia,0.001467796
+329,nitrosative stress,1.89E-06
+329,oxidative stress,3.38E-06
+330,limited - carbon source,1.49E-06
+330,DNA damage,0.000608649
+330,limited nutrients,1.63E-11
+330,nitrosative stress,2.97E-05
+330,low pH,0.000356646
+331,protein synthesis inhibitors  - antitubercular drugs,7.98E-07
+331,macrophage infection,8.51E-08
+332,iron scavengers - antitubercular drugs,1.33E-05
+332,others - antitubercular drugs,0.004000177
+332,carboxylic acids - carbon source,0
+332,limited - carbon source,0.000491408
+332,hypoxia,8.20E-25
+332,nitrosative stress,0.000115517
+333,respiration inhibitors - antitubercular drugs,0.001144319
+333,iron scavengers - antitubercular drugs,0.000951621
+333,others - carbon source,0
+333,DNA damage,0.00260712
+333,limited nutrients,0
+334,iron scavengers - antitubercular drugs,1.51E-05
+334,DNA damage,3.24E-11
+334,nitrosative stress,1.45E-07
+334,oxidative stress,0.002237456
+335,carboxylic acids - carbon source,0
+335,fatty acids - carbon source,0.005477402
+335,lipids - carbon source,0.007539429
+335,limited - carbon source,0.00095407
+335,limited nutrients,3.59E-12
+336,cell wall inhibitors - antitubercular drugs,2.12E-10
+336,iron scavengers - antitubercular drugs,0.00043439
+336,fatty acids - carbon source,9.19E-18
+336,limited - carbon source,0.003297732
+336,hypoxia,1.53E-08
+336,limited nutrients,2.20E-09
+337,DNA damage,0.000123248
+338,carboxylic acids - carbon source,0
+338,fatty acids - carbon source,2.43E-25
+338,hypoxia,0.007602985
+339,iron scavengers - antitubercular drugs,6.74E-07
+339,DNA damage,5.89E-07
+339,nitrosative stress,2.01E-05
+339,oxidative stress,1.06E-05
+340,fatty acids - carbon source,7.68E-45
+340,cell wall stress,6.58E-05
+341,iron scavengers - antitubercular drugs,1.56E-05
+341,others - antitubercular drugs,0.000797604
+341,carboxylic acids - carbon source,0
+341,fatty acids - carbon source,4.37E-21
+341,DNA damage,1.58E-10
+341,limited nutrients,4.18E-05
+341,oxidative stress,7.97E-05
+342,aromatic amides - antitubercular drugs,0.000120415
+342,cell wall stress,0.00563419
+342,hypoxia,3.55E-13
+343,limited - carbon source,0.00939108
+343,DNA damage,3.86E-08
+343,oxidative stress,2.78E-05
+343,low pH,2.01E-07
+344,respiration inhibitors - antitubercular drugs,9.81E-10
+344,others - antitubercular drugs,1.11E-07
+344,carboxylic acids - carbon source,0
+344,hypoxia,2.62E-12
+344,low oxygen,0.000463965
+344,nitrosative stress,2.87E-05
+345,aromatic amides - antitubercular drugs,0
+345,cell wall inhibitors - antitubercular drugs,0.007753764
+345,iron scavengers - antitubercular drugs,3.10E-08
+345,others - antitubercular drugs,0.009516796
+345,hypoxia,0.000780229
+345,limited nutrients,0.003741583
+345,osmotic stress,0
+346,cell wall inhibitors - antitubercular drugs,2.16E-05
+346,iron scavengers - antitubercular drugs,5.01E-05
+346,others - antitubercular drugs,0.001106529
+346,others - carbon source,0
+346,limited - carbon source,7.14E-07
+346,hypoxia,1.18E-06
+346,limited nutrients,0
+348,aromatic amides - antitubercular drugs,0
+348,cell wall inhibitors - antitubercular drugs,0.008288282
+348,iron scavengers - antitubercular drugs,0.000129188
+348,carboxylic acids - carbon source,0
+348,fatty acids - carbon source,4.31E-05
+348,hypoxia,8.50E-07
+348,low oxygen,9.66E-06
+349,DNA damage - antitubercular drugs,1.14E-05
+349,fatty acids - carbon source,0.001501347
+349,low pH,0.000117641
+350,macrophage infection,6.14E-07
+351,respiration inhibitors - antitubercular drugs,0.000314334
+351,others - antitubercular drugs,0.001470525
+351,limited nutrients,5.80E-05
+351,oxidative stress,3.55E-06
+352,iron scavengers - antitubercular drugs,1.04E-05
+352,others - antitubercular drugs,0.009101153
+352,DNA damage,7.83E-05
+352,hypoxia,1.91E-23
+353,cell wall inhibitors - antitubercular drugs,1.05E-08
+353,iron scavengers - antitubercular drugs,9.31E-07
+353,fatty acids - carbon source,8.50E-09
+353,cell wall stress,0.000756994
+353,hypoxia,6.71E-21
+354,iron scavengers - antitubercular drugs,0.002034183
+354,DNA damage,0.000740045
+354,limited nutrients,0.001441181
+354,oxidative stress,3.92E-07
+355,iron scavengers - antitubercular drugs,0.009752871
+355,DNA damage,0.004772639
+355,limited nutrients,4.40E-10
+356,others - antitubercular drugs,9.67E-05
+356,hypoxia,2.87E-11
+357,DNA damage - antitubercular drugs,7.49E-07
+357,respiration inhibitors - antitubercular drugs,0.000331126
+357,carboxylic acids - carbon source,0
+357,DNA damage,6.08E-09
+357,hypoxia,1.56E-07
+357,low pH,1.15E-12
+358,aromatic amides - antitubercular drugs,0.00543906
+358,cell wall inhibitors - antitubercular drugs,0.004725083
+358,limited - carbon source,0.000140299
+358,limited nutrients,3.01E-08
+359,respiration inhibitors - antitubercular drugs,4.37E-05
+359,lipids - carbon source,0.007513383
+359,cell wall stress,0.002166695
+360,carboxylic acids - carbon source,0
+360,DNA damage,7.16E-05
+360,hypoxia,3.48E-11
+360,low oxygen,5.74E-05
+360,nitrosative stress,0.004466717
+361,respiration inhibitors - antitubercular drugs,0.001660298
+361,others - carbon source,0
+361,fatty acids - carbon source,1.29E-07
+361,limited - carbon source,9.91E-06
+361,hypoxia,1.76E-05
+361,limited nutrients,7.29E-09
+362,respiration inhibitors - antitubercular drugs,0.000938729
+362,iron scavengers - antitubercular drugs,2.41E-05
+362,others - carbon source,0
+362,fatty acids - carbon source,1.01E-17
+362,limited - carbon source,2.41E-09
+363,respiration inhibitors - antitubercular drugs,0.000687693
+363,fatty acids - carbon source,1.21E-05
+363,cell wall stress,0.000429934
+363,hypoxia,4.83E-16
+363,limited nutrients,2.45E-07
+363,nitrosative stress,3.62E-09
+364,cell wall inhibitors - antitubercular drugs,0.004158605
+364,others - antitubercular drugs,5.16E-06
+364,nitrosative stress,0.002741066
+365,reaeration,0.000476891
+365,limited - carbon source,0.000634533
+365,DNA damage,7.99E-10
+365,limited nutrients,0.002709664
+365,oxidative stress,2.19E-08
+366,iron scavengers - antitubercular drugs,9.75E-06
+366,others - antitubercular drugs,1.37E-06
+366,others - carbon source,0
+366,fatty acids - carbon source,5.68E-06
+366,limited - carbon source,0.000221346
+366,DNA damage,4.60E-06
+366,iron stress,0.002607494
+366,nitrosative stress,7.85E-13
+366,oxidative stress,0.000128492
+367,cell wall inhibitors - antitubercular drugs,0.002607827
+367,iron scavengers - antitubercular drugs,1.46E-07
+367,others - antitubercular drugs,0.008651164
+367,lipids - carbon source,0
+367,limited nutrients,0.002942935
+367,low pH,0.005188432
+368,DNA damage - antitubercular drugs,0.006895213
+368,respiration inhibitors - antitubercular drugs,6.56E-09
+368,iron scavengers - antitubercular drugs,0.00031725
+368,others - antitubercular drugs,1.67E-07
+368,low pH,0.004543762
+369,protein synthesis inhibitors  - antitubercular drugs,0.000404244
+369,iron scavengers - antitubercular drugs,0.000345923
+369,limited - carbon source,1.01E-06
+370,fatty acids - carbon source,3.36E-05
+370,lipids - carbon source,0.008616781
+370,limited - carbon source,0.001311205
+370,limited nutrients,1.38E-05
+370,oxidative stress,0.00023718
+371,iron scavengers - antitubercular drugs,0.000180721
+371,macrophage infection,0.000662448
+372,cell wall inhibitors - antitubercular drugs,1.80E-06
+372,protein synthesis inhibitors  - antitubercular drugs,7.15E-08
+372,others - antitubercular drugs,1.69E-09
+372,carboxylic acids - carbon source,0
+373,iron scavengers - antitubercular drugs,5.31E-06
+373,limited - carbon source,3.04E-09
+373,nitrosative stress,0.006694461
+374,respiration inhibitors - antitubercular drugs,1.76E-06
+374,others - antitubercular drugs,0.00641804
+374,carboxylic acids - carbon source,0
+374,limited - carbon source,9.11E-05
+374,hypoxia,1.10E-06
+374,limited nutrients,0.000235288
+374,nitrosative stress,4.19E-14
+375,low oxygen,4.11E-07
+375,nitrosative stress,6.12E-07
+376,cell wall inhibitors - antitubercular drugs,2.06E-09
+376,respiration inhibitors - antitubercular drugs,2.27E-05
+376,iron scavengers - antitubercular drugs,5.56E-06
+376,others - antitubercular drugs,1.90E-10
+376,hypoxia,3.66E-08
+377,DNA damage,7.29E-11
+377,limited nutrients,1.92E-09
+377,low oxygen,0.002692026
+377,nitrosative stress,5.27E-07
+377,oxidative stress,6.14E-06
+378,respiration inhibitors - antitubercular drugs,6.21E-08
+378,others - antitubercular drugs,2.49E-08
+378,DNA damage,0.000524447
+378,limited nutrients,0.000529785
+378,nitrosative stress,1.66E-14
+378,oxidative stress,0.000914159
+379,carboxylic acids - carbon source,0
+379,low pH,0.00657492
+380,aromatic amides - antitubercular drugs,8.05E-05
+380,respiration inhibitors - antitubercular drugs,4.33E-05
+380,carboxylic acids - carbon source,0
+380,nitrosative stress,0.004047033
+380,oxidative stress,0.000554587
+381,protein synthesis inhibitors  - antitubercular drugs,1.89E-09
+381,oxidative stress,0.000558968
+382,protein synthesis inhibitors  - antitubercular drugs,3.81E-07
+382,fatty acids - carbon source,6.52E-23
+382,limited - carbon source,1.69E-12
+383,cell wall inhibitors - antitubercular drugs,0.001119893
+383,respiration inhibitors - antitubercular drugs,0.000503067
+383,iron scavengers - antitubercular drugs,0.005283032
+383,DNA damage,5.02E-07
+383,nitrosative stress,1.88E-06
+384,carboxylic acids - carbon source,0
+384,lipids - carbon source,0
+384,limited - carbon source,8.30E-10
+384,DNA damage,2.57E-10
+384,limited nutrients,1.02E-07
+384,oxidative stress,0.000133829
+385,cell wall stress,7.39E-05
+385,hypoxia,2.38E-07
+386,cell wall inhibitors - antitubercular drugs,0.007893865
+386,others - antitubercular drugs,0.00206626
+386,hypoxia,0.000824222
+386,macrophage infection,6.77E-11
+387,aromatic amides - antitubercular drugs,9.27E-09
+387,cell wall inhibitors - antitubercular drugs,1.43E-12
+387,iron scavengers - antitubercular drugs,2.36E-06
+387,others - antitubercular drugs,1.18E-08
+387,DNA damage,0.000833778
+387,hypoxia,9.16E-30
+388,fatty acids - carbon source,5.56E-06
+388,lipids - carbon source,0.006057609
+388,DNA damage,0.000266233
+388,low oxygen,6.55E-06
+389,DNA damage - antitubercular drugs,0.006136141
+389,cell wall inhibitors - antitubercular drugs,1.28E-05
+389,respiration inhibitors - antitubercular drugs,8.41E-06
+389,transcription inhibitors  - antitubercular drugs,0.000173601
+389,iron scavengers - antitubercular drugs,4.56E-09
+389,DNA damage,1.09E-07
+389,hypoxia,0.005879343
+390,iron scavengers - antitubercular drugs,0.000107835
+390,others - antitubercular drugs,4.12E-09
+390,fatty acids - carbon source,0.004633372
+390,cell wall stress,9.06E-05
+390,oxidative stress,0.000174192
+391,cell wall inhibitors - antitubercular drugs,0.000596181
+391,fatty acids - carbon source,3.19E-06
+391,DNA damage,0.000161373
+391,nitrosative stress,0.000704514
+392,protein synthesis inhibitors  - antitubercular drugs,1.18E-11
+393,others - antitubercular drugs,0.000153991
+393,hypoxia,2.42E-13
+393,macrophage infection,0.001331777
+393,nitrosative stress,3.80E-05
+393,oxidative stress,0.001155487
+394,respiration inhibitors - antitubercular drugs,0.001744926
+394,carboxylic acids - carbon source,0
+394,DNA damage,9.84E-11
+394,hypoxia,9.89E-11
+394,nitrosative stress,3.68E-11
+395,cell wall inhibitors - antitubercular drugs,4.21E-05
+395,others - antitubercular drugs,0.000990841
+395,fatty acids - carbon source,9.47E-05
+395,limited - carbon source,0.00036697
+395,DNA damage,1.48E-07
+395,hypoxia,4.64E-06
+395,limited nutrients,0.000102126
+395,nitrosative stress,3.97E-09
+396,cell wall inhibitors - antitubercular drugs,4.73E-05
+396,iron scavengers - antitubercular drugs,0.001746132
+396,others - antitubercular drugs,0.000630489
+396,fatty acids - carbon source,2.77E-11
+396,DNA damage,5.86E-05
+396,low oxygen,0.000786628
+397,cell wall inhibitors - antitubercular drugs,4.35E-06
+397,iron scavengers - antitubercular drugs,1.22E-05
+397,others - antitubercular drugs,4.79E-05
+397,fatty acids - carbon source,1.28E-07
+397,limited - carbon source,8.71E-07
+397,hypoxia,1.12E-06
+397,limited nutrients,2.41E-10
+397,nitrosative stress,0.002202087
+398,iron scavengers - antitubercular drugs,0.001795323
+398,hypoxia,1.40E-09
+398,limited nutrients,0
+399,cell wall inhibitors - antitubercular drugs,1.52E-05
+399,respiration inhibitors - antitubercular drugs,0.000584331
+399,iron scavengers - antitubercular drugs,1.26E-08
+399,fatty acids - carbon source,2.05E-12
+399,DNA damage,1.86E-05
+399,oxidative stress,0.000336464
+400,respiration inhibitors - antitubercular drugs,0.000226816
+400,carboxylic acids - carbon source,0
+400,fatty acids - carbon source,2.76E-05
+400,DNA damage,0.005814189
+400,limited nutrients,2.25E-06
+401,DNA damage - antitubercular drugs,0.007433774
+401,cell wall inhibitors - antitubercular drugs,0.008783479
+401,respiration inhibitors - antitubercular drugs,0.001255359
+401,fatty acids - carbon source,1.89E-05
+401,limited - carbon source,0.000963882
+402,iron scavengers - antitubercular drugs,0.001652164
+402,hypoxia,0.00055931
+403,reaeration,0.001200231
+403,respiration inhibitors - antitubercular drugs,0.00154745
+403,iron scavengers - antitubercular drugs,0.001634317
+403,limited - carbon source,9.91E-07
+403,hypoxia,9.39E-05
+403,limited nutrients,8.73E-12
+404,reaeration,4.18E-05
+404,aromatic amides - antitubercular drugs,0.001359655
+404,protein synthesis inhibitors  - antitubercular drugs,0.000959249
+404,fatty acids - carbon source,3.83E-06
+404,lipids - carbon source,0
+405,reaeration,0.000114984
+405,others - antitubercular drugs,1.67E-05
+405,MTB strain comparisons,0.001864784
+405,hypoxia,3.76E-08
+406,cell wall inhibitors - antitubercular drugs,7.42E-10
+406,respiration inhibitors - antitubercular drugs,5.48E-08
+406,others - antitubercular drugs,0.000369669
+407,aromatic amides - antitubercular drugs,6.40E-11
+407,limited nutrients,1.05E-07
+407,nitrosative stress,0.002609565
+408,reaeration,0
+408,iron scavengers - antitubercular drugs,0.002631864
+408,carboxylic acids - carbon source,0
+408,DNA damage,0.000582751
+408,hypoxia,1.31E-17
+408,limited nutrients,4.25E-07
+408,nitrosative stress,0.003302168
+409,others - antitubercular drugs,0.000384236
+409,cell wall stress,0.00943961
+410,DNA damage - antitubercular drugs,0.004745964
+410,cell wall inhibitors - antitubercular drugs,9.22E-05
+410,hypoxia,0.005939898
+410,limited nutrients,8.25E-06
+410,nitrosative stress,0.009925982
+411,iron scavengers - antitubercular drugs,0.000563699
+411,carboxylic acids - carbon source,0
+411,limited nutrients,0.00379645
+412,lipids - carbon source,7.96E-05
+412,limited - carbon source,0.000526325
+412,DNA damage,1.48E-09
+412,hypoxia,2.82E-10
+412,oxidative stress,2.89E-09
+413,protein synthesis inhibitors  - antitubercular drugs,1.30E-08
+413,respiration inhibitors - antitubercular drugs,6.91E-05
+413,iron scavengers - antitubercular drugs,2.99E-05
+413,others - antitubercular drugs,1.15E-06
+414,iron scavengers - antitubercular drugs,7.47E-06
+414,others - antitubercular drugs,0.004681455
+414,hypoxia,1.05E-05
+415,iron scavengers - antitubercular drugs,8.02E-06
+415,limited - carbon source,0.000192602
+415,cell wall stress,0.002753228
+415,DNA damage,1.04E-06
+415,macrophage infection,0.000519225
+416,others - carbon source,0.006080118
+416,carboxylic acids - carbon source,0
+416,hypoxia,1.20E-20
+416,oxidative stress,2.19E-09
+416,low pH,9.63E-08
+417,carboxylic acids - carbon source,0
+417,hypoxia,1.26E-05
+417,limited nutrients,0.000164993
+417,macrophage infection,0.009032703
+418,aromatic amides - antitubercular drugs,0.002789758
+418,lipids - carbon source,0.000263249
+418,DNA damage,0.00208571
+418,hypoxia,0.009938962
+418,limited nutrients,9.61E-05
+419,reaeration,0.000809379
+419,aromatic amides - antitubercular drugs,7.91E-05
+419,iron scavengers - antitubercular drugs,0.009358716
+419,hypoxia,0.000500371
+419,oxidative stress,1.45E-11
+420,respiration inhibitors - antitubercular drugs,3.96E-06
+420,iron scavengers - antitubercular drugs,0.001065974
+420,fatty acids - carbon source,3.72E-05
+420,hypoxia,0.008639163
+420,limited nutrients,1.06E-05
+421,iron scavengers - antitubercular drugs,0.003272569
+421,DNA damage,0.003558704
+421,hypoxia,4.19E-06
+421,limited nutrients,0.005065355
+422,iron scavengers - antitubercular drugs,0.001139701
+422,fatty acids - carbon source,5.63E-07
+422,limited nutrients,0.0046805
+422,low oxygen,9.19E-05
+422,macrophage infection,0.006214197
+422,low pH,5.38E-08
+423,others - antitubercular drugs,0.005306173
+423,fatty acids - carbon source,9.07E-11
+423,limited - carbon source,1.33E-07
+423,DNA damage,2.56E-07
+424,reaeration,0
+424,respiration inhibitors - antitubercular drugs,0.00095902
+425,lipids - carbon source,0
+425,DNA damage,3.71E-08
+425,hypoxia,2.64E-07
+425,limited nutrients,0.00165929
+425,low oxygen,0.006599367
+425,oxidative stress,0.000241128
+425,low pH,9.32E-10
+426,protein synthesis inhibitors  - antitubercular drugs,3.43E-06
+426,others - antitubercular drugs,0.000727988
+426,hypoxia,6.64E-06
+427,iron scavengers - antitubercular drugs,0.005955622
+427,low pH,0.001955692
+428,iron scavengers - antitubercular drugs,0.000231029
+428,fatty acids - carbon source,4.04E-15
+428,limited - carbon source,4.27E-11
+428,DNA damage,0.003845195
+428,hypoxia,1.76E-22
+428,limited nutrients,9.74E-09
+429,respiration inhibitors - antitubercular drugs,1.79E-06
+429,others - antitubercular drugs,0.003492384
+429,cell wall stress,0.007068426
+429,hypoxia,2.52E-07
+429,oxidative stress,0.001183283
+430,carboxylic acids - carbon source,0
+430,fatty acids - carbon source,0.000105787
+430,limited - carbon source,1.73E-07
+431,iron scavengers - antitubercular drugs,3.24E-07
+431,others - antitubercular drugs,2.41E-06
+431,carboxylic acids - carbon source,0
+431,limited - carbon source,1.30E-05
+431,DNA damage,0.003325365
+431,hypoxia,1.34E-20
+431,limited nutrients,1.61E-07
+431,low oxygen,0.002972705
+431,nitrosative stress,3.31E-06
+432,respiration inhibitors - antitubercular drugs,2.86E-08
+432,iron scavengers - antitubercular drugs,0.000191514
+432,others - antitubercular drugs,9.52E-05
+432,cell wall stress,0.005709166
+432,DNA damage,5.28E-11
+432,hypoxia,2.68E-05
+432,nitrosative stress,6.34E-08
+433,fatty acids - carbon source,3.43E-15
+433,limited nutrients,0.000105704
+434,transcription inhibitors  - antitubercular drugs,0.002844201
+434,carboxylic acids - carbon source,0
+434,DNA damage,5.34E-06
+434,hypoxia,5.22E-09
+434,nitrosative stress,0.000177102
+434,oxidative stress,1.04E-07
+435,cell wall inhibitors - antitubercular drugs,2.28E-05
+435,iron scavengers - antitubercular drugs,8.96E-05
+435,others - antitubercular drugs,0.002662931
+435,others - carbon source,0
+435,limited - carbon source,0.000608396
+435,hypoxia,5.16E-14
+435,oxidative stress,5.83E-05
+436,iron scavengers - antitubercular drugs,8.24E-05
+436,limited - carbon source,2.16E-05
+436,DNA damage,6.38E-05
+436,hypoxia,4.28E-07
+437,iron scavengers - antitubercular drugs,2.76E-05
+437,DNA damage,2.10E-20
+437,nitrosative stress,6.76E-19
+437,oxidative stress,2.44E-09
+438,carbon monoxide stress,0
+438,fatty acids - carbon source,2.88E-08
+438,DNA damage,1.85E-06
+438,low oxygen,0.000294163
+438,nitrosative stress,3.88E-21
+438,oxidative stress,0.002734925
+439,protein synthesis inhibitors  - antitubercular drugs,0.000719903
+439,respiration inhibitors - antitubercular drugs,2.42E-05
+439,iron scavengers - antitubercular drugs,0.000564409
+440,cell wall inhibitors - antitubercular drugs,1.03E-05
+440,iron scavengers - antitubercular drugs,1.33E-05
+440,others - antitubercular drugs,4.63E-05
+440,carboxylic acids - carbon source,0
+440,DNA damage,1.48E-16
+440,nitrosative stress,3.59E-08
+440,oxidative stress,2.98E-08
+441,fatty acids - carbon source,1.16E-05
+441,limited - carbon source,2.47E-06
+441,cell wall stress,0.004375534
+441,DNA damage,0.000525564
+441,limited nutrients,4.30E-07
+442,respiration inhibitors - antitubercular drugs,5.75E-06
+442,iron scavengers - antitubercular drugs,0.001179286
+442,hypoxia,8.07E-05
+442,limited nutrients,0.000906095
+442,low oxygen,0.003018651
+442,oxidative stress,0.005255862
+443,lipids - carbon source,0.007679317
+443,limited - carbon source,4.46E-05
+443,cell wall stress,0.000533763
+443,DNA damage,0.007778054
+444,limited - carbon source,0.002721292
+444,DNA damage,2.97E-09
+444,limited nutrients,4.16E-05
+444,nitrosative stress,4.63E-07
+444,oxidative stress,0.000180562
+445,hypoxia,2.39E-08
+445,macrophage infection,0.000180096
+445,nitrosative stress,1.19E-07
+446,aromatic amides - antitubercular drugs,0.006669224
+446,protein synthesis inhibitors  - antitubercular drugs,0.000760088
+446,fatty acids - carbon source,1.88E-23
+447,aromatic amides - antitubercular drugs,0.007584492
+447,iron scavengers - antitubercular drugs,0.001987729
+447,limited - carbon source,0
+447,DNA damage,0.000497906
+447,hypoxia,1.35E-05
+448,protein synthesis inhibitors  - antitubercular drugs,6.88E-10
+448,respiration inhibitors - antitubercular drugs,2.67E-07
+448,iron scavengers - antitubercular drugs,4.31E-05
+448,others - antitubercular drugs,0.001653102
+449,fatty acids - carbon source,0.00655714
+449,low oxygen,0.00012054
+449,oxidative stress,3.39E-10
+449,low pH,0.000815297
+450,respiration inhibitors - antitubercular drugs,5.19E-07
+450,others - antitubercular drugs,0.00407281
+450,fatty acids - carbon source,3.56E-07
+450,limited - carbon source,1.01E-07
+451,aromatic amides - antitubercular drugs,3.71E-06
+451,cell wall inhibitors - antitubercular drugs,0.003793429
+451,lipids - carbon source,0
+451,DNA damage,0.00276415
+451,low pH,1.16E-06
+452,protein synthesis inhibitors  - antitubercular drugs,4.81E-10
+452,carboxylic acids - carbon source,0
+452,cell wall stress,0.000270673
+452,DNA damage,0.001399853
+452,limited nutrients,1.58E-05
+453,aromatic amides - antitubercular drugs,0.00243736
+453,DNA damage - antitubercular drugs,3.37E-05
+453,cell wall inhibitors - antitubercular drugs,5.80E-12
+453,others - antitubercular drugs,0.000107729
+453,DNA damage,4.78E-05
+453,hypoxia,5.91E-06
+454,iron scavengers - antitubercular drugs,0.008261674
+454,others - antitubercular drugs,0.000132451
+454,limited - carbon source,1.82E-09
+454,hypoxia,4.03E-10
+454,limited nutrients,3.33E-06
+455,cell wall inhibitors - antitubercular drugs,2.62E-06
+455,iron scavengers - antitubercular drugs,0.007907095
+455,fatty acids - carbon source,8.88E-07
+455,hypoxia,0.003691945
+455,low pH,0.000171974
+456,protein synthesis inhibitors  - antitubercular drugs,1.30E-06
+456,DNA damage,1.38E-05
+456,hypoxia,0.001228549
+456,limited nutrients,0.003059275
+456,low oxygen,0.001153635
+457,aromatic amides - antitubercular drugs,0.000927224
+457,iron scavengers - antitubercular drugs,1.35E-06
+457,others - carbon source,0.005237788
+457,fatty acids - carbon source,0.000485349
+457,hypoxia,6.56E-32
+458,iron scavengers - antitubercular drugs,0.000173725
+458,fatty acids - carbon source,0.002861635
+458,limited - carbon source,4.36E-07
+458,DNA damage,0.002077612
+458,hypoxia,0.00139823
+459,aromatic amides - antitubercular drugs,0.005276004
+459,fatty acids - carbon source,0.003123684
+459,lipids - carbon source,0.003538694
+459,hypoxia,0.001181285
+459,limited nutrients,5.87E-09
+460,respiration inhibitors - antitubercular drugs,7.33E-07
+460,others - antitubercular drugs,9.44E-08
+460,MTB strain comparisons,0.007350375
+460,hypoxia,2.93E-07
+460,nitrosative stress,0.000529859
+461,reaeration,0
+461,protein synthesis inhibitors  - antitubercular drugs,6.02E-07
+461,iron scavengers - antitubercular drugs,5.64E-06
+461,others - antitubercular drugs,7.55E-12
+461,hypoxia,2.95E-18
+462,fatty acids - carbon source,3.54E-21
+462,cell wall stress,0.001362527
+462,limited nutrients,1.59E-08
+462,macrophage infection,0.003982103
+463,cell wall stress,0.001569986
+463,DNA damage,0.006800802
+463,hypoxia,3.11E-14
+464,reaeration,2.03E-05
+464,aromatic amides - antitubercular drugs,0.007283512
+464,iron scavengers - antitubercular drugs,3.48E-12
+464,low oxygen,0.000404406
+464,oxidative stress,0.002849175
+465,iron scavengers - antitubercular drugs,3.55E-05
+465,others - antitubercular drugs,0.000432832
+465,limited - carbon source,0.001356073
+465,limited nutrients,4.72E-12
+466,fatty acids - carbon source,1.09E-23
+466,lipids - carbon source,0.005149686
+466,low pH,0.004532537
+467,DNA damage - antitubercular drugs,8.58E-09
+467,cell wall inhibitors - antitubercular drugs,0.000861882
+467,DNA damage,8.31E-09
+467,hypoxia,3.81E-05
+467,nitrosative stress,0.000209707
+467,low pH,1.19E-08
+468,hypoxia,1.82E-19
+468,nitrosative stress,0.001516018
+469,aromatic amides - antitubercular drugs,0.001476897
+469,cell wall inhibitors - antitubercular drugs,0.001501119
+469,respiration inhibitors - antitubercular drugs,0.001043469
+469,iron scavengers - antitubercular drugs,1.11E-07
+469,others - antitubercular drugs,0.004843382
+469,fatty acids - carbon source,2.43E-14
+469,DNA damage,0.000462175
+470,fatty acids - carbon source,6.91E-05
+470,limited - carbon source,1.90E-09
+470,DNA damage,0.000105824
+470,limited nutrients,3.21E-08
+471,fatty acids - carbon source,1.43E-05
+471,lipids - carbon source,0
+471,low oxygen,6.43E-05
+472,iron scavengers - antitubercular drugs,2.61E-05
+472,carboxylic acids - carbon source,0
+472,limited - carbon source,0.001132665
+472,hypoxia,4.75E-17
+472,low oxygen,2.69E-05
+473,carboxylic acids - carbon source,0
+473,hypoxia,7.30E-13
+473,low oxygen,0.000107392
+473,nitrosative stress,2.94E-10
+473,oxidative stress,1.85E-07
+474,DNA damage - antitubercular drugs,0.000145719
+474,cell wall inhibitors - antitubercular drugs,1.95E-05
+474,fatty acids - carbon source,9.58E-06
+474,DNA damage,1.52E-07
+474,limited nutrients,8.87E-07
+475,cell wall inhibitors - antitubercular drugs,6.10E-06
+475,iron scavengers - antitubercular drugs,5.48E-08
+475,limited - carbon source,9.87E-09
+475,DNA damage,0.003861307
+476,carboxylic acids - carbon source,0
+476,lipids - carbon source,0
+476,DNA damage,3.98E-07
+476,hypoxia,2.73E-08
+477,respiration inhibitors - antitubercular drugs,8.02E-05
+477,iron scavengers - antitubercular drugs,0.000172667
+477,others - antitubercular drugs,5.97E-06
+477,hypoxia,7.06E-05
+478,carboxylic acids - carbon source,0
+478,limited - carbon source,7.22E-05
+478,DNA damage,0.000916872
+478,hypoxia,3.16E-16
+478,low pH,7.13E-06
+479,protein synthesis inhibitors  - antitubercular drugs,0.007917836
+479,respiration inhibitors - antitubercular drugs,1.55E-05
+479,others - antitubercular drugs,1.65E-13
+479,lipids - carbon source,0.003968696
+479,limited nutrients,0.000279313
+480,protein synthesis inhibitors  - antitubercular drugs,3.83E-05
+480,iron scavengers - antitubercular drugs,9.36E-05
+480,DNA damage,7.36E-07
+480,nitrosative stress,7.80E-07
+482,protein synthesis inhibitors  - antitubercular drugs,1.94E-10
+482,iron scavengers - antitubercular drugs,0.00012075
+482,hypoxia,3.07E-09
+483,cell wall inhibitors - antitubercular drugs,0.000274603
+483,limited - carbon source,7.09E-07
+483,hypoxia,1.05E-08
+483,limited nutrients,1.81E-07
+484,aromatic amides - antitubercular drugs,4.57E-08
+484,limited nutrients,8.57E-14
+485,respiration inhibitors - antitubercular drugs,2.83E-05
+485,DNA damage,7.23E-06
+485,limited nutrients,0.000135605
+485,nitrosative stress,7.89E-11
+486,iron scavengers - antitubercular drugs,5.93E-08
+486,fatty acids - carbon source,5.06E-05
+486,DNA damage,9.51E-05
+486,hypoxia,0.003441363
+486,low oxygen,0.009634204
+487,iron scavengers - antitubercular drugs,0.006081783
+487,carboxylic acids - carbon source,0
+487,lipids - carbon source,0
+487,DNA damage,1.69E-06
+487,limited nutrients,0
+487,nitrosative stress,4.03E-05
+487,low pH,0.009947677
+488,protein synthesis inhibitors  - antitubercular drugs,1.56E-09
+488,cell wall stress,0.005713147
+488,hypoxia,0.005834007
+488,low oxygen,0.008374167
+489,others - antitubercular drugs,3.33E-06
+489,osmotic stress,0.008079632
+490,hypoxia,1.28E-06
+490,limited nutrients,7.60E-05
+491,respiration inhibitors - antitubercular drugs,3.94E-05
+491,iron scavengers - antitubercular drugs,0.001923865
+491,carbon monoxide stress,0
+491,carboxylic acids - carbon source,0
+491,lipids - carbon source,0
+491,limited - carbon source,0.001386505
+491,DNA damage,0.003278484
+491,hypoxia,1.07E-14
+491,limited nutrients,6.51E-07
+491,low pH,5.02E-07
+492,respiration inhibitors - antitubercular drugs,0.001328768
+492,carboxylic acids - carbon source,0
+492,lipids - carbon source,0
+492,hypoxia,6.28E-07
+492,limited nutrients,0.000300091
+493,protein synthesis inhibitors  - antitubercular drugs,9.49E-07
+494,respiration inhibitors - antitubercular drugs,9.95E-09
+494,iron scavengers - antitubercular drugs,0.003203932
+494,limited nutrients,0.000154031
+494,nitrosative stress,9.75E-06
+495,cell wall inhibitors - antitubercular drugs,0.006608084
+495,iron scavengers - antitubercular drugs,0.008402685
+495,limited - carbon source,0.001286032
+495,DNA damage,0.000351598
+495,low oxygen,7.92E-06
+496,cell wall inhibitors - antitubercular drugs,0.008325919
+496,respiration inhibitors - antitubercular drugs,4.78E-05
+496,iron scavengers - antitubercular drugs,0.007229045
+496,DNA damage,4.83E-09
+496,hypoxia,0.008833715
+496,nitrosative stress,6.20E-13
+497,others - antitubercular drugs,0.001042498
+497,carbon monoxide stress,0.006481717
+497,fatty acids - carbon source,0.000123801
+497,DNA damage,0.004284506
+497,hypoxia,6.71E-34
+497,limited nutrients,7.30E-07
+497,low oxygen,5.73E-07
+497,nitrosative stress,4.30E-15
+497,oxidative stress,0.006192818
+498,iron scavengers - antitubercular drugs,0.000632268
+498,fatty acids - carbon source,4.36E-06
+498,lipids - carbon source,0
+498,DNA damage,9.06E-05
+498,macrophage infection,0.006344394
+498,oxidative stress,0.00437846
+499,respiration inhibitors - antitubercular drugs,0.000103554
+499,DNA damage,2.22E-06
+499,oxidative stress,0.000759688
+500,respiration inhibitors - antitubercular drugs,0.008788855
+500,iron scavengers - antitubercular drugs,3.22E-05
+500,limited - carbon source,0.003415246
+500,DNA damage,1.38E-10
+500,hypoxia,1.83E-08
+500,limited nutrients,8.70E-06
+500,nitrosative stress,1.75E-07
+501,others - antitubercular drugs,8.17E-05
+501,DNA damage,0.000239446
+501,low oxygen,3.65E-05
+502,carboxylic acids - carbon source,0
+502,cell wall stress,0.00122316
+502,hypoxia,1.08E-26
+503,respiration inhibitors - antitubercular drugs,3.04E-06
+503,iron scavengers - antitubercular drugs,0.001738807
+503,others - antitubercular drugs,5.06E-06
+503,DNA damage,0.000455321
+503,oxidative stress,8.23E-06
+504,respiration inhibitors - antitubercular drugs,0.006825173
+504,cell wall stress,0.001944679
+504,hypoxia,1.70E-06
+504,limited nutrients,6.51E-05
+505,lipids - carbon source,0.008326014
+505,cell wall stress,1.72E-05
+505,DNA damage,2.36E-05
+505,limited nutrients,0.004551228
+505,macrophage infection,0.000114342
+505,low pH,0.004104033
+506,cell wall inhibitors - antitubercular drugs,0.000243737
+506,fatty acids - carbon source,1.44E-20
+506,limited nutrients,8.97E-15
+506,nitrosative stress,0.006377611
+507,transcription inhibitors  - antitubercular drugs,0.003216028
+507,others - carbon source,0.006022041
+507,limited - carbon source,2.63E-05
+507,DNA damage,4.35E-06
+507,limited nutrients,1.07E-05
+507,oxidative stress,8.09E-09
+509,cell wall inhibitors - antitubercular drugs,0.007914392
+509,respiration inhibitors - antitubercular drugs,2.36E-05
+509,carbon monoxide stress,0.005832165
+509,lipids - carbon source,0
+509,limited - carbon source,0.000456244
+509,hypoxia,1.05E-12
+509,limited nutrients,2.84E-06
+509,low pH,2.90E-07
+510,transcription inhibitors  - antitubercular drugs,0.003964947
+510,iron scavengers - antitubercular drugs,4.31E-05
+510,others - antitubercular drugs,6.55E-06
+510,carboxylic acids - carbon source,0
+510,lipids - carbon source,0
+510,DNA damage,1.65E-05
+510,oxidative stress,0.004980354
+510,low pH,2.78E-08
+511,respiration inhibitors - antitubercular drugs,0.000226236
+511,iron scavengers - antitubercular drugs,0.004749426
+511,carboxylic acids - carbon source,0
+511,lipids - carbon source,0
+511,hypoxia,5.73E-11
+512,cell wall inhibitors - antitubercular drugs,0.007481765
+512,respiration inhibitors - antitubercular drugs,0.000114963
+512,iron scavengers - antitubercular drugs,0.000466351
+512,others - antitubercular drugs,7.11E-05
+512,carboxylic acids - carbon source,0
+512,hypoxia,0.000187771
+513,iron scavengers - antitubercular drugs,0.00728112
+513,carboxylic acids - carbon source,0
+513,limited - carbon source,0
+513,DNA damage,0.009998913
+513,limited nutrients,0.000210314
+514,hypoxia,0.005570933
+514,limited nutrients,0.001229205
+515,fatty acids - carbon source,6.68E-07
+515,limited - carbon source,0.005228439
+515,limited nutrients,1.78E-05
+516,respiration inhibitors - antitubercular drugs,9.28E-05
+516,others - antitubercular drugs,0.003818893
+516,carboxylic acids - carbon source,0
+516,nitrosative stress,0.001340593
+516,oxidative stress,1.67E-07
+517,iron scavengers - antitubercular drugs,0.000187581
+517,others - antitubercular drugs,7.41E-07
+517,DNA damage,0.000988798
+517,low oxygen,0.000370014
+517,nitrosative stress,7.60E-07
+518,protein synthesis inhibitors  - antitubercular drugs,1.42E-07
+518,carboxylic acids - carbon source,0
+518,cell wall stress,0.001108924
+518,hypoxia,3.06E-09
+519,cell wall inhibitors - antitubercular drugs,1.72E-08
+519,respiration inhibitors - antitubercular drugs,1.57E-06
+519,iron scavengers - antitubercular drugs,0.001932795
+519,DNA damage,1.07E-10
+519,nitrosative stress,3.94E-17
+519,oxidative stress,0.004888655
+520,iron scavengers - antitubercular drugs,3.36E-06
+520,cell wall stress,0.000130982
+520,hypoxia,3.10E-12
+520,limited nutrients,0
+520,macrophage infection,0.006170619
+521,respiration inhibitors - antitubercular drugs,0.005375021
+521,iron scavengers - antitubercular drugs,0.002415137
+521,limited - carbon source,7.79E-05
+521,macrophage infection,0.003804405
+522,carboxylic acids - carbon source,0
+522,lipids - carbon source,0
+522,hypoxia,8.40E-06
+522,low pH,6.04E-10
+523,respiration inhibitors - antitubercular drugs,5.80E-05
+523,iron scavengers - antitubercular drugs,0.001456363
+523,others - antitubercular drugs,0.00279573
+523,carboxylic acids - carbon source,0
+523,lipids - carbon source,0
+523,DNA damage,1.61E-05
+523,hypoxia,1.09E-12
+523,limited nutrients,3.46E-06
+523,low pH,4.61E-06
+524,cell wall stress,0.001017241
+524,hypoxia,7.27E-10
+524,limited nutrients,0.000220386
+525,iron scavengers - antitubercular drugs,0.001278933
+525,others - antitubercular drugs,2.50E-05
+525,DNA damage,0.000515825
+525,low oxygen,0.001403443
+525,low pH,0.000121967
+526,cell wall inhibitors - antitubercular drugs,2.66E-05
+526,fatty acids - carbon source,2.86E-10
+526,limited nutrients,1.04E-06
+526,low pH,0.002762161
+527,fatty acids - carbon source,3.14E-15
+527,hypoxia,1.46E-10
+527,nitrosative stress,0.000415279
+528,iron scavengers - antitubercular drugs,0.002119006
+528,others - antitubercular drugs,0.000766045
+528,DNA damage,0.000421109
+528,oxidative stress,0.008746508
+529,protein synthesis inhibitors  - antitubercular drugs,0.000395236
+529,cell wall stress,0.00172847
+529,wildtype growth,0.008151538
+529,hypoxia,0.00010757
+530,others - antitubercular drugs,0.00057933
+530,DNA damage,5.12E-05
+530,limited nutrients,4.20E-06
+530,low oxygen,0.00604933
+530,nitrosative stress,0.000128907
+530,oxidative stress,6.34E-05
+531,hypoxia,3.91E-24
+532,cell wall inhibitors - antitubercular drugs,0.002326407
+532,protein synthesis inhibitors  - antitubercular drugs,0.000909609
+532,lipids - carbon source,0.00267631
+532,limited nutrients,0.000301063
+533,cell wall inhibitors - antitubercular drugs,0.005691344
+533,others - antitubercular drugs,2.76E-06
+534,iron scavengers - antitubercular drugs,0.00039494
+534,others - antitubercular drugs,0.002182136
+534,carboxylic acids - carbon source,0
+534,hypoxia,0.000631112
+535,iron scavengers - antitubercular drugs,0.002879475
+535,others - carbon source,0.00476934
+535,carboxylic acids - carbon source,0
+535,fatty acids - carbon source,1.75E-08
+535,lipids - carbon source,0.00476934
+535,limited - carbon source,4.90E-10
+535,DNA damage,3.15E-05
+535,limited nutrients,1.90E-07
+536,reaeration,0.001447714
+536,respiration inhibitors - antitubercular drugs,2.99E-06
+536,iron scavengers - antitubercular drugs,4.40E-05
+536,carboxylic acids - carbon source,0
+536,DNA damage,0.005775321
+536,hypoxia,2.37E-15
+537,aromatic amides - antitubercular drugs,0.001151727
+537,respiration inhibitors - antitubercular drugs,0.000600557
+537,iron scavengers - antitubercular drugs,7.02E-06
+537,others - antitubercular drugs,1.15E-06
+538,reaeration,0.008216929
+538,respiration inhibitors - antitubercular drugs,9.59E-06
+538,iron scavengers - antitubercular drugs,5.93E-06
+538,others - antitubercular drugs,5.40E-05
+538,DNA damage,0.000114576
+538,oxidative stress,0.004606343
+539,respiration inhibitors - antitubercular drugs,1.87E-08
+539,iron scavengers - antitubercular drugs,0.000324971
+539,carboxylic acids - carbon source,0
+539,fatty acids - carbon source,0.000993912
+539,lipids - carbon source,0
+539,limited - carbon source,0.009070569
+539,limited nutrients,0
+539,nitrosative stress,0.00023443
+540,others - antitubercular drugs,6.63E-08
+540,hypoxia,0.00551222
+540,nitrosative stress,1.39E-07
+541,limited - carbon source,2.74E-08
+541,DNA damage,2.35E-11
+542,others - antitubercular drugs,6.13E-11
+542,fatty acids - carbon source,2.83E-09
+542,DNA damage,3.06E-06
+542,limited nutrients,4.18E-05
+542,oxidative stress,7.97E-05
+543,aromatic amides - antitubercular drugs,0.000192745
+543,DNA damage - antitubercular drugs,1.02E-06
+543,lipids - carbon source,0.008252009
+543,DNA damage,1.04E-10
+543,nitrosative stress,1.55E-08
+543,oxidative stress,0.000152598
+543,low pH,3.88E-08
+544,transcription inhibitors  - antitubercular drugs,0.005916325
+544,others - antitubercular drugs,0.005208754
+544,DNA damage,7.85E-06
+544,limited nutrients,2.30E-05
+544,oxidative stress,0.000352234
+545,DNA damage - antitubercular drugs,3.12E-07
+545,cell wall inhibitors - antitubercular drugs,0.00223122
+545,iron scavengers - antitubercular drugs,1.74E-05
+545,carboxylic acids - carbon source,0
+545,DNA damage,8.29E-17
+545,hypoxia,0.000932144
+545,nitrosative stress,1.78E-17
+545,low pH,5.28E-11
+546,cell wall inhibitors - antitubercular drugs,0.002652936
+546,iron scavengers - antitubercular drugs,0.001703741
+547,fatty acids - carbon source,4.60E-07
+547,limited nutrients,0.000909321
+547,low oxygen,8.74E-06
+547,nitrosative stress,3.61E-05
+548,protein synthesis inhibitors  - antitubercular drugs,7.05E-12
+548,fatty acids - carbon source,0.001408525
+548,cell wall stress,0.001293671
+549,respiration inhibitors - antitubercular drugs,0.000257695
+549,iron scavengers - antitubercular drugs,0.000617983
+549,others - antitubercular drugs,4.32E-08
+549,limited - carbon source,0.00523899
+549,nitrosative stress,1.35E-09
+550,iron scavengers - antitubercular drugs,0.000223486
+550,fatty acids - carbon source,4.71E-07
+550,lipids - carbon source,0.008928576
+550,MTB strain comparisons,0.006457444
+550,limited nutrients,1.59E-05
+551,DNA damage - antitubercular drugs,0.001440373
+551,cell wall inhibitors - antitubercular drugs,0.007646507
+551,respiration inhibitors - antitubercular drugs,1.46E-07
+551,iron scavengers - antitubercular drugs,0.009800206
+551,hypoxia,2.33E-19
+551,nitrosative stress,0.00018426
+552,reaeration,0.000384763
+552,aromatic amides - antitubercular drugs,1.30E-06
+552,others - carbon source,0.009015254
+552,fatty acids - carbon source,0.000385346
+552,lipids - carbon source,0.000565847
+552,DNA damage,0.00065736
+553,aromatic amides - antitubercular drugs,1.66E-08
+553,respiration inhibitors - antitubercular drugs,2.82E-07
+553,iron scavengers - antitubercular drugs,1.47E-07
+553,others - antitubercular drugs,7.91E-09
+553,carbon monoxide stress,0.002089234
+553,DNA damage,6.33E-09
+553,oxidative stress,0.000271481
+553,low pH,2.45E-05
+554,respiration inhibitors - antitubercular drugs,0.001255359
+554,transcription inhibitors  - antitubercular drugs,0.001843941
+554,iron scavengers - antitubercular drugs,0.000129249
+554,hypoxia,0.000116614
+555,iron scavengers - antitubercular drugs,2.21E-07
+555,others - carbon source,0
+555,limited - carbon source,2.47E-08
+555,DNA damage,0.001854009
+555,hypoxia,4.71E-10
+555,limited nutrients,1.70E-12
+556,carboxylic acids - carbon source,0
+556,limited - carbon source,0.000122927
+556,DNA damage,2.08E-08
+556,limited nutrients,6.20E-07
+556,oxidative stress,4.19E-05
+557,DNA damage - antitubercular drugs,7.60E-05
+557,carboxylic acids - carbon source,0
+557,DNA damage,1.97E-24
+557,hypoxia,0.001032142
+558,cell wall inhibitors - antitubercular drugs,0.002131632
+558,iron scavengers - antitubercular drugs,2.86E-06
+558,fatty acids - carbon source,1.38E-07
+558,lipids - carbon source,0.009120124
+558,limited nutrients,4.89E-07
+559,respiration inhibitors - antitubercular drugs,3.56E-05
+559,iron scavengers - antitubercular drugs,7.67E-08
+559,others - antitubercular drugs,0.007445494
+559,DNA damage,0.000747491
+559,hypoxia,4.89E-10
+559,oxidative stress,0.001306177
+560,respiration inhibitors - antitubercular drugs,2.33E-06
+560,others - antitubercular drugs,0.003665697
+560,fatty acids - carbon source,0.001363132
+560,limited nutrients,0.001729918
+560,nitrosative stress,0.000133529

@@ -1,0 +1,30 @@
+EGRIN2.block - old name,EGRIN2.block - new name
+carbon.source.carboxylic.acid,carboxylic acids - carbon source
+carbon.source.fatty.acid,fatty acids - carbon source
+carbon.source.lipid,lipids - carbon source
+antitb.DNA.damage,DNA damage - antitubercular drugs
+lim.nutrients,limited nutrients
+antitb.aromatic.amides,aromatic amides - antitubercular drugs
+antitb.other,others - antitubercular drugs
+osmotic.stress,osmotic stress
+DNA.damage,DNA damage
+hypoxia,hypoxia
+pH.stress,low pH
+aeration,reaeration
+antitb.inhibit.respiration,respiration inhibitors - antitubercular drugs
+growth.strain.comp,MTB strain comparisons
+low.oxygen,low oxygen
+antitb.iron.scavenger,iron scavengers - antitubercular drugs
+antitb.inhibit.cell.wall.synthesis,cell wall inhibitors - antitubercular drugs 
+macrophage,macrophage infection
+oxidative.stress,oxidative stress
+nitrosative.stress,nitrosative stress
+antitb.inhibit.protein.synthesis,protein synthesis inhibitors  - antitubercular drugs
+carbon.source,others - carbon source
+carbon.source.min,limited - carbon source
+carbon.monoxide.stress,carbon monoxide stress
+cell.envelope.stress,cell wall stress
+growth.wt,wildtype growth
+antitb.inhibit.transcription,transcription inhibitors  - antitubercular drugs
+host.interaction,host interactions
+iron,iron stress

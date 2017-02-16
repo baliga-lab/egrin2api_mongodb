@@ -146,7 +146,7 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
     def test_condition_info_1(self):
         """test the condition_info() function with the first condition"""
         info = json.loads(self.app.get('/api/v1.0.0/condition_info/1').data.decode('utf-8'))
-        self.assertEquals(len(info['blocks']['carbon source fatty acid']), 224)
+        self.assertEquals(len(info['blocks']['fatty acids - carbon source']), 224)
 
     def test_corem_info_1(self):
         """test the corem_info() function with the first corem"""

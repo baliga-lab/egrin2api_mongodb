@@ -167,7 +167,7 @@ def condition_info(condition_id):
         for cond in conds:
             cond2block[cond].add(egrin2_block)
             block2cond[egrin2_block].add(cond)
-    cond_blocks = {block.replace('.', ' '): list(block2cond[block]) for block in cond2block[conds[0]]}
+    cond_blocks = {block: list(block2cond[block]) for block in cond2block[conds[0]]}
     return jsonify(condition=cond_docs[0], blocks=cond_blocks)
 
 
@@ -323,7 +323,7 @@ def corem_condition_enrichment(corem_id):
     cond_blocks_path = app.config["COREM_COND_BLOCKS_FILE"]
     df = pd.read_csv(cond_blocks_path)
     df = df[df['COREM'] == int(corem_id)].reset_index()
-    blocks = [{'name': df['EGRIN2.block'][i].replace('.', ' '), 'q_value': df['BH.adjusted.p.value'][i]}
+    blocks = [{'name': df['EGRIN2.block'][i], 'q_value': df['BH.adjusted.p.value'][i]}
                    for i in range(df.shape[0])]
     return jsonify(condition_blocks=blocks)
 
