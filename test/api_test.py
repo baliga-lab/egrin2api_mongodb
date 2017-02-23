@@ -159,7 +159,7 @@ class APITest(unittest.TestCase):  # pylint: disable-msg=R0904
         """test the gene_gres() function with the specified gene"""
         gres = json.loads(self.app.get('/api/v1.0.0/gene_gres/Rv0116c').data.decode('utf-8'))
         self.assertEquals(gres['gene'], 'Rv0116c')
-        self.assertEquals(len(gres['gres']), 6)
+        self.assertEquals(len(gres['gres']), 59)
 
     def test_corems_with_gene_Rv1100(self):
         """test the corems_with_gene() function with the specified gene"""

@@ -17,6 +17,7 @@ import pymongo
 from bson.objectid import ObjectId
 import pandas as pd
 import numpy as np
+import mysql.connector
 
 import egrin2_query as e2q
 
@@ -90,10 +91,33 @@ def corems_with_gene(gene):
     return jsonify(corem_infos=corem_infos)
 
 
+def cachedb_conn():
+    return mysql.connector.connect(host=app.config['MYSQL_HOST'],
+                                       user=app.config['MYSQL_USER'],
+                                       password=app.config['MYSQL_PASSWORD'],
+                                       database=app.config['MYSQL_CACHEDB'])
+
+
+def __gene_gre_counts_mysql(gene, start, stop):
+    conn = cachedb_conn()
+    cursor = conn.cursor()
+    result = defaultdict(list)
+    try:
+        cursor.execute("""select gre_id,position,count from gene_gre_counts ggc
+join genes g on ggc.gene_id=g.id where g.name=%s and position >= %s and position <= %s
+order by gre_id,position""",
+                           [gene, int(start), int(stop)])
+        for row in cursor.fetchall():
+            gre_id, pos, count = row
+            result['GRE_' + str(gre_id)].append({"pos": pos, "count": count})
+        return result
+    finally:
+        cursor.close()
+        conn.close()
+
 @app.route('/api/v1.0.0/gene_gres/<gene>')
 def gene_gre_counts(gene):
     """Get the GRE counts (we only use the first 163) for a specific gene
-    TODO: 1. make corem contexts available
     """
 
     # Read the output window from the TSS start stop file
@@ -119,8 +143,6 @@ def gene_gre_counts(gene):
                                                    {"gre_id": {"$ne": None}},
                                                 {"gre_id": {"$lte": 163 }}]},
                                          {"_id": 0, "gre_id": 1, "motif_num": 1, "cluster_id": 1})
-    gres = defaultdict(list)
-
     # set the window to the TSS, and if the TSS does not overlap
     # with the coding region, include 50 additional bases
     # TODO: because of the circular nature of the chromosome, we need to handle Rv0001
@@ -133,10 +155,7 @@ def gene_gre_counts(gene):
     chipseq_df = chipseq_df[(chipseq_df['position'] >= window_start) & (chipseq_df['position'] <= window_stop)].reset_index()
     chipseq_peaks = {e['tf']: int(e['position']) for index, e in chipseq_df.iterrows()}
 
-    for m in motif_infos:
-        gres[m["gre_id"]].extend(make_sites(m["cluster_id"], m["motif_num"], window_start, window_stop))
-    gres = {'GRE_%d' % gre_id: make_counts(sorted(unique(sites), key=lambda e: e['start']))
-            for gre_id, sites in gres.items() if len(sites) > 0}
+    gres = __gene_gre_counts_mysql(gene, window_start, window_stop)
     return jsonify(gene=gene, gres=gres, chipseq_peaks=chipseq_peaks)
 
 
