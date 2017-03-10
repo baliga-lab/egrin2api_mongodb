@@ -156,7 +156,8 @@ def gene_gre_counts(gene):
     chipseq_peaks = {e['tf']: int(e['position']) for index, e in chipseq_df.iterrows()}
 
     gres = __gene_gre_counts_mysql(gene, window_start, window_stop)
-    return jsonify(gene=gene, gres=gres, chipseq_peaks=chipseq_peaks)
+    return jsonify(gene={'name': gene, 'start': gene_start, 'stop': gene_stop, 'strand': gene_strand},
+                       gres=gres, chipseq_peaks=chipseq_peaks)
 
 
 @app.route('/api/v1.0.0/corem_info/<corem_num>')
