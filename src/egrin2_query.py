@@ -189,6 +189,19 @@ def __map_reduce_to_gres(db, query, gre_lim):
     return to_r.loc[to_r.all_counts>=gre_lim, :]
 
 
+def gene_gres(db, genes, gre_lim=10, pval_cutoff=0.05):
+    """computes GRE counts and additional statistics for input genes
+    Similar to agglom(), but being explicit makes it actually much easier
+    to understand what is happening"""
+    gene_ids = row2id_any(db, genes, return_field="row_id")
+    cluster_ids = pd.DataFrame(list(db.bicluster_info.find({"$or": [{'rows': i} for i in gene_ids]},
+                                                            {"_id" : 1})))["_id"].tolist()
+    query = pd.DataFrame(list(db.motif_info.find({"cluster_id": {"$in": cluster_ids}}, {'gre_id': 1})))
+    if query.shape[0] > 0:
+        to_r = __map_reduce_to_gres(db, query, gre_lim)
+        return __enrich_counts(db, to_r, query, pval_cutoff)
+
+
 def agglom(db, x, x_type, y_type,
            x_input_type=None, y_output_type=None,
            logic="or", gre_lim=10, pval_cutoff=0.05, translate=True):

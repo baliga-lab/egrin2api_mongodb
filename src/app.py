@@ -157,7 +157,7 @@ def gene_gre_counts(gene):
 
     gres = __gene_gre_counts_mysql(gene, window_start, window_stop)
     return jsonify(gene={'name': gene, 'start': gene_start, 'stop': gene_stop, 'strand': gene_strand},
-                   tss={'start': tss_start, 'stop': tss_stop},
+                   tss={'start': int(tss_start), 'stop': int(tss_stop)},
                        gres=gres, chipseq_peaks=chipseq_peaks)
 
 
@@ -167,7 +167,7 @@ def corem_info(corem_num):
     TODO: add the counts for the GREs in the corem associated with the corem's genes
     """
     genes = e2q.corem_genes(db, corem_num)
-    corem_gres = e2q.agglom(db, genes, x_type='genes', y_type='gres', logic='or')
+    corem_gres = e2q.gene_gres(db, genes) #e2q.agglom(db, genes, x_type='genes', y_type='gres', logic='or')
     gre_ids = sorted([int(i) for i in corem_gres.index if i <= 163])
     return jsonify(corem=corem_num, genes=genes, gres=gre_ids)
 
