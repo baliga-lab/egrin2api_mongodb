@@ -163,11 +163,8 @@ def gene_gre_counts(gene):
 
 @app.route('/api/v1.0.0/corem_info/<corem_num>')
 def corem_info(corem_num):
-    """
-    TODO: add the counts for the GREs in the corem associated with the corem's genes
-    """
     genes = e2q.corem_genes(db, corem_num)
-    corem_gres = e2q.gene_gres(db, genes) #e2q.agglom(db, genes, x_type='genes', y_type='gres', logic='or')
+    corem_gres = e2q.gene_gres(db, genes)
     gre_ids = sorted([int(i) for i in corem_gres.index if i <= 163])
     return jsonify(corem=corem_num, genes=genes, gres=gre_ids)
 
@@ -371,12 +368,19 @@ def __gre_motifs(gre_id):
 
 def __gre_pssm(gre_id):
     gre_pssms_path = app.config["GRE_PSSMS_DIR"]
-    with open(os.path.join(gre_pssms_path, 'gre_pssm_%04d.json' % gre_id)) as infile:
-        return json.load(infile)
+    path = os.path.join(gre_pssms_path, 'gre_pssm_%04d.json' % gre_id)
+    if os.path.exists(path):
+        with open(path) as infile:
+            return json.load(infile)
+    else:
+        return {}
 
 def __gre_motif_evalue(df, gre_id):
     df = df[df['GRE'] == gre_id].reset_index()
-    return df['motif e-value'][0]
+    result = df['motif e-value'][0]
+    if np.isnan(result):
+        result = 0.0
+    return result
 
 @app.route('/api/v1.0.0/corem_gres/<corem_id>')
 def corem_gres(corem_id):
@@ -463,6 +467,34 @@ def biclusters():
     clusters = [{ "id": str(c['_id']), "num_genes": len(c['rows']), "num_conditions": len(c["columns"]), "residual": c["residual"]}
                     for c in cursor]
     return jsonify(biclusters=clusters)
+
+
+@app.route('/api/v1.0.0/gres')
+def gres():
+    try:
+        start = int(request.args.get('start'))
+    except Exception as e:
+        start = 0
+    try:
+        num_entries = int(request.args.get('length'))
+    except Exception as e:
+        num_entries = BATCH_SIZE
+    end = start + num_entries
+
+    corem_gres_path = app.config["COREM_GRES_FILE"]
+    df = pd.read_csv(corem_gres_path)
+    gre_summary_path = app.config["GRE_SUMMARY_FILE"]
+    gre_df = pd.read_csv(gre_summary_path, sep='\t')
+
+    gres = [{
+        'gre': i,
+        #'q_value': df['qval_BH'][i],
+        'pssm': __gre_pssm(i),
+        'motif_evalue': __gre_motif_evalue(gre_df, i)
+        } for i in range(1, 164)]
+    total = 163
+
+    return jsonify(gres=gres[start:end], total=total)
 
 
 @app.route('/api/v1.0.0/api_info')
