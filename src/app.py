@@ -488,7 +488,7 @@ def gres():
 
     gres = [{
         'gre': i,
-        #'q_value': df['qval_BH'][i],
+        'corems': list(df[df['gre'] == i]['corem']),
         'pssm': __gre_pssm(i),
         'motif_evalue': __gre_motif_evalue(gre_df, i)
         } for i in range(1, 164)]
