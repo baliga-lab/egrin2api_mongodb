@@ -188,6 +188,22 @@ def condition_info(condition_id):
     cond_blocks = {block: list(block2cond[block]) for block in cond2block[conds[0]]}
     return jsonify(condition=cond_docs[0], blocks=cond_blocks)
 
+@app.route('/api/v1.0.0/condition_blocks')
+def condition_block_info():
+    cond_blocks_path = app.config["COND_BLOCKS_FILE"]
+    df = pd.read_csv(cond_blocks_path)
+    block2cond = defaultdict(set)
+
+    for i in range(df.shape[0]):
+        egrin2_block = df['EGRIN2.block'][i]
+        conds = df["conds"][i].split()
+        for cond in conds:
+            block2cond[egrin2_block].add(cond)
+    result = {}
+    for block, conds in block2cond.items():
+        result[block] = list(conds)
+    return jsonify(result)
+
 
 @app.route('/api/v1.0.0/gene_info/<gene>')
 def gene_info(gene):
