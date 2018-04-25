@@ -383,8 +383,10 @@ def __corem_condition_blocks(corem_id):
     df = df[df['COREM'] == int(corem_id)].reset_index()
     # we give the blocks a fake id, so we can easily reload
     # expressions
+    condblock_conds = __condition_block_map()
     return [{'id': i + 1,
-             'name': df['EGRIN2.block'][i], 'q_value': df['BH.adjusted.p.value'][i]}
+             'name': df['EGRIN2.block'][i], 'q_value': df['BH.adjusted.p.value'][i],
+             'num_conditions': len(condblock_conds[df['EGRIN2.block'][i]])}
             for i in range(df.shape[0])]
 
 
