@@ -188,8 +188,7 @@ def condition_info(condition_id):
     cond_blocks = {block: list(block2cond[block]) for block in cond2block[conds[0]]}
     return jsonify(condition=cond_docs[0], blocks=cond_blocks)
 
-@app.route('/api/v1.0.0/condition_blocks')
-def condition_block_info():
+def __condition_block_map():
     cond_blocks_path = app.config["COND_BLOCKS_FILE"]
     df = pd.read_csv(cond_blocks_path)
     block2cond = defaultdict(set)
@@ -202,7 +201,12 @@ def condition_block_info():
     result = {}
     for block, conds in block2cond.items():
         result[block] = list(conds)
-    return jsonify(result)
+    return result
+
+
+@app.route('/api/v1.0.0/condition_blocks')
+def condition_block_info():
+    return jsonify(__condition_block_map())
 
 
 @app.route('/api/v1.0.0/gene_info/<gene>')
@@ -330,8 +334,29 @@ def corem_conditions(corem_id):
 def corem_expressions(corem_id):
     """retrieve the co-regulation expressions for the specified corem"""
     expressions = []
+    blocks = request.args.get('blocks')
+    blocks = map(int, blocks.split(','))
+
+    if (len(blocks) > 1 or (len(blocks) == 1 and blocks[0] != 0)):
+        # find the condition ids that are needed
+        corem_cond_blocks = {b['id']: b['name'] for b in __corem_condition_blocks(corem_id)}
+        block_names = [corem_cond_blocks[block_id] for block_id in blocks]
+        condblock_conds = __condition_block_map()
+        used_conds = set()
+        for name in block_names:
+            used_conds.update(condblock_conds[name])
+        all_cols = db.col_info.find({}, {'_id': 0, 'col_id': 1, 'egrin2_col_name': 1})
+        all_col_names = {cn['egrin2_col_name']: cn['col_id'] for cn in all_cols}
+        used_cond_ids = sorted([all_col_names[c] for c in used_conds])
+    else:
+        used_cond_ids = None
+
+
     corem = db.corem.find({"corem_id": int(corem_id)}, {'_id': 0, 'cols': 1, 'rows': 1})[0]
-    cols = [int(c['col_id']) for c in corem['cols']]
+    if used_cond_ids is None:
+        cols = [int(c['col_id']) for c in corem['cols']]
+    else:
+        cols = used_cond_ids
     gene_ids = corem["rows"]
     expressions.append({"cols": cols, "rows": gene_ids})
     exps = db.gene_expression.find({'col_id': {"$in": cols}, 'row_id': {"$in": gene_ids}},
@@ -351,15 +376,21 @@ def corem_expressions(corem_id):
 
     return jsonify(expressions=series, conditions=[col_name_map[cid] for cid in cols])
 
-
-@app.route('/api/v1.0.0/corem_condition_enrichment/<corem_id>')
-def corem_condition_enrichment(corem_id):
+def __corem_condition_blocks(corem_id):
+    """reusable blocks for the specified corem"""
     cond_blocks_path = app.config["COREM_COND_BLOCKS_FILE"]
     df = pd.read_csv(cond_blocks_path)
     df = df[df['COREM'] == int(corem_id)].reset_index()
-    blocks = [{'name': df['EGRIN2.block'][i], 'q_value': df['BH.adjusted.p.value'][i]}
-                   for i in range(df.shape[0])]
-    return jsonify(condition_blocks=blocks)
+    # we give the blocks a fake id, so we can easily reload
+    # expressions
+    return [{'id': i + 1,
+             'name': df['EGRIN2.block'][i], 'q_value': df['BH.adjusted.p.value'][i]}
+            for i in range(df.shape[0])]
+
+
+@app.route('/api/v1.0.0/corem_condition_enrichment/<corem_id>')
+def corem_condition_enrichment(corem_id):
+    return jsonify(condition_blocks=__corem_condition_blocks(corem_id))
 
 
 @app.route('/api/v1.0.0/corem_categories/<corem_id>')
